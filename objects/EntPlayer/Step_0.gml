@@ -1,11 +1,10 @@
 event_inherited();
 
-if (point_distance(self.x, self.y, mouse_x, mouse_y) <= self.movement_speed) {
-    self.x = mouse_x;
-    self.y = mouse_y;
-} else {
-    move_towards_point(mouse_x, mouse_y, self.movement_speed);
-}
+var distance_to_target = point_distance(self.x, self.y, mouse_x, mouse_y);
+var direction_to_target = point_direction(self.x, self.y, mouse_x, mouse_y);
+var distance_to_move = min(self.movement_speed, distance_to_target);
+self.x += distance_to_move * dcos(direction_to_target);
+self.y -= distance_to_move * dsin(direction_to_target);
 
 if (mouse_check_button(mb_left)) {
     if (self.last_shot_time + 1 / self.shots_per_second <= current_time / 1000) {
