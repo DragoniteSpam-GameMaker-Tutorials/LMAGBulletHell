@@ -11,3 +11,9 @@ if (mouse_check_button(mb_left)) {
         self.Shoot();
     }
 }
+
+if ((self.iframe_time + self.iframe_duration) > (current_time / 1000)) {
+    self.sprite_index = spr_player_iframes;
+} else {
+    self.sprite_index = spr_player;
+}
