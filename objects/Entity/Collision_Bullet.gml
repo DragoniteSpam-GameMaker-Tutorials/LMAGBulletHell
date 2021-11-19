@@ -1,0 +1,1 @@
+self.OnDamage(other.id);
