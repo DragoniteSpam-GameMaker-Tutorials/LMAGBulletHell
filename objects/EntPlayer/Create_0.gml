@@ -2,6 +2,8 @@ event_inherited();
 
 self.friendly = true;
 
+self.health = 10;
+
 self.x = mouse_x;
 self.y = mouse_y;
 
@@ -23,4 +25,12 @@ self.Shoot = function() {
     shot.yspeed = -shot_velocity * dsin(shot_angle);
     shot.friendly = true;
     self.last_shot_time = current_time / 1000;
+};
+
+self.OnDamage = function(bullet) {
+    self.health -= bullet.damage;
+    instance_destroy(bullet);
+    if (self.health <= 0) {
+        //instance_destroy();
+    }
 };
