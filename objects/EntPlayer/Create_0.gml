@@ -3,6 +3,8 @@ event_inherited();
 self.friendly = true;
 
 self.health = 10;
+self.iframe_time = 0;
+self.iframe_duration = 1;
 
 self.x = mouse_x;
 self.y = mouse_y;
@@ -28,9 +30,13 @@ self.Shoot = function() {
 };
 
 self.OnDamage = function(bullet) {
-    self.health -= bullet.damage;
     instance_destroy(bullet);
+    
+    if ((self.iframe_time + self.iframe_duration) > (current_time / 1000)) return;
+    
+    self.health -= bullet.damage;
     if (self.health <= 0) {
         //instance_destroy();
     }
+    self.iframe_time = current_time / 1000;
 };
