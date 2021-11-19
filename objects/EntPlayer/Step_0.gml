@@ -13,6 +13,7 @@ if (mouse_check_button(mb_left)) {
         var shot_angle = 90 + random_range(-self.bullet_spread / 2, self.bullet_spread / 2);
         shot.xspeed =  shot_velocity * dcos(shot_angle);
         shot.yspeed = -shot_velocity * dsin(shot_angle);
+        shot.friendly = true;
         self.last_shot_time = current_time / 1000;
     }
 }
