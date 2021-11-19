@@ -12,7 +12,7 @@ if (mouse_check_button(mb_left)) {
     }
 }
 
-if ((self.iframe_time + self.iframe_duration) > (current_time / 1000)) {
+if (self.Invincible()) {
     self.sprite_index = spr_player_iframes;
 } else {
     self.sprite_index = spr_player;

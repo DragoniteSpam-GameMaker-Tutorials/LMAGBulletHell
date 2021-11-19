@@ -11,12 +11,16 @@ self.OnDamage = function(bullet) {
     self.health -= bullet.damage;
     instance_destroy(bullet);
     if (self.health <= 0) {
-        instance_destroy();
+        self.Die();
     }
 };
 
 self.CanShoot = function() {
     return (self.last_shot_time + 1 / self.shots_per_second) <= (current_time / 1000);
+};
+
+self.Die = function() {
+    instance_destroy();
 };
 
 self.Shoot = function() {

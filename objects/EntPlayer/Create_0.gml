@@ -29,14 +29,23 @@ self.Shoot = function() {
     self.last_shot_time = current_time / 1000;
 };
 
+self.Invincible = function() {
+    return (self.iframe_time + self.iframe_duration) > (current_time / 1000);
+};
+
 self.OnDamage = function(bullet) {
     instance_destroy(bullet);
     
-    if ((self.iframe_time + self.iframe_duration) > (current_time / 1000)) return;
+    if (self.Invincible()) return;
     
     self.health -= bullet.damage;
     if (self.health <= 0) {
-        //instance_destroy();
+        self.Die();
     }
     self.iframe_time = current_time / 1000;
+};
+
+self.Die = function() {
+    show_debug_message("You died!");
+    //instance_destroy();
 };
