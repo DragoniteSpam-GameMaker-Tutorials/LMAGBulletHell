@@ -1,5 +1,8 @@
 {
   "resources": [
+    {"id":{"name":"EntPlayer","path":"objects/EntPlayer/EntPlayer.yy",},"order":15,},
+    {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":16,},
+    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":14,},
   ],
   "Options": [
     {"name":"Android","path":"options/android/options_android.yy",},
