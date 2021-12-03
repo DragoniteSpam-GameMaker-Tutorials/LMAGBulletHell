@@ -2,7 +2,8 @@ event_inherited();
 
 self.friendly = true;
 
-self.health = 10;
+self.health_max = 10;
+self.health = self.health_max;
 self.iframe_time = 0;
 self.iframe_duration = 1;
 

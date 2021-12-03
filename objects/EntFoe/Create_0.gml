@@ -1,6 +1,7 @@
 event_inherited();
 
-self.health = 4;
+self.health_max = 4;
+self.health = self.health_max;
 
 self.bullet_spread = 10;
 self.shots_per_second = 1;
@@ -20,7 +21,7 @@ self.CanShoot = function() {
 };
 
 self.Die = function() {
-    instance_create_depth(self.x, self.y, self.depth + 1, Pickup);
+    instance_create_depth(self.x, self.y, self.depth + 1, PickupHealth);
     instance_destroy();
 };
 
