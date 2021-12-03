@@ -1,9 +1,11 @@
 {
   "resources": [
     {"id":{"name":"spr_player_iframes","path":"sprites/spr_player_iframes/spr_player_iframes.yy",},"order":24,},
+    {"id":{"name":"EntFoeDoesNothing","path":"objects/EntFoeDoesNothing/EntFoeDoesNothing.yy",},"order":26,},
     {"id":{"name":"spr_foe_radial","path":"sprites/spr_foe_radial/spr_foe_radial.yy",},"order":23,},
     {"id":{"name":"Entity","path":"objects/Entity/Entity.yy",},"order":19,},
     {"id":{"name":"spr_foe","path":"sprites/spr_foe/spr_foe.yy",},"order":21,},
+    {"id":{"name":"spr_foe_does_nothing","path":"sprites/spr_foe_does_nothing/spr_foe_does_nothing.yy",},"order":25,},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":18,},
     {"id":{"name":"EntPlayer","path":"objects/EntPlayer/EntPlayer.yy",},"order":15,},
     {"id":{"name":"EntFoe","path":"objects/EntFoe/EntFoe.yy",},"order":20,},
@@ -43,7 +45,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "23.1.1.431",
+    "IDEVersion": "2.3.7.603",
   },
   "resourceVersion": "1.4",
   "name": "LMAGBulletHell",
