@@ -17,3 +17,14 @@ if (self.Invincible()) {
 } else {
     self.sprite_index = spr_player;
 }
+
+self.buff_damage.duration -= DT:
+self.buff_fire_rate.duration -= DT:
+
+if (self.buff_damage.duration <= 0) {
+    self.buff_damage.value = 0;
+}
+
+if (self.buff_fire_rate.duration <= 0) {
+    self.buff_fire_rate.value = 1;
+}

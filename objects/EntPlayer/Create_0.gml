@@ -23,7 +23,7 @@ self.buff_damage = {
 
 self.buff_fire_rate = {
     duration: 0,
-    value: 0,
+    value: 1,
 };
 
 self.CanShoot = function() {
