@@ -49,6 +49,8 @@ self.Shoot = function() {
     shot.friendly = true;
     shot.damage += self.buff_damage.value;
     if (self.buff_recursive.value) shot.attribute_recursive = true;
+    //shot.attribute_fire = true;
+    shot.attribute_explode = true;
     self.shot_cooldown = self.buff_fire_rate.value / self.shots_per_second;
 };
 
@@ -62,9 +64,7 @@ self.OnDamage = function(bullet) {
     if (self.Invincible()) return;
     
     self.health -= bullet.damage;
-    if (self.health <= 0) {
-        self.Die();
-    }
+    self.CheckDeath();
     self.iframe_cooldown = self.iframe_duration;
 };
 
@@ -72,10 +72,14 @@ self.OnEntityContact = function(bullet) {
     if (self.Invincible()) return;
     
     self.health--;
+    self.CheckDeath();
+    self.iframe_cooldown = self.iframe_duration;
+};
+
+self.CheckDeath = function() {
     if (self.health <= 0) {
         self.Die();
     }
-    self.iframe_cooldown = self.iframe_duration;
 };
 
 self.Die = function() {

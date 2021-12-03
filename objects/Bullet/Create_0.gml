@@ -11,6 +11,9 @@ self.attribute_explode = false;
 
 self.ApplyEffect = function(entity) {
     if (self.attribute_fire) {
+        entity.buff_fire.value = true;
+        entity.buff_fire.duration = 2;
+        entity.buff_fire.damage_cooldown = 1;
     }
     if (self.attribute_recursive) {
         var number_of_shots = 8;
@@ -28,5 +31,7 @@ self.ApplyEffect = function(entity) {
         }
     }
     if (self.attribute_explode) {
+        var shot = instance_create_depth(self.x, self.y, self.depth + 1, BulletExplosion);
+        shot.friendly = self.friendly;
     }
 };

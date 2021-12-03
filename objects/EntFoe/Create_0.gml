@@ -19,13 +19,17 @@ self.drops = [
 self.OnDamage = function(bullet) {
     self.health -= bullet.damage;
     instance_destroy(bullet);
-    if (self.health <= 0) {
-        self.Die();
-    }
+    self.CheckDeath();
 };
 
 self.CanShoot = function() {
     return (self.shot_cooldown <= 0);
+};
+
+self.CheckDeath = function() {
+    if (self.health <= 0) {
+        self.Die();
+    }
 };
 
 self.Die = function() {
