@@ -4,7 +4,7 @@ self.friendly = true;
 
 self.health_max = 10;
 self.health = self.health_max;
-self.iframe_time = 0;
+self.iframe_cooldown = 0;
 self.iframe_duration = 1;
 
 self.x = mouse_x;
@@ -14,7 +14,7 @@ self.movement_speed = 12;
 self.bullet_spread = 10;
 
 self.shots_per_second = 10;
-self.last_shot_time = 0;
+self.shot_cooldown = 0;
 
 self.buff_damage = {
     duration: 0,
@@ -27,7 +27,7 @@ self.buff_fire_rate = {
 };
 
 self.CanShoot = function() {
-    return (self.last_shot_time + 1 / self.shots_per_second) <= (current_time / 1000);
+    return (self.shot_cooldown <= 0);
 };
 
 self.Shoot = function() {
@@ -38,11 +38,11 @@ self.Shoot = function() {
     shot.yspeed = -shot_velocity * dsin(shot_angle);
     shot.friendly = true;
     shot.damage += self.buff_damage.value;
-    self.last_shot_time = current_time / 1000;
+    self.shot_cooldown = self.buff_fire_rate.value / self.shots_per_second;
 };
 
 self.Invincible = function() {
-    return (self.iframe_time + self.iframe_duration) > (current_time / 1000);
+    return (self.iframe_cooldown > 0);
 };
 
 self.OnDamage = function(bullet) {
@@ -54,7 +54,7 @@ self.OnDamage = function(bullet) {
     if (self.health <= 0) {
         self.Die();
     }
-    self.iframe_time = current_time / 1000;
+    self.iframe_cooldown = self.iframe_duration;
 };
 
 self.OnEntityContact = function(bullet) {
@@ -64,7 +64,7 @@ self.OnEntityContact = function(bullet) {
     if (self.health <= 0) {
         self.Die();
     }
-    self.iframe_time = current_time / 1000;
+    self.iframe_cooldown = self.iframe_duration;
 };
 
 self.Die = function() {

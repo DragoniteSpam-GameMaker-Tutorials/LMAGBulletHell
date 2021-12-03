@@ -11,5 +11,5 @@ self.Shoot = function() {
         shot.xspeed =  shot_velocity * dcos(shot_angle);
         shot.yspeed = -shot_velocity * dsin(shot_angle);
     }
-    self.last_shot_time = current_time / 1000;
+    self.shot_cooldown = 1 / self.shots_per_second;
 };

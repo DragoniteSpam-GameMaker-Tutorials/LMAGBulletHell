@@ -5,7 +5,7 @@ self.health = self.health_max;
 
 self.bullet_spread = 10;
 self.shots_per_second = 1;
-self.last_shot_time = 0;
+self.shot_cooldown = 0;
 self.shot_velocity = 4;
 
 self.OnDamage = function(bullet) {
@@ -17,7 +17,7 @@ self.OnDamage = function(bullet) {
 };
 
 self.CanShoot = function() {
-    return (self.last_shot_time + 1 / self.shots_per_second) <= (current_time / 1000);
+    return (self.shot_cooldown <= 0);
 };
 
 self.Die = function() {
@@ -31,5 +31,5 @@ self.Shoot = function() {
     var shot_angle = 270 + random_range(-self.bullet_spread / 2, self.bullet_spread / 2);
     shot.xspeed =  shot_velocity * dcos(shot_angle);
     shot.yspeed = -shot_velocity * dsin(shot_angle);
-    self.last_shot_time = current_time / 1000;
+    self.shot_cooldown = 1 / self.shots_per_second;
 };
