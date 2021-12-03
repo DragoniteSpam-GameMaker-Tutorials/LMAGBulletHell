@@ -45,6 +45,16 @@ self.OnDamage = function(bullet) {
     self.iframe_time = current_time / 1000;
 };
 
+self.OnEntityContact = function(bullet) {
+    if (self.Invincible()) return;
+    
+    self.health--;
+    if (self.health <= 0) {
+        self.Die();
+    }
+    self.iframe_time = current_time / 1000;
+};
+
 self.Die = function() {
     show_debug_message("You died!");
     //instance_destroy();
