@@ -33,5 +33,8 @@ self.ApplyEffect = function(entity) {
     if (self.attribute_explode) {
         var shot = instance_create_depth(self.x, self.y, self.depth + 1, BulletExplosion);
         shot.friendly = self.friendly;
+        shot.attribute_fire = self.attribute_fire;
+        shot.attribute_recursive = false;
+        shot.attribute_explode = false;
     }
 };

@@ -24,7 +24,9 @@ if (self.Invincible()) {
 self.buff_damage.duration -= DT;
 self.buff_fire_rate.duration -= DT;
 self.buff_damage_shield.duration -= DT;
+self.buff_fire_bullets.duration -= DT;
 self.buff_recursive.duration -= DT;
+self.buff_explosive.duration -= DT;
 
 if (self.buff_damage.duration <= 0) {
     self.buff_damage.value = 0;
@@ -38,6 +40,14 @@ if (self.buff_damage_shield.duration <= 0) {
     self.buff_damage_shield.value = false;
 }
 
+if (self.buff_fire_bullets.duration <= 0) {
+    self.buff_fire_bullets.value = false;
+}
+
 if (self.buff_recursive.duration <= 0) {
     self.buff_recursive.value = false;
+}
+
+if (self.buff_explosive.duration <= 0) {
+    self.buff_explosive.value = false;
 }

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_pickup_recursive",
-    "path": "sprites/spr_pickup_recursive/spr_pickup_recursive.yy",
+    "name": "spr_pickup_explosive_bullet",
+    "path": "sprites/spr_pickup_explosive_bullet/spr_pickup_explosive_bullet.yy",
   },
   "solid": false,
   "visible": true,
@@ -33,7 +33,7 @@
     "path": "LMAGBulletHell.yyp",
   },
   "resourceVersion": "1.0",
-  "name": "PickupRecursive",
+  "name": "PickupExplosiveBullet",
   "tags": [],
   "resourceType": "GMObject",
 }

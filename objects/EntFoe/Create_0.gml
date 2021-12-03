@@ -13,7 +13,9 @@ self.drops = [
     new PickupDropOdds(PickupFasterFire, 5),
     new PickupDropOdds(PickupMoreDamage, 5),
     new PickupDropOdds(PickupDamageShield, 5),
-    new PickupDropOdds(PickupRecursive, 5),
+    new PickupDropOdds(PickupRecursiveBullet, 5),
+    new PickupDropOdds(PickupFireBullet, 5),
+    new PickupDropOdds(PickupExplosiveBullet, 5),
 ];
 
 self.OnDamage = function(bullet) {
