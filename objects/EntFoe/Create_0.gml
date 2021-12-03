@@ -8,6 +8,12 @@ self.shots_per_second = 1;
 self.shot_cooldown = 0;
 self.shot_velocity = 4;
 
+self.drops = [
+    new PickupDropOdds(PickupHealth, 10),
+    new PickupDropOdds(PickupFasterFire, 10),
+    new PickupDropOdds(PickupMoreDamage, 10),
+];
+
 self.OnDamage = function(bullet) {
     self.health -= bullet.damage;
     instance_destroy(bullet);
@@ -21,7 +27,12 @@ self.CanShoot = function() {
 };
 
 self.Die = function() {
-    instance_create_depth(self.x, self.y, self.depth + 1, PickupFasterFire);
+    for (var i = 0, n = array_length(self.drops); i < n; i++) {
+        var odds = random(100);
+        if (odds < self.drops[i].odds) {
+            instance_create_depth(self.x, self.y, self.depth + 1, self.drops[i].type);
+        }
+    }
     instance_destroy();
 };
 

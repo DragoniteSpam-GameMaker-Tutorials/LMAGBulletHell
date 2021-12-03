@@ -3,6 +3,7 @@
     {"id":{"name":"spr_pickup_more_damage","path":"sprites/spr_pickup_more_damage/spr_pickup_more_damage.yy",},"order":33,},
     {"id":{"name":"spr_player_iframes","path":"sprites/spr_player_iframes/spr_player_iframes.yy",},"order":24,},
     {"id":{"name":"spr_pickup","path":"sprites/spr_pickup/spr_pickup.yy",},"order":27,},
+    {"id":{"name":"Pickup_Code","path":"scripts/Pickup_Code/Pickup_Code.yy",},"order":36,},
     {"id":{"name":"EntFoeDoesNothing","path":"objects/EntFoeDoesNothing/EntFoeDoesNothing.yy",},"order":26,},
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},"order":31,},
     {"id":{"name":"PickupHealth","path":"objects/PickupHealth/PickupHealth.yy",},"order":30,},
