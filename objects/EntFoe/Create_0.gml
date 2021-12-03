@@ -20,6 +20,7 @@ self.CanShoot = function() {
 };
 
 self.Die = function() {
+    instance_create_depth(self.x, self.y, self.depth + 1, Pickup);
     instance_destroy();
 };
 

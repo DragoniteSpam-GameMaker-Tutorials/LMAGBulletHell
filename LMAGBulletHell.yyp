@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"spr_player_iframes","path":"sprites/spr_player_iframes/spr_player_iframes.yy",},"order":24,},
+    {"id":{"name":"spr_pickup","path":"sprites/spr_pickup/spr_pickup.yy",},"order":27,},
     {"id":{"name":"EntFoeDoesNothing","path":"objects/EntFoeDoesNothing/EntFoeDoesNothing.yy",},"order":26,},
     {"id":{"name":"spr_foe_radial","path":"sprites/spr_foe_radial/spr_foe_radial.yy",},"order":23,},
     {"id":{"name":"Entity","path":"objects/Entity/Entity.yy",},"order":19,},
@@ -11,6 +12,7 @@
     {"id":{"name":"EntFoe","path":"objects/EntFoe/EntFoe.yy",},"order":20,},
     {"id":{"name":"Bullet","path":"objects/Bullet/Bullet.yy",},"order":17,},
     {"id":{"name":"EntFoeRadial","path":"objects/EntFoeRadial/EntFoeRadial.yy",},"order":22,},
+    {"id":{"name":"Pickup","path":"objects/Pickup/Pickup.yy",},"order":28,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":16,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":14,},
   ],
