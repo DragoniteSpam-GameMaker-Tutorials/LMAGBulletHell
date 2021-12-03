@@ -11,6 +11,8 @@
     {"id":{"name":"spr_foe","path":"sprites/spr_foe/spr_foe.yy",},"order":21,},
     {"id":{"name":"spr_foe_does_nothing","path":"sprites/spr_foe_does_nothing/spr_foe_does_nothing.yy",},"order":25,},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":18,},
+    {"id":{"name":"PickupFasterFire","path":"objects/PickupFasterFire/PickupFasterFire.yy",},"order":35,},
+    {"id":{"name":"spr_pickup_faster_fire","path":"sprites/spr_pickup_faster_fire/spr_pickup_faster_fire.yy",},"order":34,},
     {"id":{"name":"EntPlayer","path":"objects/EntPlayer/EntPlayer.yy",},"order":15,},
     {"id":{"name":"spr_pickup_health","path":"sprites/spr_pickup_health/spr_pickup_health.yy",},"order":29,},
     {"id":{"name":"EntFoe","path":"objects/EntFoe/EntFoe.yy",},"order":20,},

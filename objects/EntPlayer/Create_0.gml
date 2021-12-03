@@ -21,6 +21,11 @@ self.buff_damage = {
     value: 0,
 };
 
+self.buff_fire_rate = {
+    duration: 0,
+    value: 0,
+};
+
 self.CanShoot = function() {
     return (self.last_shot_time + 1 / self.shots_per_second) <= (current_time / 1000);
 };
