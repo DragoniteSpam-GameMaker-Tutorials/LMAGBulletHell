@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"spr_pickup_more_damage","path":"sprites/spr_pickup_more_damage/spr_pickup_more_damage.yy",},"order":33,},
     {"id":{"name":"spr_player_iframes","path":"sprites/spr_player_iframes/spr_player_iframes.yy",},"order":24,},
     {"id":{"name":"spr_pickup","path":"sprites/spr_pickup/spr_pickup.yy",},"order":27,},
     {"id":{"name":"EntFoeDoesNothing","path":"objects/EntFoeDoesNothing/EntFoeDoesNothing.yy",},"order":26,},
@@ -16,6 +17,7 @@
     {"id":{"name":"EntFoeRadial","path":"objects/EntFoeRadial/EntFoeRadial.yy",},"order":22,},
     {"id":{"name":"Pickup","path":"objects/Pickup/Pickup.yy",},"order":28,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":16,},
+    {"id":{"name":"PickupMoreDamage","path":"objects/PickupMoreDamage/PickupMoreDamage.yy",},"order":32,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":14,},
   ],
   "Options": [
