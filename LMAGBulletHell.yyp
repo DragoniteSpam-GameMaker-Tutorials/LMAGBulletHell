@@ -16,6 +16,7 @@
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":18,},
     {"id":{"name":"PickupFasterFire","path":"objects/PickupFasterFire/PickupFasterFire.yy",},"order":35,},
     {"id":{"name":"spr_pickup_faster_fire","path":"sprites/spr_pickup_faster_fire/spr_pickup_faster_fire.yy",},"order":34,},
+    {"id":{"name":"spr_damage_shield","path":"sprites/spr_damage_shield/spr_damage_shield.yy",},"order":39,},
     {"id":{"name":"EntPlayer","path":"objects/EntPlayer/EntPlayer.yy",},"order":15,},
     {"id":{"name":"spr_pickup_health","path":"sprites/spr_pickup_health/spr_pickup_health.yy",},"order":29,},
     {"id":{"name":"EntFoe","path":"objects/EntFoe/EntFoe.yy",},"order":20,},
