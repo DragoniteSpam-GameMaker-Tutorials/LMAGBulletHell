@@ -26,6 +26,11 @@ self.buff_fire_rate = {
     value: 1,
 };
 
+self.buff_damage_shield = {
+    duration: 0,
+    value: false,
+};
+
 self.CanShoot = function() {
     return (self.shot_cooldown <= 0);
 };
@@ -42,7 +47,7 @@ self.Shoot = function() {
 };
 
 self.Invincible = function() {
-    return (self.iframe_cooldown > 0);
+    return ((self.iframe_cooldown > 0) || self.buff_damage_shield.value);
 };
 
 self.OnDamage = function(bullet) {

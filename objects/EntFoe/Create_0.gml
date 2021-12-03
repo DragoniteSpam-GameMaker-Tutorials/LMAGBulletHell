@@ -12,6 +12,7 @@ self.drops = [
     new PickupDropOdds(PickupHealth, 10),
     new PickupDropOdds(PickupFasterFire, 10),
     new PickupDropOdds(PickupMoreDamage, 10),
+    new PickupDropOdds(PickupDamageShield, 100),
 ];
 
 self.OnDamage = function(bullet) {
