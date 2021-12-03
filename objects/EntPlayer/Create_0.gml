@@ -16,6 +16,11 @@ self.bullet_spread = 10;
 self.shots_per_second = 10;
 self.last_shot_time = 0;
 
+self.buff_damage = {
+    duration: 0,
+    value: 0,
+};
+
 self.CanShoot = function() {
     return (self.last_shot_time + 1 / self.shots_per_second) <= (current_time / 1000);
 };
@@ -27,6 +32,7 @@ self.Shoot = function() {
     shot.xspeed =  shot_velocity * dcos(shot_angle);
     shot.yspeed = -shot_velocity * dsin(shot_angle);
     shot.friendly = true;
+    shot.damage += self.buff_damage.value;
     self.last_shot_time = current_time / 1000;
 };
 
