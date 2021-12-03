@@ -10,7 +10,7 @@ self.iframe_duration = 1;
 self.x = mouse_x;
 self.y = mouse_y;
 
-self.movement_speed = 12;
+self.movement_speed = 720;
 self.bullet_spread = 10;
 
 self.shots_per_second = 10;
