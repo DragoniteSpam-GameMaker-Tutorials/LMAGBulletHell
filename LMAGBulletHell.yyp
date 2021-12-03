@@ -5,6 +5,8 @@
     {"id":{"name":"spr_pickup","path":"sprites/spr_pickup/spr_pickup.yy",},"order":27,},
     {"id":{"name":"Pickup_Code","path":"scripts/Pickup_Code/Pickup_Code.yy",},"order":36,},
     {"id":{"name":"EntFoeDoesNothing","path":"objects/EntFoeDoesNothing/EntFoeDoesNothing.yy",},"order":26,},
+    {"id":{"name":"spr_pickup_recursive","path":"sprites/spr_pickup_recursive/spr_pickup_recursive.yy",},"order":40,},
+    {"id":{"name":"PickupRecursive","path":"objects/PickupRecursive/PickupRecursive.yy",},"order":41,},
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},"order":31,},
     {"id":{"name":"PickupHealth","path":"objects/PickupHealth/PickupHealth.yy",},"order":30,},
     {"id":{"name":"PickupDamageShield","path":"objects/PickupDamageShield/PickupDamageShield.yy",},"order":38,},

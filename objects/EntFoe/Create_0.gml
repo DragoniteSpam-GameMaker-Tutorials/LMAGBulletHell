@@ -9,10 +9,11 @@ self.shot_cooldown = 0;
 self.shot_velocity = 4;
 
 self.drops = [
-    new PickupDropOdds(PickupHealth, 10),
-    new PickupDropOdds(PickupFasterFire, 10),
-    new PickupDropOdds(PickupMoreDamage, 10),
-    new PickupDropOdds(PickupDamageShield, 100),
+    new PickupDropOdds(PickupHealth, 5),
+    new PickupDropOdds(PickupFasterFire, 5),
+    new PickupDropOdds(PickupMoreDamage, 5),
+    new PickupDropOdds(PickupDamageShield, 5),
+    new PickupDropOdds(PickupRecursive, 5),
 ];
 
 self.OnDamage = function(bullet) {

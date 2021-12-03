@@ -31,6 +31,11 @@ self.buff_damage_shield = {
     value: false,
 };
 
+self.buff_recursive = {
+    duration: 0,
+    value: false,
+};
+
 self.CanShoot = function() {
     return (self.shot_cooldown <= 0);
 };
@@ -43,7 +48,7 @@ self.Shoot = function() {
     shot.yspeed = -shot_velocity * dsin(shot_angle);
     shot.friendly = true;
     shot.damage += self.buff_damage.value;
-    shot.attribute_recursive = true;
+    if (self.buff_recursive.value) shot.attribute_recursive = true;
     self.shot_cooldown = self.buff_fire_rate.value / self.shots_per_second;
 };
 
