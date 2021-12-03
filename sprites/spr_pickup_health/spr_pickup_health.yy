@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "LMAGBulletHell",
-    "path": "LMAGBulletHell.yyp",
+    "name": "Programmer art and stuff",
+    "path": "folders/Programmer art and stuff.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pickup_health",

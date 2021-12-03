@@ -1,6 +1,6 @@
 {
   "bboxMode": 0,
-  "collisionKind": 2,
+  "collisionKind": 1,
   "type": 0,
   "origin": 4,
   "preMultiplyAlpha": false,
@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 95,
+  "bbox_right": 63,
   "bbox_top": 0,
-  "bbox_bottom": 95,
+  "bbox_bottom": 63,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 96,
-  "height": 96,
+  "width": 64,
+  "height": 64,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f7bd2fca-b964-4699-90ba-42903403e467","path":"sprites/spr_damage_shield/spr_damage_shield.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f7bd2fca-b964-4699-90ba-42903403e467","path":"sprites/spr_damage_shield/spr_damage_shield.yy",},"LayerId":{"name":"547a02fd-d7ed-4b7b-9d18-ce9a33b090c6","path":"sprites/spr_damage_shield/spr_damage_shield.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_damage_shield","path":"sprites/spr_damage_shield/spr_damage_shield.yy",},"resourceVersion":"1.0","name":"f7bd2fca-b964-4699-90ba-42903403e467","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"23d02dc9-b4f0-48f6-b15e-9a9c0d2cdefd","path":"sprites/spr_foe_chase/spr_foe_chase.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"23d02dc9-b4f0-48f6-b15e-9a9c0d2cdefd","path":"sprites/spr_foe_chase/spr_foe_chase.yy",},"LayerId":{"name":"b7866bd6-5e63-422f-a4d5-67687753dbda","path":"sprites/spr_foe_chase/spr_foe_chase.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_foe_chase","path":"sprites/spr_foe_chase/spr_foe_chase.yy",},"resourceVersion":"1.0","name":"23d02dc9-b4f0-48f6-b15e-9a9c0d2cdefd","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_damage_shield","path":"sprites/spr_damage_shield/spr_damage_shield.yy",},
+    "spriteId": {"name":"spr_foe_chase","path":"sprites/spr_foe_chase/spr_foe_chase.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"16c95296-9c1c-466e-a35b-5a53614c1176","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f7bd2fca-b964-4699-90ba-42903403e467","path":"sprites/spr_damage_shield/spr_damage_shield.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"440713cb-bfeb-465b-9acc-094b6dc33146","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"23d02dc9-b4f0-48f6-b15e-9a9c0d2cdefd","path":"sprites/spr_foe_chase/spr_foe_chase.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -54,18 +54,18 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 48,
-    "yorigin": 48,
+    "xorigin": 32,
+    "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_damage_shield","path":"sprites/spr_damage_shield/spr_damage_shield.yy",},
+    "parent": {"name":"spr_foe_chase","path":"sprites/spr_foe_chase/spr_foe_chase.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_damage_shield",
+    "name": "spr_foe_chase",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"547a02fd-d7ed-4b7b-9d18-ce9a33b090c6","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b7866bd6-5e63-422f-a4d5-67687753dbda","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Programmer art and stuff.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_damage_shield",
+  "name": "spr_foe_chase",
   "tags": [],
   "resourceType": "GMSprite",
 }
