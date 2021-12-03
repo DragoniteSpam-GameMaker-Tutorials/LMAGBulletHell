@@ -43,6 +43,7 @@ self.Shoot = function() {
     shot.yspeed = -shot_velocity * dsin(shot_angle);
     shot.friendly = true;
     shot.damage += self.buff_damage.value;
+    shot.attribute_recursive = true;
     self.shot_cooldown = self.buff_fire_rate.value / self.shots_per_second;
 };
 
