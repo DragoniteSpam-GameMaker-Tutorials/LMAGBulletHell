@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "LMAGBulletHell",
-    "path": "LMAGBulletHell.yyp",
+    "name": "Bullets",
+    "path": "folders/Bullets.yy",
   },
   "resourceVersion": "1.0",
   "name": "Bullet",

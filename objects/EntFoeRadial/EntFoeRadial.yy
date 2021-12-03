@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "LMAGBulletHell",
-    "path": "LMAGBulletHell.yyp",
+    "name": "Foes",
+    "path": "folders/Entities/Foes.yy",
   },
   "resourceVersion": "1.0",
   "name": "EntFoeRadial",
