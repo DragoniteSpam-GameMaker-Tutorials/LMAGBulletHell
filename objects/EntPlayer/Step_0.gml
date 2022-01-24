@@ -8,7 +8,7 @@ self.y -= distance_to_move * dsin(direction_to_target);
 
 self.shot_cooldown -= DT;
 self.iframe_cooldown -= DT;
-self.shot_cooldown_sub -= DT;
+self.shot_cooldown_sub = max(0, self.shot_cooldown_sub - DT);
 
 if (mouse_check_button(mb_left)) {
     if (self.CanShoot()) {
@@ -16,7 +16,7 @@ if (mouse_check_button(mb_left)) {
     }
 }
 
-if (mouse_check_button(mb_right)) {
+if (mouse_check_button_pressed(mb_right)) {
     if (self.CanShootSub()) {
         self.ShootSub();
     }
