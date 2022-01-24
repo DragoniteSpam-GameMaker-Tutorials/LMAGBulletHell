@@ -5,8 +5,8 @@ self.health = self.health_max;
 self.iframe_cooldown = 0;
 self.iframe_duration = 1;
 
-self.x = mouse_x;
-self.y = mouse_y;
+self.x = window_mouse_get_x();
+self.y = window_mouse_get_y();
 
 self.movement_speed = 720;
 self.bullet_spread = 10;
