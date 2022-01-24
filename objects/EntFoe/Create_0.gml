@@ -2,6 +2,7 @@ event_inherited();
 
 self.health_max = 4;
 self.health = self.health_max;
+self.score = 10;
 
 self.bullet_spread = 10;
 self.shots_per_second = 1;
@@ -43,6 +44,7 @@ self.Die = function() {
             instance_create_depth(self.x, self.y, self.depth + 1, self.drops[i].type);
         }
     }
+    GameController.level.AddScore(self.score);
     instance_destroy();
 };
 

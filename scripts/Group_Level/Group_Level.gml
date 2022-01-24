@@ -1,6 +1,8 @@
 #macro WAVE_DURATION 60
 
 function Level() constructor {
+    self.score = 0;
+    
     self.wave_index = 0;
     self.waves = [];
     self.wave_timer = WAVE_DURATION;
@@ -23,6 +25,10 @@ function Level() constructor {
                 self.SendNextWave();
             }
         }
+    };
+    
+    static AddScore = function(value) {
+        self.score += value;
     };
     
     static SendNextWave = function() {

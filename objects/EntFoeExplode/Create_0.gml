@@ -1,6 +1,7 @@
 event_inherited();
 
 self.shot_cooldown = 10;
+self.score = 20;
 
 self.Shoot = function() {
     self.Die();

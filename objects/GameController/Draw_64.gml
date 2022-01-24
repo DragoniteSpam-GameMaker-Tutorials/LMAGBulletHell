@@ -1,0 +1,1 @@
+draw_text(32, 64, "Score: " + string(self.level.score));
