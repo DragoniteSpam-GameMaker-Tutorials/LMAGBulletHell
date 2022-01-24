@@ -13,7 +13,7 @@ self.bullet_spread = 10;
 
 self.shots_per_second = 10;
 self.shot_cooldown = 0;
-self.shot_cooldown_sub = 5;
+self.shot_cooldown_sub = SUB_ATTACK_COOLDOWN;
 
 self.buff_damage = {
     duration: 0,
