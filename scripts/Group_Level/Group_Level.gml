@@ -8,6 +8,8 @@ function Level() constructor {
     self.score_multiplier = 1;
     self.score_multiplier_timer = 0;
     
+    self.game_timer = 0;
+    
     self.wave_index = 0;
     self.waves = [];
     self.wave_timer = WAVE_DURATION;
@@ -21,6 +23,7 @@ function Level() constructor {
     static Update = function() {
         self.wave_timer -= DT;
         self.score_multiplier_timer -= DT;
+        self.game_timer += DT;
         
         if (self.score_multiplier_timer <= 0) {
             self.score_multiplier = max(1, SCORE_MULTIPLIER_REDUCTION);
