@@ -2,6 +2,8 @@
 
 function Level() constructor {
     self.score = 0;
+    self.score_multiplier = 1;
+    self.score_multiplier_timer = 0;
     
     self.wave_index = 0;
     self.waves = [];
@@ -15,6 +17,11 @@ function Level() constructor {
     
     static Update = function() {
         self.wave_timer -= DT;
+        self.score_multiplier_timer -= DT;
+        
+        if (self.score_multiplier_timer <= 0) {
+            self.score_multiplier = max(1, self.score_multiplier - DT / 4);
+        }
         
         if (instance_number(EntFoe) == 0 || self.wave_timer <= 0) {
             if (self.Complete()) {
@@ -28,7 +35,9 @@ function Level() constructor {
     };
     
     static AddScore = function(value) {
-        self.score += value;
+        self.score += value * self.score_multiplier;
+        self.score_multiplier += 0.05;
+        self.score_multiplier_timer = 2;
     };
     
     static SendNextWave = function() {
