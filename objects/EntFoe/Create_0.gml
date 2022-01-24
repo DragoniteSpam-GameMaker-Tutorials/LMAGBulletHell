@@ -52,3 +52,5 @@ self.Shoot = function() {
     shot.yspeed = -shot_velocity * dsin(shot_angle);
     self.shot_cooldown = 1 / self.shots_per_second;
 };
+
+path_start(self.path_enter, 10, path_action_stop, false);
