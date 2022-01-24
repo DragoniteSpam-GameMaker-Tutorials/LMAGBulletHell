@@ -7,6 +7,7 @@ function Level() constructor {
     self.score = 0;
     self.score_multiplier = 1;
     self.score_multiplier_timer = 0;
+    self.stomp_count = 0;
     
     self.game_timer = 0;
     
@@ -44,6 +45,7 @@ function Level() constructor {
         self.score += value * self.score_multiplier;
         self.score_multiplier += SCORE_MULTIPLIER_INCREASE;
         self.score_multiplier_timer = SCORE_MULTIPLIER_TIMER_DURATION;
+        self.stomp_count++;
     };
     
     static SendNextWave = function() {
