@@ -1,0 +1,41 @@
+{
+  "spriteId": {
+    "name": "spr_text_label",
+    "path": "sprites/spr_text_label/spr_text_label.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "ParentUI",
+    "path": "objects/ParentUI/ParentUI.yy",
+  },
+  "physicsObject": true,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 1,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [
+    {"varType":2,"value":"Button Name","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"text","tags":[],"resourceType":"GMObjectProperty",},
+  ],
+  "overriddenProperties": [],
+  "parent": {
+    "name": "User interface stuff",
+    "path": "folders/Graphical stuff/User interface stuff.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "UIText",
+  "tags": [],
+  "resourceType": "GMObject",
+}
