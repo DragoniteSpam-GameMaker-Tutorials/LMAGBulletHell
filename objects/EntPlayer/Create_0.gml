@@ -51,7 +51,7 @@ self.CanShoot = function() {
 
 self.Shoot = function() {
     var shot = instance_create_depth(self.x, self.y, self.depth + 1, Bullet);
-    var shot_velocity = 10;
+    var shot_velocity = DEFAULT_SHOT_VELOCITY;
     var shot_angle = 90 + random_range(-self.bullet_spread / 2, self.bullet_spread / 2);
     shot.xspeed =  shot_velocity * dcos(shot_angle);
     shot.yspeed = -shot_velocity * dsin(shot_angle);
@@ -69,14 +69,14 @@ self.CanShootSub = function() {
 
 self.ShootSub = function() {
     var shot = instance_create_depth(self.x, self.y, self.depth + 1, BulletFireBreath);
-    var shot_velocity = 10;
+    var shot_velocity = DEFAULT_SHOT_VELOCITY;
     var shot_angle = 90;
     shot.xspeed =  shot_velocity * dcos(shot_angle);
     shot.yspeed = -shot_velocity * dsin(shot_angle);
     shot.friendly = true;
-    shot.damage += self.buff_damage.value * 4;
+    shot.damage += self.buff_damage.value * SUB_ATTACK_BUFF_VALUE;
     shot.attribute_fire = true;
-    self.shot_cooldown_sub = 5;
+    self.shot_cooldown_sub = SUB_ATTACK_COOLDOWN;
 };
 
 self.Invincible = function() {

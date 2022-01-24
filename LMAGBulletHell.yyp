@@ -36,7 +36,7 @@
     {"id":{"name":"spr_pickup_health","path":"sprites/spr_pickup_health/spr_pickup_health.yy",},"order":11,},
     {"id":{"name":"spr_pickup_fire_bullet","path":"sprites/spr_pickup_fire_bullet/spr_pickup_fire_bullet.yy",},"order":10,},
     {"id":{"name":"spr_foe_chase","path":"sprites/spr_foe_chase/spr_foe_chase.yy",},"order":17,},
-    {"id":{"name":"BulletExplosion","path":"objects/BulletExplosion/BulletExplosion.yy",},"order":1,},
+    {"id":{"name":"BulletExplosionFragments","path":"objects/BulletExplosionFragments/BulletExplosionFragments.yy",},"order":1,},
     {"id":{"name":"spr_foe_aim","path":"sprites/spr_foe_aim/spr_foe_aim.yy",},"order":18,},
     {"id":{"name":"EntFoe","path":"objects/EntFoe/EntFoe.yy",},"order":0,},
     {"id":{"name":"Bullet","path":"objects/Bullet/Bullet.yy",},"order":0,},

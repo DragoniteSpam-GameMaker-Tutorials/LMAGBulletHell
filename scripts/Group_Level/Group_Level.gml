@@ -1,4 +1,7 @@
-#macro WAVE_DURATION 60
+#macro WAVE_DURATION                            60
+#macro SCORE_MULTIPLIER_REDUCTION               (self.score_multiplier - DT / 4)
+#macro SCORE_MULTIPLIER_INCREASE                0.05
+#macro SCORE_MULTIPLIER_TIMER_DURATION          2
 
 function Level() constructor {
     self.score = 0;
@@ -20,7 +23,7 @@ function Level() constructor {
         self.score_multiplier_timer -= DT;
         
         if (self.score_multiplier_timer <= 0) {
-            self.score_multiplier = max(1, self.score_multiplier - DT / 4);
+            self.score_multiplier = max(1, SCORE_MULTIPLIER_REDUCTION);
         }
         
         if (instance_number(EntFoe) == 0 || self.wave_timer <= 0) {
@@ -36,8 +39,8 @@ function Level() constructor {
     
     static AddScore = function(value) {
         self.score += value * self.score_multiplier;
-        self.score_multiplier += 0.05;
-        self.score_multiplier_timer = 2;
+        self.score_multiplier += SCORE_MULTIPLIER_INCREASE;
+        self.score_multiplier_timer = SCORE_MULTIPLIER_TIMER_DURATION;
     };
     
     static SendNextWave = function() {

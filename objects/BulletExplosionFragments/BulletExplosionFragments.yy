@@ -34,7 +34,7 @@
     "path": "folders/Bullets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "BulletExplosion",
+  "name": "BulletExplosionFragments",
   "tags": [],
   "resourceType": "GMObject",
 }
