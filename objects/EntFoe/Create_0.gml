@@ -38,11 +38,13 @@ self.CheckDeath = function() {
 };
 
 self.Die = function() {
+    var odds = random(100);
     for (var i = 0, n = array_length(self.drops); i < n; i++) {
-        var odds = random(100);
         if (odds < self.drops[i].odds) {
             instance_create_depth(self.x, self.y, self.depth + 1, self.drops[i].type);
+            break;
         }
+        odds -= self.drops[i].odds;
     }
     GameController.level.AddScore(self.score);
     instance_destroy();
