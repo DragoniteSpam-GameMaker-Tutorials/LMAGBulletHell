@@ -1,5 +1,7 @@
 event_inherited();
 
+if (!self.active) return;
+
 var target = EntPlayer.id;
 
 var distance_to_target = point_distance(self.x, self.y, target.x, target.y);

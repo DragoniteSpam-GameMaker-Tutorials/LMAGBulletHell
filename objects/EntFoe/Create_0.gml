@@ -8,6 +8,8 @@ self.shots_per_second = 1;
 self.shot_cooldown = 0;
 self.shot_velocity = 4;
 
+self.active = false;
+
 self.drops = [
     new PickupDropOdds(PickupHealth, 5),
     new PickupDropOdds(PickupFasterFire, 5),

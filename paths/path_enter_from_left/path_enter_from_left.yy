@@ -4,7 +4,7 @@
   "precision": 4,
   "points": [
     {"speed":100.0,"x":-256.0,"y":0.0,},
-    {"speed":0.0,"x":0.0,"y":0.0,},
+    {"speed":10.0,"x":0.0,"y":0.0,},
   ],
   "parent": {
     "name": "Movement",
