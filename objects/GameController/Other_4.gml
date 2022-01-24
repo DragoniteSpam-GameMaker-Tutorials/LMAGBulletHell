@@ -1,2 +1,2 @@
-level = new Level();
-level.SendNextWave();
+self.level = new Level();
+self.level.SendNextWave();

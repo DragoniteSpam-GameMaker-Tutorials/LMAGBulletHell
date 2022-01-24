@@ -11,4 +11,8 @@ function Level() constructor {
         instance_activate_layer(self.waves[self.wave_index]);
         self.wave_index++;
     };
+    
+    static Complete = function() {
+        return (self.wave_index == array_length(self.waves));
+    };
 }
