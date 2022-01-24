@@ -1,5 +1,3 @@
-self.friendly = false;
-
 self.buff_fire = {
     duration: 0,
     value: false,

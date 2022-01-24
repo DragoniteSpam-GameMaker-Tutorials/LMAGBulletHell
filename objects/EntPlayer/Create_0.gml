@@ -1,7 +1,5 @@
 event_inherited();
 
-self.friendly = true;
-
 self.health_max = 10;
 self.health = self.health_max;
 self.iframe_cooldown = 0;
