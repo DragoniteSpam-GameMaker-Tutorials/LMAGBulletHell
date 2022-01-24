@@ -15,6 +15,7 @@ self.bullet_spread = 10;
 
 self.shots_per_second = 10;
 self.shot_cooldown = 0;
+self.shot_cooldown_sub = 5;
 
 self.buff_damage = {
     duration: 0,
@@ -62,6 +63,22 @@ self.Shoot = function() {
     if (self.buff_recursive.value) shot.attribute_recursive = true;
     if (self.buff_explosive.value) shot.attribute_explode = true;
     self.shot_cooldown = self.buff_fire_rate.value / self.shots_per_second;
+};
+
+self.CanShootSub = function() {
+    return (self.shot_cooldown_sub <= 0);
+};
+
+self.ShootSub = function() {
+    var shot = instance_create_depth(self.x, self.y, self.depth + 1, BulletFireBreath);
+    var shot_velocity = 10;
+    var shot_angle = 90;
+    shot.xspeed =  shot_velocity * dcos(shot_angle);
+    shot.yspeed = -shot_velocity * dsin(shot_angle);
+    shot.friendly = true;
+    shot.damage += self.buff_damage.value * 4;
+    shot.attribute_fire = true;
+    self.shot_cooldown_sub = 5;
 };
 
 self.Invincible = function() {
