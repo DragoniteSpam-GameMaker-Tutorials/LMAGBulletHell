@@ -34,6 +34,7 @@
     {"id":{"name":"PickupFasterFire","path":"objects/PickupFasterFire/PickupFasterFire.yy",},"order":4,},
     {"id":{"name":"spr_healthbar_fill","path":"sprites/spr_healthbar_fill/spr_healthbar_fill.yy",},"order":1,},
     {"id":{"name":"PickupExplosiveBullet","path":"objects/PickupExplosiveBullet/PickupExplosiveBullet.yy",},"order":3,},
+    {"id":{"name":"Group_UI","path":"scripts/Group_UI/Group_UI.yy",},"order":57,},
     {"id":{"name":"spr_pickup_faster_fire","path":"sprites/spr_pickup_faster_fire/spr_pickup_faster_fire.yy",},"order":9,},
     {"id":{"name":"spr_damage_shield","path":"sprites/spr_damage_shield/spr_damage_shield.yy",},"order":2,},
     {"id":{"name":"path_enter_from_left","path":"paths/path_enter_from_left/path_enter_from_left.yy",},"order":1,},
