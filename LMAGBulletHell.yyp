@@ -40,6 +40,7 @@
     {"id":{"name":"spr_damage_shield","path":"sprites/spr_damage_shield/spr_damage_shield.yy",},"order":2,},
     {"id":{"name":"LevelObject","path":"objects/LevelObject/LevelObject.yy",},"order":59,},
     {"id":{"name":"path_enter_from_left","path":"paths/path_enter_from_left/path_enter_from_left.yy",},"order":1,},
+    {"id":{"name":"Group_Settings","path":"scripts/Group_Settings/Group_Settings.yy",},"order":60,},
     {"id":{"name":"EntFoeExplode","path":"objects/EntFoeExplode/EntFoeExplode.yy",},"order":6,},
     {"id":{"name":"EntFoeSpiral","path":"objects/EntFoeSpiral/EntFoeSpiral.yy",},"order":5,},
     {"id":{"name":"EntPlayer","path":"objects/EntPlayer/EntPlayer.yy",},"order":2,},
