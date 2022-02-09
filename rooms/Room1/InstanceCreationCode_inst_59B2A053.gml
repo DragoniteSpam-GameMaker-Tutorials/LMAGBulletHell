@@ -1,3 +1,3 @@
 GetText = function() {
-    self.text = "Scale: " + string("TBA");
+    self.text = "Scale: " + string(Settings.video.scale_value);
 };
