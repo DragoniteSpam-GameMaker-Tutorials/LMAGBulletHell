@@ -5,4 +5,4 @@
 
 #macro DEFAULT_EFFECT_DURATION          2
 
-#macro DEFAULT_SHOT_VELOCITY            6
+#macro DEFAULT_SHOT_VELOCITY            360

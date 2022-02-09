@@ -1,4 +1,4 @@
-var velocity = 4;
+var velocity = 240;
 var angle = random(360);
 
 self.lifespan = 10;

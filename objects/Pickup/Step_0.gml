@@ -1,7 +1,7 @@
 if (!is_playing()) return;
 
-self.x += self.xspeed;
-self.y += self.yspeed;
+self.x += self.xspeed * DT;
+self.y += self.yspeed * DT;
 
 self.xspeed *= self.drag;
 self.yspeed *= self.drag;
