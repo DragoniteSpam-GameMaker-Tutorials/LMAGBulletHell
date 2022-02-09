@@ -9,3 +9,11 @@ enum GameStates {
     PAUSED,
     TITLE,
 }
+
+Pause = function() {
+    self.state = GameStates.PAUSED;
+};
+
+Unpause = function() {
+    self.state = GameStates.PLAYING;
+};

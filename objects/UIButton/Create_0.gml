@@ -12,11 +12,10 @@ Render = function() {
             subimg = 1;
             if (mouse_check_button_pressed(mb_left)) {
                 if (self.sound_on_click != noone) {
-                    audio_play_sound(self.sound_on_click, SOUND_PRIORITY_UI, false)
+                    audio_play_sound(self.sound_on_click, 1, false)
                 }
                 OnClick();
             }
-            GAME.player_cursor_over_ui = true;
         }
     } else {
         subimg = 1;
