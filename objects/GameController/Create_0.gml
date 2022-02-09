@@ -4,6 +4,8 @@ application_surface_draw_enable(false);
 
 state = GameStates.PLAYING;
 
+pause_screen = "UI_Pause";
+
 enum GameStates {
     PLAYING,
     PAUSED,
@@ -12,6 +14,7 @@ enum GameStates {
 
 Pause = function() {
     self.state = GameStates.PAUSED;
+    self.pause_screen = "UI_Pause";
 };
 
 Unpause = function() {
