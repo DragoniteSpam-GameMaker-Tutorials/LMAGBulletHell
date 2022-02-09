@@ -20,3 +20,8 @@ Pause = function() {
 Unpause = function() {
     self.state = GameStates.PLAYING;
 };
+
+RestartLevel = function() {
+    with (LevelObject) instance_destroy();
+    room_restart();
+};
