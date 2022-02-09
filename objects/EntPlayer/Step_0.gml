@@ -1,6 +1,7 @@
 event_inherited();
 
 if (!is_playing()) return;
+if (!self.alive) return;
 
 var distance_to_target = point_distance(self.x, self.y, window_mouse_get_x(), window_mouse_get_y());
 var direction_to_target = point_direction(self.x, self.y, window_mouse_get_x(), window_mouse_get_y());

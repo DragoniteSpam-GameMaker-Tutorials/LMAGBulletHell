@@ -5,6 +5,8 @@ self.health = self.health_max;
 self.iframe_cooldown = 0;
 self.iframe_duration = 1;
 
+self.alive = true;
+
 self.x = window_mouse_get_x();
 self.y = window_mouse_get_y();
 
@@ -108,6 +110,6 @@ self.CheckDeath = function() {
 };
 
 self.Die = function() {
-    show_debug_message("You died!");
-    //instance_destroy();
+    GameController.ShowLoseScreen();
+    self.alive = false;
 };

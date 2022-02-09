@@ -6,6 +6,7 @@ self.ui = new UIManager();
 
 state = GameStates.PLAYING;
 pause_screen = "UI_Pause";
+end_of_level_screen = "";
 
 enum GameStates {
     PLAYING,
@@ -25,4 +26,12 @@ Unpause = function() {
 RestartLevel = function() {
     with (LevelObject) instance_destroy();
     room_restart();
+};
+
+ShowWinScreen = function() {
+    self.end_of_level_screen = "UI_Win";
+};
+
+ShowLoseScreen = function() {
+    self.end_of_level_screen = "UI_Lose";
 };
