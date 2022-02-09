@@ -15,6 +15,7 @@ enum GameStates {
 }
 
 Pause = function() {
+    if (self.end_of_level_screen != "" ) return;
     self.state = GameStates.PAUSED;
     self.pause_screen = "UI_Pause";
 };
