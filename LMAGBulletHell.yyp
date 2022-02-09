@@ -26,6 +26,7 @@
     {"id":{"name":"Entity","path":"objects/Entity/Entity.yy",},"order":1,},
     {"id":{"name":"path_enter_from_top","path":"paths/path_enter_from_top/path_enter_from_top.yy",},"order":0,},
     {"id":{"name":"spr_foe","path":"sprites/spr_foe/spr_foe.yy",},"order":3,},
+    {"id":{"name":"Group_Misc","path":"scripts/Group_Misc/Group_Misc.yy",},"order":58,},
     {"id":{"name":"spr_cursor_pan","path":"sprites/spr_cursor_pan/spr_cursor_pan.yy",},"order":5,},
     {"id":{"name":"spr_foe_does_nothing","path":"sprites/spr_foe_does_nothing/spr_foe_does_nothing.yy",},"order":4,},
     {"id":{"name":"spr_pickup_damage_shield","path":"sprites/spr_pickup_damage_shield/spr_pickup_damage_shield.yy",},"order":7,},
@@ -79,6 +80,7 @@
   ],
   "isDnDProject": false,
   "isEcma": false,
+  "tutorialPath": "",
   "configs": {
     "name": "Default",
     "children": [],
@@ -105,7 +107,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.1.0.465",
+    "IDEVersion": "2.3.7.606",
   },
   "resourceVersion": "1.4",
   "name": "LMAGBulletHell",

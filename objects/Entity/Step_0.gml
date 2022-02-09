@@ -1,3 +1,5 @@
+if (!is_playing()) exit;
+
 if (self.buff_fire.value) {
     self.buff_fire.damage_cooldown -= DT;
     if (self.buff_fire.damage_cooldown <= 0) {

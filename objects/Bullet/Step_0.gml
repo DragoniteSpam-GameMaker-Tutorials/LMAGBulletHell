@@ -1,3 +1,5 @@
+if (!is_playing()) return;
+
 self.x += self.xspeed;
 self.y += self.yspeed;
 

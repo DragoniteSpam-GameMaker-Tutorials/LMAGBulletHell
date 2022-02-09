@@ -22,6 +22,8 @@ function Level() constructor {
     }
     
     static Update = function() {
+        if (!is_playing()) return;
+        
         self.wave_timer -= DT;
         self.score_multiplier_timer -= DT;
         self.game_timer += DT;
