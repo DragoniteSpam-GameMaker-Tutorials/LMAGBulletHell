@@ -5,18 +5,18 @@ function UIManager() constructor {
         var layers = other.all_ui_elements[$ string(self.depth)];
         if (layers == undefined) {
             layers = {
-                elements: ds_list_create(),
+                elements: [],
                 block_raycast: undefined,
                 Render: function() {
                     self.block_raycast.Render();
-                    for (var i = 0; i < ds_list_size(self.elements); i++) {
-                        self.elements[| i].Render();
+                    for (var i = 0; i < array_length(self.elements); i++) {
+                        self.elements[i].Render();
                     }
                 },
             };
             other.all_ui_elements[$ string(self.depth)] = layers;
         }
-        ds_list_add(layers.elements, self.id);
+        array_push(layers.elements, self.id);
         self.visible = false;
     }
     
