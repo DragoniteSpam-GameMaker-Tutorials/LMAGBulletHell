@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_iframes","path":"sprites/spr_player_iframes/spr_player_iframes.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_iframes",
     "tags": [],
     "resourceType": "GMSequence",

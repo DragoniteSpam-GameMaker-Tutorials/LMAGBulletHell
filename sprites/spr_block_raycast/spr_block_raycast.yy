@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_block_raycast","path":"sprites/spr_block_raycast/spr_block_raycast.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_block_raycast",
     "tags": [],
     "resourceType": "GMSequence",

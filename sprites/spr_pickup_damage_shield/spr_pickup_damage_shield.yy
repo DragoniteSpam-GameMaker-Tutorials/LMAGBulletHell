@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pickup_damage_shield","path":"sprites/spr_pickup_damage_shield/spr_pickup_damage_shield.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pickup_damage_shield",
     "tags": [],
     "resourceType": "GMSequence",

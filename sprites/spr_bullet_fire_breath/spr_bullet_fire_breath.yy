@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bullet_fire_breath","path":"sprites/spr_bullet_fire_breath/spr_bullet_fire_breath.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bullet_fire_breath",
     "tags": [],
     "resourceType": "GMSequence",

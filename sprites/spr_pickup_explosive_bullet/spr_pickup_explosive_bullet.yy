@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pickup_explosive_bullet","path":"sprites/spr_pickup_explosive_bullet/spr_pickup_explosive_bullet.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pickup_explosive_bullet",
     "tags": [],
     "resourceType": "GMSequence",

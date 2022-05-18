@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_healthbar_fill","path":"sprites/spr_healthbar_fill/spr_healthbar_fill.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_healthbar_fill",
     "tags": [],
     "resourceType": "GMSequence",

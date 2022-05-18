@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pickup_fire_bullet","path":"sprites/spr_pickup_fire_bullet/spr_pickup_fire_bullet.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pickup_fire_bullet",
     "tags": [],
     "resourceType": "GMSequence",

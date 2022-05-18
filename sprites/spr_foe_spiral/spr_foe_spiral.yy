@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_foe_spiral","path":"sprites/spr_foe_spiral/spr_foe_spiral.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_foe_spiral",
     "tags": [],
     "resourceType": "GMSequence",

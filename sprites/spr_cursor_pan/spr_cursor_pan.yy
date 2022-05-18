@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cursor_pan","path":"sprites/spr_cursor_pan/spr_cursor_pan.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cursor_pan",
     "tags": [],
     "resourceType": "GMSequence",

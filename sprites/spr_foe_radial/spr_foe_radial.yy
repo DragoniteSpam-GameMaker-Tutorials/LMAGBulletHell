@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_foe_radial","path":"sprites/spr_foe_radial/spr_foe_radial.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_foe_radial",
     "tags": [],
     "resourceType": "GMSequence",

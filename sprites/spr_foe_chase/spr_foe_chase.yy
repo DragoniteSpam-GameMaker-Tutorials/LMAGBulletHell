@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_foe_chase","path":"sprites/spr_foe_chase/spr_foe_chase.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_foe_chase",
     "tags": [],
     "resourceType": "GMSequence",

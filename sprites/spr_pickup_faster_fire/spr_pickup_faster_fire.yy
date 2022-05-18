@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pickup_faster_fire","path":"sprites/spr_pickup_faster_fire/spr_pickup_faster_fire.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pickup_faster_fire",
     "tags": [],
     "resourceType": "GMSequence",

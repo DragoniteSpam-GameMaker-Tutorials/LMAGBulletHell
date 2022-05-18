@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_foe_explode","path":"sprites/spr_foe_explode/spr_foe_explode.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_foe_explode",
     "tags": [],
     "resourceType": "GMSequence",

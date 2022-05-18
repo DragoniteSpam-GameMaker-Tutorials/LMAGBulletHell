@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pickup","path":"sprites/spr_pickup/spr_pickup.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pickup",
     "tags": [],
     "resourceType": "GMSequence",

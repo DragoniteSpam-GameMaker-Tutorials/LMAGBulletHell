@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_status_fire","path":"sprites/spr_status_fire/spr_status_fire.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_status_fire",
     "tags": [],
     "resourceType": "GMSequence",

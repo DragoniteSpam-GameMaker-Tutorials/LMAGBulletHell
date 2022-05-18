@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_the_title_of_the_game","path":"sprites/spr_the_title_of_the_game/spr_the_title_of_the_game.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_the_title_of_the_game",
     "tags": [],
     "resourceType": "GMSequence",

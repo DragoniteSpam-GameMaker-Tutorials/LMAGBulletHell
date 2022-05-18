@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_foe_aim","path":"sprites/spr_foe_aim/spr_foe_aim.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_foe_aim",
     "tags": [],
     "resourceType": "GMSequence",

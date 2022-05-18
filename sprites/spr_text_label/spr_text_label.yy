@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_text_label","path":"sprites/spr_text_label/spr_text_label.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_text_label",
     "tags": [],
     "resourceType": "GMSequence",
