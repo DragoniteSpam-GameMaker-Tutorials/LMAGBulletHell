@@ -8,8 +8,7 @@ var direction_to_target = point_direction(self.x, self.y, window_mouse_get_x(), 
 var distance_to_move = min(self.movement_speed * DT, distance_to_target);
 self.x += distance_to_move * dcos(direction_to_target);
 self.y -= distance_to_move * dsin(direction_to_target);
-
-self.shot_cooldown -= DT;
+ 
 self.iframe_cooldown -= DT;
 self.shot_cooldown_sub = max(0, self.shot_cooldown_sub - DT);
 

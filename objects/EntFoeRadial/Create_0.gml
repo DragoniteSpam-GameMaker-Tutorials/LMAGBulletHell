@@ -12,5 +12,9 @@ self.Shoot = function() {
         shot.xspeed =  shot_velocity * dcos(shot_angle);
         shot.yspeed = -shot_velocity * dsin(shot_angle);
     }
-    self.shot_cooldown = 1 / self.shots_per_second;
+    
+    self.shot_enabled = false;
+    self.SetTimer(1 / self.shots_per_second, function() {
+        self.shot_enabled = true;
+    });
 };

@@ -14,7 +14,7 @@ self.movement_speed = 720;
 self.bullet_spread = 10;
 
 self.shots_per_second = 10;
-self.shot_cooldown = 0;
+self.shot_enabled = true;
 self.shot_cooldown_sub = SUB_ATTACK_COOLDOWN;
 
 self.buff_damage = {
@@ -48,7 +48,7 @@ self.buff_explosive = {
 };
 
 self.CanShoot = function() {
-    return (self.shot_cooldown <= 0);
+    return self.shot_enabled;
 };
 
 self.Shoot = function() {
@@ -62,7 +62,11 @@ self.Shoot = function() {
     if (self.buff_fire_bullets.value) shot.attribute_fire = true;
     if (self.buff_recursive.value) shot.attribute_recursive = true;
     if (self.buff_explosive.value) shot.attribute_explode = true;
-    self.shot_cooldown = self.buff_fire_rate.value / self.shots_per_second;
+    
+    self.shot_enabled = false;
+    self.SetTimer(self.buff_fire_rate.value / self.shots_per_second, function() {
+        self.shot_enabled = true;
+    });
 };
 
 self.CanShootSub = function() {

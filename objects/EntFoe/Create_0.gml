@@ -2,6 +2,7 @@ event_inherited();
 
 self.health = self.health_max;
 self.active = false;
+self.shot_enabled = true;
 
 self.drops = [
     new PickupDropOdds(PickupHealth, 5),
@@ -20,7 +21,7 @@ self.OnDamage = function(bullet) {
 };
 
 self.CanShoot = function() {
-    return (self.shot_cooldown <= 0);
+    return self.shot_enabled;
 };
 
 self.CheckDeath = function() {
@@ -48,7 +49,11 @@ self.Shoot = function() {
     var shot_angle = 270 + random_range(-self.bullet_spread / 2, self.bullet_spread / 2);
     shot.xspeed =  shot_velocity * dcos(shot_angle);
     shot.yspeed = -shot_velocity * dsin(shot_angle);
-    self.shot_cooldown = 1 / self.shots_per_second;
+    
+    self.shot_enabled = false;
+    self.SetTimer(1 / self.shots_per_second, function() {
+        self.shot_enabled = true;
+    });
 };
 
 path_start(self.path_enter, 10, path_action_stop, false);
