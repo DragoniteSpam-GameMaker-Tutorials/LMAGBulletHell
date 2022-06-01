@@ -8,7 +8,8 @@ function UIManager() constructor {
                 elements: [],
                 block_raycast: undefined,
                 Render: function() {
-                    self.block_raycast.Render();
+                    if (self.block_raycast)
+                        self.block_raycast.Render();
                     for (var i = 0; i < array_length(self.elements); i++) {
                         self.elements[i].Render();
                     }

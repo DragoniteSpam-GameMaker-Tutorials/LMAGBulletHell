@@ -1,4 +1,6 @@
-if (self.state != GameStates.TITLE) {
+if (self.state == GameStates.TITLE) {
+    self.ui.RenderUI("UI_Title");
+} else {
     self.ui.RenderUI("UI_Gameplay");
 }
 

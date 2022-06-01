@@ -1,3 +1,0 @@
-OnClick = function() {
-    GameController.RestartLevel();
-};
