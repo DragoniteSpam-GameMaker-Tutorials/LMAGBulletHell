@@ -9,6 +9,13 @@ pause_screen = "UI_Pause";
 title_screen = "UI_Title";
 end_of_level_screen = "";
 
+save_data = [
+    { },
+    { },
+    { },
+];
+active_save_data = save_data[0];
+
 enum GameStates {
     PLAYING,
     PAUSED,
