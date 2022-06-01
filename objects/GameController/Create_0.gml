@@ -6,6 +6,7 @@ self.ui = new UIManager();
 
 state = GameStates.TITLE;
 pause_screen = "UI_Pause";
+title_screen = "UI_Title";
 end_of_level_screen = "";
 
 enum GameStates {

@@ -1,5 +1,5 @@
 if (self.state == GameStates.TITLE) {
-    self.ui.RenderUI("UI_Title");
+    self.ui.RenderUI(self.title_screen);
 } else {
     self.ui.RenderUI("UI_Gameplay");
 }
