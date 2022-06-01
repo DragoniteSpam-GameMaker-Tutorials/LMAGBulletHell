@@ -1,17 +1,19 @@
 {
+  "name": "UIButton",
   "spriteId": {
     "name": "spr_nineslice",
     "path": "sprites/spr_nineslice/spr_nineslice.yy",
   },
-  "solid": false,
-  "visible": true,
   "spriteMaskId": null,
+  "visible": true,
+  "solid": false,
   "persistent": false,
+  "physicsObject": false,
+  "managed": true,
   "parentObjectId": {
     "name": "ParentUI",
     "path": "objects/ParentUI/ParentUI.yy",
   },
-  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -37,7 +39,6 @@
     "path": "folders/Graphical stuff/User interface stuff.yy",
   },
   "resourceVersion": "1.0",
-  "name": "UIButton",
   "tags": [],
   "resourceType": "GMObject",
 }

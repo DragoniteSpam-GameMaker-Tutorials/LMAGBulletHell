@@ -6,4 +6,6 @@ if (keyboard_check_pressed(vk_escape)) {
     }
 }
 
-self.level.Update();
+if (self.state == GameStates.PLAYING) {
+    self.level.Update();
+}

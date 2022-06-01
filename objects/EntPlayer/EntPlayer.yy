@@ -1,18 +1,19 @@
 {
+  "name": "EntPlayer",
   "spriteId": {
     "name": "spr_player",
     "path": "sprites/spr_player/spr_player.yy",
   },
-  "solid": false,
-  "visible": true,
-  "managed": true,
   "spriteMaskId": null,
+  "visible": true,
+  "solid": false,
   "persistent": false,
+  "physicsObject": false,
+  "managed": true,
   "parentObjectId": {
     "name": "Entity",
     "path": "objects/Entity/Entity.yy",
   },
-  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -38,7 +39,6 @@
     "path": "folders/Entities.yy",
   },
   "resourceVersion": "1.0",
-  "name": "EntPlayer",
   "tags": [],
   "resourceType": "GMObject",
 }

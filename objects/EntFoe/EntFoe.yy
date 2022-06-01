@@ -1,18 +1,19 @@
 {
+  "name": "EntFoe",
   "spriteId": {
     "name": "spr_foe",
     "path": "sprites/spr_foe/spr_foe.yy",
   },
-  "solid": false,
-  "visible": true,
-  "managed": true,
   "spriteMaskId": null,
+  "visible": true,
+  "solid": false,
   "persistent": false,
+  "physicsObject": false,
+  "managed": true,
   "parentObjectId": {
     "name": "Entity",
     "path": "objects/Entity/Entity.yy",
   },
-  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -46,7 +47,6 @@
     "path": "folders/Entities/Foes.yy",
   },
   "resourceVersion": "1.0",
-  "name": "EntFoe",
   "tags": [],
   "resourceType": "GMObject",
 }

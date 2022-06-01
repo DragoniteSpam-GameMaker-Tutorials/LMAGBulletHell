@@ -1,18 +1,19 @@
 {
+  "name": "EntFoeAim",
   "spriteId": {
     "name": "spr_foe_aim",
     "path": "sprites/spr_foe_aim/spr_foe_aim.yy",
   },
-  "solid": false,
-  "visible": true,
-  "managed": true,
   "spriteMaskId": null,
+  "visible": true,
+  "solid": false,
   "persistent": false,
+  "physicsObject": false,
+  "managed": true,
   "parentObjectId": {
     "name": "EntFoe",
     "path": "objects/EntFoe/EntFoe.yy",
   },
-  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -37,7 +38,6 @@
     "path": "folders/Entities/Foes.yy",
   },
   "resourceVersion": "1.0",
-  "name": "EntFoeAim",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -4,7 +4,7 @@ application_surface_draw_enable(false);
 
 self.ui = new UIManager();
 
-state = GameStates.PLAYING;
+state = GameStates.TITLE;
 pause_screen = "UI_Pause";
 end_of_level_screen = "";
 
