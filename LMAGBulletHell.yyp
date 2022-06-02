@@ -17,6 +17,7 @@
     {"id":{"name":"spr_pickup_recursive_bullet","path":"sprites/spr_pickup_recursive_bullet/spr_pickup_recursive_bullet.yy",},"order":13,},
     {"id":{"name":"PickupRecursiveBullet","path":"objects/PickupRecursiveBullet/PickupRecursiveBullet.yy",},"order":8,},
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},"order":31,},
+    {"id":{"name":"RoomLevel2","path":"rooms/RoomLevel2/RoomLevel2.yy",},"order":1,},
     {"id":{"name":"PickupHealth","path":"objects/PickupHealth/PickupHealth.yy",},"order":6,},
     {"id":{"name":"PickupDamageShield","path":"objects/PickupDamageShield/PickupDamageShield.yy",},"order":2,},
     {"id":{"name":"spr_foe_radial","path":"sprites/spr_foe_radial/spr_foe_radial.yy",},"order":5,},
@@ -39,6 +40,7 @@
     {"id":{"name":"PickupExplosiveBullet","path":"objects/PickupExplosiveBullet/PickupExplosiveBullet.yy",},"order":3,},
     {"id":{"name":"Group_UI","path":"scripts/Group_UI/Group_UI.yy",},"order":57,},
     {"id":{"name":"spr_pickup_faster_fire","path":"sprites/spr_pickup_faster_fire/spr_pickup_faster_fire.yy",},"order":9,},
+    {"id":{"name":"RoomTitle","path":"rooms/RoomTitle/RoomTitle.yy",},"order":3,},
     {"id":{"name":"spr_damage_shield","path":"sprites/spr_damage_shield/spr_damage_shield.yy",},"order":2,},
     {"id":{"name":"LevelObject","path":"objects/LevelObject/LevelObject.yy",},"order":59,},
     {"id":{"name":"path_enter_from_left","path":"paths/path_enter_from_left/path_enter_from_left.yy",},"order":1,},
@@ -69,7 +71,7 @@
     {"id":{"name":"spr_block_raycast","path":"sprites/spr_block_raycast/spr_block_raycast.yy",},"order":4,},
     {"id":{"name":"PickupMoreDamage","path":"objects/PickupMoreDamage/PickupMoreDamage.yy",},"order":7,},
     {"id":{"name":"spr_text_label","path":"sprites/spr_text_label/spr_text_label.yy",},"order":7,},
-    {"id":{"name":"RoomTitle","path":"rooms/RoomTitle/RoomTitle.yy",},"order":0,},
+    {"id":{"name":"RoomInitialization","path":"rooms/RoomInitialization/RoomInitialization.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Android","path":"options/android/options_android.yy",},
@@ -92,10 +94,12 @@
     ],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"RoomTitle","path":"rooms/RoomTitle/RoomTitle.yy",},},
+    {"roomId":{"name":"RoomInitialization","path":"rooms/RoomInitialization/RoomInitialization.yy",},},
     {"roomId":{"name":"RoomTemplate","path":"rooms/RoomTemplate/RoomTemplate.yy",},},
+    {"roomId":{"name":"RoomTitle","path":"rooms/RoomTitle/RoomTitle.yy",},},
     {"groupName":"Levels","children":[
         {"roomId":{"name":"RoomLevel1","path":"rooms/RoomLevel1/RoomLevel1.yy",},},
+        {"roomId":{"name":"RoomLevel2","path":"rooms/RoomLevel2/RoomLevel2.yy",},},
       ],},
   ],
   "Folders": [
