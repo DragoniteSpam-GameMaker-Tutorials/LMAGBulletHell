@@ -1,6 +1,6 @@
 event_inherited();
 
-text = L(text);
+text = "";
 
 Render = function() {
     var subimg = 0;
@@ -18,4 +18,5 @@ Render = function() {
 }
 
 GetText = function() {
+    self.text = L(self.source_text);
 }

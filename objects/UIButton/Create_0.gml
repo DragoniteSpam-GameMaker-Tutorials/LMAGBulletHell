@@ -1,6 +1,6 @@
 event_inherited();
 
-text = L(text);
+text = "";
 
 enabled = true;
 
@@ -38,7 +38,7 @@ OnClick = function() {
 };
 
 Update = function() {
-    
+    self.text = L(self.source_text);
 };
 
 OnHover = function() {
