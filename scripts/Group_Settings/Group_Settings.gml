@@ -56,6 +56,8 @@ Settings = {
     language_index: 0,
 };
 
+#macro TEXT_FILE "text.csv"
+
 #macro Text global.__text
 
 Text = array_create(array_length(Settings.languages));
@@ -66,11 +68,11 @@ for (var i = 0, n = array_length(Text); i < n; i++) {
 var text_grid = -1;
 
 try {
-    text_grid = load_csv("text.csv");
+    text_grid = load_csv(TEXT_FILE);
     
     for (var i = 0, w = ds_grid_width(text_grid); i < w; i++) {
         for (var j = 0, h = ds_grid_height(text_grid); j < h; j++) {
-            Text[i][$ text_grid[# 0, j]] = text_grid[# i, j];
+            Text[i][$ text_grid[# 0, j]] = string_replace_all(text_grid[# i, j], "\\n", "\n");
         }
     }
     
