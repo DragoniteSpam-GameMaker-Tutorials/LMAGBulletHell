@@ -1,3 +1,3 @@
 GetText = function() {
-    self.text = "Bugs stomped:\n" + string(GameController.level.stomp_count);
+    self.text = L("Bugs stomped:\n%0", GameController.level.stomp_count);
 };

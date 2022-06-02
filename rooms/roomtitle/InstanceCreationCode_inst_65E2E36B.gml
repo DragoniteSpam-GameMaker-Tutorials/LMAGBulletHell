@@ -1,3 +1,3 @@
 GetText = function() {
-    self.text = "Language: " + Settings.languages[Settings.language_index];
+    self.text = L("Language: %0", Settings.languages[Settings.language_index]);
 };

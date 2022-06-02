@@ -1,5 +1,5 @@
 Update = function() {
-    self.text = "Fullscreen: " + (window_get_fullscreen() ? "On" : "Off");
+    self.text = L("Fullscreen: %0", window_get_fullscreen() ? L("On") : L("Off"));
 };
 
 OnClick = function() {

@@ -1,3 +1,3 @@
 GetText = function() {
-    self.text = "Level Name...";
+    self.text = L("Level Name...");
 };

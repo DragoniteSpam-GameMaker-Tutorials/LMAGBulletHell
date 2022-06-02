@@ -1,3 +1,3 @@
 GetText = function() {
-    self.text = "Health: " + string(EntPlayer.health);
+    self.text = L("Health: %0", EntPlayer.health);
 };

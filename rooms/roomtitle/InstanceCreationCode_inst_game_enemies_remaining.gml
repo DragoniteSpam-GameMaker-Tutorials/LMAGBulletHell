@@ -1,3 +1,3 @@
 GetText = function() {
-    self.text = "Bugs remaining:\n" + string(instance_number(EntFoe));
+    self.text = L("Bugs remaining:\n%0", instance_number(EntFoe));
 };

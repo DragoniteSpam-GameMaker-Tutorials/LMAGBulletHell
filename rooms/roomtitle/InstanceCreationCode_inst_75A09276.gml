@@ -1,3 +1,3 @@
 GetText = function() {
-    self.text = "Volume (Master): " + string(Settings.audio.master * 100) + "%";
+    self.text = L("Volume (Master): %0%", Settings.audio.master * 100);
 };

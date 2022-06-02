@@ -1,3 +1,3 @@
 GetText = function() {
-    self.text = "Volume (Music): " + string(Settings.audio.bgm * 100) + "%";
+    self.text = L("Volume (Music): %0", Settings.audio.bgm * 100);
 };

@@ -1,3 +1,3 @@
 GetText = function() {
-    self.text = "High score: TBA";
+    self.text = L("High score: %0", "TBA");
 };
