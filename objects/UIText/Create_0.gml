@@ -1,5 +1,7 @@
 event_inherited();
 
+text = L(text);
+
 Render = function() {
     var subimg = 0;
     

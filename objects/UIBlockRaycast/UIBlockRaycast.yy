@@ -1,16 +1,15 @@
 {
-  "name": "UIBlockRaycast",
   "spriteId": {
     "name": "spr_block_raycast",
     "path": "sprites/spr_block_raycast/spr_block_raycast.yy",
   },
-  "spriteMaskId": null,
-  "visible": true,
   "solid": false,
-  "persistent": false,
-  "physicsObject": false,
+  "visible": true,
   "managed": true,
+  "spriteMaskId": null,
+  "persistent": false,
   "parentObjectId": null,
+  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -36,6 +35,7 @@
     "path": "folders/Graphical stuff/User interface stuff.yy",
   },
   "resourceVersion": "1.0",
+  "name": "UIBlockRaycast",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -1,19 +1,18 @@
 {
-  "name": "UISprite",
   "spriteId": {
     "name": "spr_title",
     "path": "sprites/spr_title/spr_title.yy",
   },
-  "spriteMaskId": null,
-  "visible": true,
   "solid": false,
-  "persistent": false,
-  "physicsObject": false,
+  "visible": true,
   "managed": true,
+  "spriteMaskId": null,
+  "persistent": false,
   "parentObjectId": {
     "name": "ParentUI",
     "path": "objects/ParentUI/ParentUI.yy",
   },
+  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -35,6 +34,7 @@
     "path": "folders/Graphical stuff/User interface stuff.yy",
   },
   "resourceVersion": "1.0",
+  "name": "UISprite",
   "tags": [],
   "resourceType": "GMObject",
 }

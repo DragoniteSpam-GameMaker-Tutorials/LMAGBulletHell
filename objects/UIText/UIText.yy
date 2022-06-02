@@ -1,19 +1,18 @@
 {
-  "name": "UIText",
   "spriteId": {
     "name": "spr_text_label",
     "path": "sprites/spr_text_label/spr_text_label.yy",
   },
-  "spriteMaskId": null,
-  "visible": true,
   "solid": false,
-  "persistent": false,
-  "physicsObject": true,
+  "visible": true,
   "managed": true,
+  "spriteMaskId": null,
+  "persistent": false,
   "parentObjectId": {
     "name": "ParentUI",
     "path": "objects/ParentUI/ParentUI.yy",
   },
+  "physicsObject": true,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -37,6 +36,7 @@
     "path": "folders/Graphical stuff/User interface stuff.yy",
   },
   "resourceVersion": "1.0",
+  "name": "UIText",
   "tags": [],
   "resourceType": "GMObject",
 }

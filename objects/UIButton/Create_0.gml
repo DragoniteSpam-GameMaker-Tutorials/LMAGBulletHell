@@ -1,5 +1,7 @@
 event_inherited();
 
+text = L(text);
+
 enabled = true;
 
 Render = function() {
