@@ -55,3 +55,30 @@ Settings = {
     
     language_index: 0,
 };
+
+#macro Text global.__text
+
+Text = array_create(array_length(Settings.languages));
+for (var i = 0, n = array_length(Text); i < n; i++) {
+    Text[i] = { };
+}
+
+var text_grid = -1;
+
+try {
+    text_grid = load_csv("text.csv");
+    
+    for (var i = 0, w = ds_grid_width(text_grid); i < w; i++) {
+        for (var j = 0, h = ds_grid_height(text_grid); j < h; j++) {
+            Text[i][$ text_grid[# 0, j]] = text_grid[# i, j];
+        }
+    }
+    
+    ds_grid_destroy(text_grid);
+} catch (e) {
+    show_debug_message("Couldn't load the language text");
+} finally {
+    if (ds_exists(text_grid, ds_type_grid)) {
+        ds_grid_destroy(text_grid);
+    }
+}
