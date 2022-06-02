@@ -7,7 +7,7 @@
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
-  "persistent": false,
+  "persistent": true,
   "parentObjectId": {
     "name": "ParentUI",
     "path": "objects/ParentUI/ParentUI.yy",
