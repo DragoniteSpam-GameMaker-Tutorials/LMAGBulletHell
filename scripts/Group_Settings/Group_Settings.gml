@@ -57,7 +57,8 @@ Settings = {
 };
 
 #macro TEXT_FILE "text.csv"
-
+#macro SAVE_ON_MISSING_TEXT true
+#macro Release:SAVE_ON_MISSING_TEXT false
 #macro Text global.__text
 
 Text = array_create(array_length(Settings.languages));

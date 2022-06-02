@@ -86,7 +86,9 @@
   "isEcma": false,
   "configs": {
     "name": "Default",
-    "children": [],
+    "children": [
+      {"name":"Release","children":[],},
+    ],
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"RoomTitle","path":"rooms/RoomTitle/RoomTitle.yy",},},

@@ -13,7 +13,7 @@ function L(text, args = undefined) {
         } else {
             show_debug_message("Translated string not found: " + text);
             Text[Settings.language_index][$ text] = undefined;
-            save_text_csv(TEXT_FILE);
+            if (SAVE_ON_MISSING_TEXT) save_text_csv(TEXT_FILE);
         }
     }
     
