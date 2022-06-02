@@ -1,19 +1,18 @@
 {
-  "name": "EntFoeDoesNothing",
   "spriteId": {
     "name": "spr_foe_does_nothing",
     "path": "sprites/spr_foe_does_nothing/spr_foe_does_nothing.yy",
   },
-  "spriteMaskId": null,
-  "visible": true,
   "solid": false,
-  "persistent": false,
-  "physicsObject": false,
+  "visible": true,
   "managed": true,
+  "spriteMaskId": null,
+  "persistent": false,
   "parentObjectId": {
     "name": "EntFoe",
     "path": "objects/EntFoe/EntFoe.yy",
   },
+  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -37,6 +36,7 @@
     "path": "folders/Entities/Foes.yy",
   },
   "resourceVersion": "1.0",
+  "name": "EntFoeDoesNothing",
   "tags": [],
   "resourceType": "GMObject",
 }

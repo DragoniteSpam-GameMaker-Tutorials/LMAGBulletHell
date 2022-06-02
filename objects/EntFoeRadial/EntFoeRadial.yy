@@ -1,19 +1,18 @@
 {
-  "name": "EntFoeRadial",
   "spriteId": {
     "name": "spr_foe_radial",
     "path": "sprites/spr_foe_radial/spr_foe_radial.yy",
   },
-  "spriteMaskId": null,
-  "visible": true,
   "solid": false,
-  "persistent": false,
-  "physicsObject": false,
+  "visible": true,
   "managed": true,
+  "spriteMaskId": null,
+  "persistent": false,
   "parentObjectId": {
     "name": "EntFoe",
     "path": "objects/EntFoe/EntFoe.yy",
   },
+  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -38,6 +37,7 @@
     "path": "folders/Entities/Foes.yy",
   },
   "resourceVersion": "1.0",
+  "name": "EntFoeRadial",
   "tags": [],
   "resourceType": "GMObject",
 }

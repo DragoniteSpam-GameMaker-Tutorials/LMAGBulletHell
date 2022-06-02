@@ -1,4 +1,5 @@
 GetText = function() {
+    if (!GameController.level) return;
     var seconds = floor(GameController.level.game_timer);
     if (seconds < 60) {
         self.text = L("Time: %0", seconds);
