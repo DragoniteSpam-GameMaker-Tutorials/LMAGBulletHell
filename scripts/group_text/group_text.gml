@@ -1,7 +1,15 @@
 function L(text, args = undefined) {
-    // Your score is %0, and your health is %1
+    // example: "Your score is %0, and your health is %1"
     
-    text = text;
+    if (variable_struct_exists(Text[Settings.language_index], text)) {
+        var translation = Text[Settings.language_index][$ text];
+        if (translation != undefined) {
+            text = translation;
+        }
+    } else {
+        show_debug_message("Translated string not found: " + text);
+        Text[Settings.language_index][$ text] = undefined;
+    }
     
     if (args != undefined) {
         if (!is_array(args)) args = [args];
