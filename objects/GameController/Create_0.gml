@@ -8,6 +8,7 @@ state = GameStates.TITLE;
 pause_screen = "UI_Pause";
 title_screen = "UI_Title";
 end_of_level_screen = "";
+self.level = undefined;
 
 save_data = [
     { },
@@ -46,3 +47,20 @@ ShowWinScreen = function() {
 ShowLoseScreen = function() {
     self.end_of_level_screen = "UI_Lose";
 };
+
+GoToLevel = function(target_room) {
+    self.state = GameStates.PLAYING;
+    room_goto(target_room);
+};
+
+GoToNextLevel = function() {
+    self.state = GameStates.PLAYING;
+    room_goto_next();
+};
+
+GoToTitle = function() {
+    self.state = GameStates.TITLE;
+    room_goto(RoomTitle);
+};
+
+show_debug_message("create event run")
