@@ -60,7 +60,8 @@ GoToNextLevel = function() {
 
 GoToTitle = function() {
     self.state = GameStates.TITLE;
+    self.level = undefined;
     room_goto(RoomTitle);
 };
 
-show_debug_message("create event run")
+room_goto(RoomTitle);
