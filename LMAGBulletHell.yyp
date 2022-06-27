@@ -22,6 +22,7 @@
     {"id":{"name":"PickupDamageShield","path":"objects/PickupDamageShield/PickupDamageShield.yy",},"order":2,},
     {"id":{"name":"spr_foe_radial","path":"sprites/spr_foe_radial/spr_foe_radial.yy",},"order":5,},
     {"id":{"name":"GameController","path":"objects/GameController/GameController.yy",},"order":54,},
+    {"id":{"name":"shd_world","path":"shaders/shd_world/shd_world.yy",},"order":2,},
     {"id":{"name":"UIText","path":"objects/UIText/UIText.yy",},"order":12,},
     {"id":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"order":3,},
     {"id":{"name":"Entity","path":"objects/Entity/Entity.yy",},"order":1,},
