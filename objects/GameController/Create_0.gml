@@ -9,19 +9,8 @@ vertex_format_add_color();
 self.format = vertex_format_end();
 
 self.meshes = {
-    woodlands: {
-    },
+    woodlands: load_level_meshes("meshes/woodlands/", self.format)
 };
-
-var filename = file_find_first("meshes/woodlands/*.vbuff", 0);
-while (filename != "") {
-    var buffer = buffer_load("meshes/woodlands/" + filename);
-    var vbuff = vertex_create_buffer_from_buffer(buffer, self.format);
-    self.meshes.woodlands[$ filename] = vbuff;
-    buffer_delete(buffer);
-    filename = file_find_next();
-}
-file_find_close();
 
 self.ui = new UIManager();
 
