@@ -126,7 +126,7 @@
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"text.csv","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2022.5.0.8",
+    "IDEVersion": "2022.600.0.138",
   },
   "resourceVersion": "1.5",
   "name": "LMAGBulletHell",
