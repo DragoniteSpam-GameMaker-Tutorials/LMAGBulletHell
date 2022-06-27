@@ -2,6 +2,27 @@ window_set_size(1366, 768);
 display_set_gui_maximize();
 application_surface_draw_enable(false);
 
+vertex_format_begin();
+vertex_format_add_position_3d();
+vertex_format_add_normal();
+vertex_format_add_color();
+self.format = vertex_format_end();
+
+self.meshes = {
+    woodlands: {
+    },
+};
+
+var filename = file_find_first("meshes/woodlands/*.vbuff", 0);
+while (filename != "") {
+    var buffer = buffer_load("meshes/woodlands/" + filename);
+    var vbuff = vertex_create_buffer_from_buffer(buffer, self.format);
+    self.meshes.woodlands[$ filename] = vbuff;
+    buffer_delete(buffer);
+    filename = file_find_next();
+}
+file_find_close();
+
 self.ui = new UIManager();
 
 state = GameStates.TITLE;
