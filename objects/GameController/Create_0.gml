@@ -69,16 +69,16 @@ RestartLevel = function() {
 ShowWinScreen = function() {
     // update the high score if you need to
     var current_high_score = self.active_save_data.high_score[$ room_get_name(room)];
-    if (current_high_score == undefined || current_high_score < self.level.score) {
-        self.active_save_data.high_score[$ room_get_name(room)] = self.level.score;
+    if (current_high_score == undefined || current_high_score < self.level.stats.score) {
+        self.active_save_data.high_score[$ room_get_name(room)] = self.level.stats.score;
     }
     // update some other stats
-    self.active_save_data.highest_score_multiplier = max(self.active_save_data.highest_score_multiplier, self.level.highest_score_multiplier);
-    self.active_save_data.cumulative_score += self.level.score;
-    self.active_save_data.total_stomps += self.level.stomp_count;
-    self.active_save_data.total_shots += self.level.shots;
-    self.active_save_data.total_damage_dealt += self.level.damage_dealt;
-    self.active_save_data.total_damage_taken += self.level.damage_taken;
+    self.active_save_data.highest_score_multiplier = max(self.active_save_data.highest_score_multiplier, self.level.stats.highest_score_multiplier);
+    self.active_save_data.cumulative_score += self.level.stats.score;
+    self.active_save_data.total_stomps += self.level.stats.stomp_count;
+    self.active_save_data.total_shots += self.level.stats.shots;
+    self.active_save_data.total_damage_dealt += self.level.stats.damage_dealt;
+    self.active_save_data.total_damage_taken += self.level.stats.damage_taken;
     // actually show the win screen
     self.end_of_level_screen = "UI_Win";
 };

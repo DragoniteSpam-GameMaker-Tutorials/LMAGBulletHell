@@ -1,20 +1,21 @@
 #macro WAVE_DURATION                            60
-#macro SCORE_MULTIPLIER_REDUCTION               (self.score_multiplier - DT / 4)
+#macro SCORE_MULTIPLIER_REDUCTION               (self.stats.score_multiplier - DT / 4)
 #macro SCORE_MULTIPLIER_INCREASE                0.05
 #macro SCORE_MULTIPLIER_TIMER_DURATION          2
 #macro LEVEL_SCROLL_SPEED                       150
 #macro LEVEL_BACKGROUND_OBJECTS                 400
 
 function Level(level_type, level_color) constructor {
-    self.score = 0;
-    self.score_multiplier = 1;
-    self.score_multiplier_timer = 0;
-    self.stomp_count = 0;
-    self.shots = 0;
-    self.damage_taken = 0;
-    self.damage_dealt = 0;
-    
-    self.highest_score_multiplier = 1;
+    self.stats = {
+        score: 0,
+        score_multiplier: 1,
+        score_multiplier_timer: 0,
+        stomp_count: 0,
+        shots: 0,
+        damage_taken: 0,
+        damage_dealt: 0,
+        highest_score_multiplier: 1,
+    };
     
     self.game_timer = 0;
     
@@ -44,12 +45,12 @@ function Level(level_type, level_color) constructor {
     static Update = function() {
         if (!is_playing()) return;
         
+        self.stats.score_multiplier_timer -= DT;
         self.wave_timer -= DT;
-        self.score_multiplier_timer -= DT;
         self.game_timer += DT;
         
-        if (self.score_multiplier_timer <= 0) {
-            self.score_multiplier = max(1, SCORE_MULTIPLIER_REDUCTION);
+        if (self.stats.score_multiplier_timer <= 0) {
+            self.stats.score_multiplier = max(1, SCORE_MULTIPLIER_REDUCTION);
         }
         
         if (EntPlayer.alive && (instance_number(EntFoe) == 0 || self.wave_timer <= 0) && GameController.end_of_level_screen == "") {
@@ -75,12 +76,12 @@ function Level(level_type, level_color) constructor {
     };
     
     static AddScore = function(value) {
-        self.score += floor(value * self.score_multiplier);
-        self.score_multiplier += SCORE_MULTIPLIER_INCREASE;
-        self.score_multiplier_timer = SCORE_MULTIPLIER_TIMER_DURATION;
-        self.stomp_count++;
+        self.stats.score += floor(value * self.stats.score_multiplier);
+        self.stats.score_multiplier += SCORE_MULTIPLIER_INCREASE;
+        self.stats.score_multiplier_timer = SCORE_MULTIPLIER_TIMER_DURATION;
+        self.stats.stomp_count++;
         
-        self.highest_score_multiplier = max(self.score_multiplier, self.highest_score_multiplier);
+        self.stats.highest_score_multiplier = max(self.stats.score_multiplier, self.stats.highest_score_multiplier);
     };
     
     static SendNextWave = function() {

@@ -68,7 +68,7 @@ self.Shoot = function() {
         self.shot_enabled = true;
     });
     
-    GameController.level.shots++;
+    GameController.level.stats.shots++;
 };
 
 self.CanShootSub = function() {
@@ -100,7 +100,7 @@ self.OnDamage = function(bullet) {
     self.CheckDeath();
     self.iframe_cooldown = self.iframe_duration;
     
-    GameController.level.damage_taken += bullet.damage;
+    GameController.level.stats.damage_taken += bullet.damage;
 };
 
 self.OnEntityContact = function(bullet) {
