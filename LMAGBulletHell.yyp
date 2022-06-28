@@ -51,6 +51,7 @@
     {"id":{"name":"EntPlayer","path":"objects/EntPlayer/EntPlayer.yy",},"order":2,},
     {"id":{"name":"spr_pickup_explosive_bullet","path":"sprites/spr_pickup_explosive_bullet/spr_pickup_explosive_bullet.yy",},"order":8,},
     {"id":{"name":"spr_foe_explode","path":"sprites/spr_foe_explode/spr_foe_explode.yy",},"order":20,},
+    {"id":{"name":"Group_Player_Data","path":"scripts/Group_Player_Data/Group_Player_Data.yy",},"order":64,},
     {"id":{"name":"spr_pickup_health","path":"sprites/spr_pickup_health/spr_pickup_health.yy",},"order":11,},
     {"id":{"name":"spr_pickup_fire_bullet","path":"sprites/spr_pickup_fire_bullet/spr_pickup_fire_bullet.yy",},"order":10,},
     {"id":{"name":"fnt_game_buttons","path":"fonts/fnt_game_buttons/fnt_game_buttons.yy",},"order":2,},

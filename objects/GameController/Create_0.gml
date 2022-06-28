@@ -37,9 +37,9 @@ end_of_level_screen = "";
 self.level = undefined;
 
 save_data = [
-    { },
-    { },
-    { },
+    new PlayerSaveData(),
+    new PlayerSaveData(),
+    new PlayerSaveData(),
 ];
 active_save_data = save_data[0];
 
