@@ -67,6 +67,8 @@ self.Shoot = function() {
     self.SetTimer(self.buff_fire_rate.value / self.shots_per_second, function() {
         self.shot_enabled = true;
     });
+    
+    GameController.level.shots++;
 };
 
 self.CanShootSub = function() {
@@ -97,6 +99,8 @@ self.OnDamage = function(bullet) {
     self.health -= bullet.damage;
     self.CheckDeath();
     self.iframe_cooldown = self.iframe_duration;
+    
+    GameController.level.damage_taken += bullet.damage;
 };
 
 self.OnEntityContact = function(bullet) {

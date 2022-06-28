@@ -16,6 +16,7 @@ self.drops = [
 
 self.OnDamage = function(bullet) {
     self.health -= bullet.damage;
+    GameController.level.damage_dealt += bullet.damage;
     instance_destroy(bullet);
     self.CheckDeath();
 };

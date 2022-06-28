@@ -74,6 +74,11 @@ ShowWinScreen = function() {
     }
     // update some other stats
     self.active_save_data.highest_score_multiplier = max(self.active_save_data.highest_score_multiplier, self.level.highest_score_multiplier);
+    self.active_save_data.cumulative_score += self.level.score;
+    self.active_save_data.total_stomps += self.level.stomp_count;
+    self.active_save_data.total_shots += self.level.shots;
+    self.active_save_data.total_damage_dealt += self.level.damage_dealt;
+    self.active_save_data.total_damage_taken += self.level.damage_taken;
     // actually show the win screen
     self.end_of_level_screen = "UI_Win";
 };

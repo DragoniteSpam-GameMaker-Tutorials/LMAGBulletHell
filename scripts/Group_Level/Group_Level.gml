@@ -10,6 +10,9 @@ function Level(level_type, level_color) constructor {
     self.score_multiplier = 1;
     self.score_multiplier_timer = 0;
     self.stomp_count = 0;
+    self.shots = 0;
+    self.damage_taken = 0;
+    self.damage_dealt = 0;
     
     self.highest_score_multiplier = 1;
     
