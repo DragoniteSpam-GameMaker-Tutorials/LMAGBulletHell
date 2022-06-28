@@ -49,7 +49,7 @@ function Level(level_type, level_color) constructor {
             self.score_multiplier = max(1, SCORE_MULTIPLIER_REDUCTION);
         }
         
-        if (EntPlayer.alive && (instance_number(EntFoe) == 0 || self.wave_timer <= 0)) {
+        if (EntPlayer.alive && (instance_number(EntFoe) == 0 || self.wave_timer <= 0) && GameController.end_of_level_screen == "") {
             if (self.Complete()) {
                 if (instance_number(EntFoe) == 0) {
                     GameController.ShowWinScreen();
