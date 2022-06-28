@@ -70,7 +70,7 @@ function Level(level_type, level_color) constructor {
     };
     
     static AddScore = function(value) {
-        self.score += value * self.score_multiplier;
+        self.score += floor(value * self.score_multiplier);
         self.score_multiplier += SCORE_MULTIPLIER_INCREASE;
         self.score_multiplier_timer = SCORE_MULTIPLIER_TIMER_DURATION;
         self.stomp_count++;

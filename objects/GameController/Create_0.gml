@@ -67,6 +67,11 @@ RestartLevel = function() {
 };
 
 ShowWinScreen = function() {
+    // update the high score if you need to
+    var current_high_score = self.active_save_data.high_score[$ room_get_name(room)];
+    if (current_high_score == undefined || current_high_score < self.level.score) {
+        self.active_save_data.high_score[$ room_get_name(room)] = self.level.score;
+    }
     self.end_of_level_screen = "UI_Win";
 };
 
