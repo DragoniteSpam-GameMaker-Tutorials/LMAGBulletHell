@@ -19,3 +19,7 @@ function load_level_meshes(folder, format) {
     file_find_close();
     return output;
 }
+
+function array_get_random_element(array) {
+    return array[irandom(array_length(array) - 1)];
+}
