@@ -10,93 +10,18 @@ self.format = vertex_format_end();
 
 var meshes_woodlands = load_level_meshes("meshes/woodlands/", self.format);
 self.level_types = { };
-self.level_types[$ string(RoomLevel1)] = {
-    name: "Level 1: Woodlands",
-    meshes: meshes_woodlands,
-    color: $004000,
-    id: 0
-};
-self.level_types[$ string(RoomLevel2)] = {
-    name: "Level 2: Woodlands",
-    meshes: meshes_woodlands,
-    color: $004000,
-    id: 1
-};
-self.level_types[$ string(RoomLevel3)] = {
-    name: "Level 3...",
-    meshes: meshes_woodlands,
-    color: $004000,
-    id: 2
-};
-self.level_types[$ string(RoomLevel3)] = {
-    name: "Level 3...",
-    meshes: meshes_woodlands,
-    color: $004000,
-    id: 3
-};
-self.level_types[$ string(RoomLevel4)] = {
-    name: "Level 4...",
-    meshes: meshes_woodlands,
-    color: $004000,
-    id: 4
-};
-self.level_types[$ string(RoomLevel5)] = {
-    name: "Level 5...",
-    meshes: meshes_woodlands,
-    color: $004000,
-    id: 5
-};
-self.level_types[$ string(RoomLevel6)] = {
-    name: "Level 6...",
-    meshes: meshes_woodlands,
-    color: $004000,
-    id: 6
-};
-self.level_types[$ string(RoomLevel7)] = {
-    name: "Level 7...",
-    meshes: meshes_woodlands,
-    color: $004000,
-    id: 7
-};
-self.level_types[$ string(RoomLevel8)] = {
-    name: "Level 8...",
-    meshes: meshes_woodlands,
-    color: $004000,
-    id: 8
-};
-self.level_types[$ string(RoomLevel9)] = {
-    name: "Level 9...",
-    meshes: meshes_woodlands,
-    color: $004000,
-    id: 9
-};
-self.level_types[$ string(RoomLevel10)] = {
-    name: "Level 10...",
-    meshes: meshes_woodlands,
-    color: $004000,
-    id: 10
-};
-self.level_types[$ string(RoomLevel11)] = {
-    name: "Level 11...",
-    meshes: meshes_woodlands,
-    color: $004000,
-    id: 11
-};
-self.level_types[$ string(RoomLevel12)] = {
-    name: "Level 12...",
-    meshes: meshes_woodlands,
-    color: $004000,
-    id: 12
-};
-/*
-    desert: {
-        meshes: load_level_meshes("meshes/desert/", self.format),
-        color: $ffdd99,
-    },
-    beach: {
-        meshes: load_level_meshes("meshes/beach/", self.format),
-        color: $ffeecc,
-    },*/
+self.level_types[$ string(RoomLevel1)] = new LevelMetadata("Level 1: Woodlands", 0, meshes_woodlands, $004000);
+self.level_types[$ string(RoomLevel2)] = new LevelMetadata("Level 2: Woodlands", 1, meshes_woodlands, $004000);
+self.level_types[$ string(RoomLevel3)] = new LevelMetadata("Level 3...", 2, meshes_woodlands, $004000);
+self.level_types[$ string(RoomLevel4)] = new LevelMetadata("Level 4...", 3, meshes_woodlands, $004000);
+self.level_types[$ string(RoomLevel5)] = new LevelMetadata("Level 5...", 4, meshes_woodlands, $004000);
+self.level_types[$ string(RoomLevel6)] = new LevelMetadata("Level 6...", 5, meshes_woodlands, $004000);
+self.level_types[$ string(RoomLevel7)] = new LevelMetadata("Level 7...", 6, meshes_woodlands, $004000);
+self.level_types[$ string(RoomLevel8)] = new LevelMetadata("Level 8...", 7, meshes_woodlands, $004000);
+self.level_types[$ string(RoomLevel9)] = new LevelMetadata("Level 9...", 8, meshes_woodlands, $004000);
+self.level_types[$ string(RoomLevel10)] = new LevelMetadata("Level 10...", 9, meshes_woodlands, $004000);
+self.level_types[$ string(RoomLevel11)] = new LevelMetadata("Level 11...", 10, meshes_woodlands, $004000);
+self.level_types[$ string(RoomLevel12)] = new LevelMetadata("Level 12...", 11, meshes_woodlands, $004000);
 
 self.ui = new UIManager();
 

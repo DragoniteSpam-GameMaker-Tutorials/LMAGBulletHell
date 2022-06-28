@@ -93,3 +93,10 @@ function Level(level_data) constructor {
         return (self.wave_index == array_length(self.waves));
     };
 }
+
+function LevelMetadata(name, id, mesh_array, background_color) constructor {
+    self.name = name;
+    self.id = id;
+    self.meshes = mesh_array;
+    self.color = background_color;
+}
