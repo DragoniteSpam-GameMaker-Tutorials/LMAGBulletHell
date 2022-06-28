@@ -11,6 +11,8 @@ function Level(level_type, level_color) constructor {
     self.score_multiplier_timer = 0;
     self.stomp_count = 0;
     
+    self.highest_score_multiplier = 1;
+    
     self.game_timer = 0;
     
     self.wave_index = 0;
@@ -74,6 +76,8 @@ function Level(level_type, level_color) constructor {
         self.score_multiplier += SCORE_MULTIPLIER_INCREASE;
         self.score_multiplier_timer = SCORE_MULTIPLIER_TIMER_DURATION;
         self.stomp_count++;
+        
+        self.highest_score_multiplier = max(self.score_multiplier, self.highest_score_multiplier);
     };
     
     static SendNextWave = function() {
