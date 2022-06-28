@@ -79,6 +79,12 @@ ShowWinScreen = function() {
     self.active_save_data.total_shots += self.level.stats.shots;
     self.active_save_data.total_damage_dealt += self.level.stats.damage_dealt;
     self.active_save_data.total_damage_taken += self.level.stats.damage_taken;
+    // autosave
+    static save_buffer = buffer_create(1000, buffer_grow, 1);
+    var save_json = json_stringify(self.save_data);
+    buffer_seek(save_buffer, buffer_seek_start, 0);
+    buffer_write(save_buffer, buffer_text, save_json);
+    buffer_save_ext(save_buffer, SAVE_FILE_NAME, 0, buffer_tell(save_buffer));
     // actually show the win screen
     self.end_of_level_screen = "UI_Win";
 };
