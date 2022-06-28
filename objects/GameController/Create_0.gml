@@ -8,9 +8,25 @@ vertex_format_add_normal();
 vertex_format_add_color();
 self.format = vertex_format_end();
 
-self.meshes = {
-    woodlands: load_level_meshes("meshes/woodlands/", self.format)
+var meshes_woodlands = load_level_meshes("meshes/woodlands/", self.format);
+self.level_types = { };
+self.level_types[$ string(RoomLevel1)] = {
+    meshes: meshes_woodlands,
+    color: $004000,
 };
+self.level_types[$ string(RoomLevel2)] = {
+    meshes: meshes_woodlands,
+    color: $004000,
+};
+/*
+    desert: {
+        meshes: load_level_meshes("meshes/desert/", self.format),
+        color: $ffdd99,
+    },
+    beach: {
+        meshes: load_level_meshes("meshes/beach/", self.format),
+        color: $ffeecc,
+    },*/
 
 self.ui = new UIManager();
 
