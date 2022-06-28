@@ -26,6 +26,7 @@ function Level(level_type, level_color) constructor {
             x: random(room_width),
             y: random_range(-64, room_height + 64),
             mesh: array_get_random_element(level_type),
+            scale: random_range(1.8, 2.2)
         };
     }
     

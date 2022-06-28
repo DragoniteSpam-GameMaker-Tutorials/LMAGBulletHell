@@ -9,7 +9,7 @@ if (self.state != GameStates.TITLE) {
     for (var i = 0, n = array_length(self.level.level_objects); i < n; i++) {
         var object = self.level.level_objects[i];
         
-        var matrix = matrix_build(object.x, object.y, 0, 0, 0, 0, 2, 2, -2);
+        var matrix = matrix_build(object.x, object.y, 0, -15, 0, 0, object.scale, object.scale, -object.scale);
         matrix_set(matrix_world, matrix);
         vertex_submit(object.mesh, pr_trianglelist, -1);
         matrix_set(matrix_world, matrix_build_identity());
