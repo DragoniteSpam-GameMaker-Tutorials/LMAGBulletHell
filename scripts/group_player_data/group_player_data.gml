@@ -18,5 +18,16 @@ function PlayerSaveData() constructor {
         if (is_real(source[$ "total_damage_dealt"])) self.total_damage_dealt = source.total_damage_dealt;
         if (is_real(source[$ "total_damage_taken"])) self.total_damage_taken = source.total_damage_taken;
         if (is_real(source[$ "total_level_cleared"])) self.total_level_cleared = source.total_level_cleared;
+        
+        if (is_struct(source[$ "high_score"])) {
+            var keys = variable_struct_get_names(source.high_score);
+            for (var i = 0, n = array_length(keys); i < n; i++) {
+                if (room_exists(asset_get_index(keys[i])) && room_get_name(asset_get_index(keys[i])) == keys[i]) {
+                    if (is_real(source.high_score[$ keys[i]])) {
+                        self.high_score[$ keys[i]] = source.high_score[$ keys[i]];
+                    }
+                }
+            }
+        }
     };
 }
