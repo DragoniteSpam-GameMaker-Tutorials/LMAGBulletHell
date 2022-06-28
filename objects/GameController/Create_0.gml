@@ -36,12 +36,31 @@ title_screen = "UI_Title";
 end_of_level_screen = "";
 self.level = undefined;
 
-save_data = [
+self.save_data = [
     new PlayerSaveData(),
     new PlayerSaveData(),
     new PlayerSaveData(),
 ];
-active_save_data = save_data[0];
+
+var load_buffer = -1;
+try {
+    load_buffer = buffer_load(SAVE_FILE_NAME);
+    var load_json = json_parse(buffer_read(load_buffer, buffer_text));
+    for (var i = 0; i < array_length(self.save_data); i++) {
+        self.save_data[i].Load(load_json[i]);
+    }
+} catch (e) {
+    show_debug_message("Couldn't load the player save data - " + e.message);
+    self.save_data = [
+        new PlayerSaveData(),
+        new PlayerSaveData(),
+        new PlayerSaveData(),
+    ];
+} finally {
+    if (buffer_exists(load_buffer)) buffer_delete(load_buffer);
+}
+
+self.active_save_data = self.save_data[0];
 
 enum GameStates {
     PLAYING,
