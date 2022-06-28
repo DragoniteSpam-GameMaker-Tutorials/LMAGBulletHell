@@ -8,3 +8,6 @@
 #macro DEFAULT_SHOT_VELOCITY            360
 
 #macro SAVE_FILE_NAME                   "save.json"
+
+#macro DEBUG                            true
+#macro Release:DEBUG                    false

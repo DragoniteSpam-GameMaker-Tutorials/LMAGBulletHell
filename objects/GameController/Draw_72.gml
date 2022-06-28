@@ -5,7 +5,7 @@ gpu_set_zwriteenable(true);
 shader_set(shd_world);
 
 if (self.state != GameStates.TITLE) {
-    draw_clear(self.level.level_color);
+    draw_clear(self.level.level_data.color);
     for (var i = 0, n = array_length(self.level.level_objects); i < n; i++) {
         var object = self.level.level_objects[i];
         

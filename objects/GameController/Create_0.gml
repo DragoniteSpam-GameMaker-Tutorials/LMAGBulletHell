@@ -11,12 +11,82 @@ self.format = vertex_format_end();
 var meshes_woodlands = load_level_meshes("meshes/woodlands/", self.format);
 self.level_types = { };
 self.level_types[$ string(RoomLevel1)] = {
+    name: "Level 1: Woodlands",
     meshes: meshes_woodlands,
     color: $004000,
+    id: 0
 };
 self.level_types[$ string(RoomLevel2)] = {
+    name: "Level 2: Woodlands",
     meshes: meshes_woodlands,
     color: $004000,
+    id: 1
+};
+self.level_types[$ string(RoomLevel3)] = {
+    name: "Level 3...",
+    meshes: meshes_woodlands,
+    color: $004000,
+    id: 2
+};
+self.level_types[$ string(RoomLevel3)] = {
+    name: "Level 3...",
+    meshes: meshes_woodlands,
+    color: $004000,
+    id: 3
+};
+self.level_types[$ string(RoomLevel4)] = {
+    name: "Level 4...",
+    meshes: meshes_woodlands,
+    color: $004000,
+    id: 4
+};
+self.level_types[$ string(RoomLevel5)] = {
+    name: "Level 5...",
+    meshes: meshes_woodlands,
+    color: $004000,
+    id: 5
+};
+self.level_types[$ string(RoomLevel6)] = {
+    name: "Level 6...",
+    meshes: meshes_woodlands,
+    color: $004000,
+    id: 6
+};
+self.level_types[$ string(RoomLevel7)] = {
+    name: "Level 7...",
+    meshes: meshes_woodlands,
+    color: $004000,
+    id: 7
+};
+self.level_types[$ string(RoomLevel8)] = {
+    name: "Level 8...",
+    meshes: meshes_woodlands,
+    color: $004000,
+    id: 8
+};
+self.level_types[$ string(RoomLevel9)] = {
+    name: "Level 9...",
+    meshes: meshes_woodlands,
+    color: $004000,
+    id: 9
+};
+self.level_types[$ string(RoomLevel10)] = {
+    name: "Level 10...",
+    meshes: meshes_woodlands,
+    color: $004000,
+    id: 10
+};
+self.level_types[$ string(RoomLevel11)] = {
+    name: "Level 11...",
+    meshes: meshes_woodlands,
+    color: $004000,
+    id: 11
+};
+self.level_types[$ string(RoomLevel12)] = {
+    name: "Level 12...",
+    meshes: meshes_woodlands,
+    color: $004000,
+    id: 12
 };
 /*
     desert: {
@@ -116,6 +186,7 @@ ShowWinScreen = function() {
     self.active_save_data.total_shots += self.level.stats.shots;
     self.active_save_data.total_damage_dealt += self.level.stats.damage_dealt;
     self.active_save_data.total_damage_taken += self.level.stats.damage_taken;
+    self.active_save_data.total_level_cleared = max(self.active_save_data.total_level_cleared, self.level.level_data.id + 1);
     // autosave
     self.SaveAll();
     // actually show the win screen

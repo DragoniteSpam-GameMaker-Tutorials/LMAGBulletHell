@@ -5,7 +5,7 @@
 #macro LEVEL_SCROLL_SPEED                       150
 #macro LEVEL_BACKGROUND_OBJECTS                 400
 
-function Level(level_type, level_color) constructor {
+function Level(level_data) constructor {
     self.stats = {
         score: 0,
         score_multiplier: 1,
@@ -23,15 +23,14 @@ function Level(level_type, level_color) constructor {
     self.waves = [];
     self.wave_timer = WAVE_DURATION;
     
-    self.level_type = level_type;
-    self.level_color = level_color;
+    self.level_data = level_data;
     self.level_objects = array_create(LEVEL_BACKGROUND_OBJECTS);
     
     for (var i = 0; i < LEVEL_BACKGROUND_OBJECTS; i++) {
         self.level_objects[i] = {
             x: random(room_width),
             y: random_range(-64, room_height + 64),
-            mesh: array_get_random_element(level_type),
+            mesh: array_get_random_element(level_data.meshes),
             scale: random_range(1.8, 2.2)
         };
     }
@@ -70,7 +69,7 @@ function Level(level_type, level_color) constructor {
             if (object.y > room_height + 128) {
                 object.x = random(room_width);
                 object.y -= room_height + 192;
-                object.mesh = array_get_random_element(self.level_type);
+                object.mesh = array_get_random_element(self.level_data.meshes);
             }
         }
     };
