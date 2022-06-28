@@ -15,6 +15,16 @@ function Level() constructor {
     self.waves = [];
     self.wave_timer = WAVE_DURATION;
     
+    self.level_objects = [];
+    
+    repeat (100) {
+        array_push(self.level_objects, {
+            x: random(room_width),
+            y: random(room_height),
+            mesh: array_get_random_element(GameController.meshes.woodlands),
+        });
+    }
+    
     for (var index = 1; layer_exists("Wave" + string(index)); index++) {
         var layer_data = layer_get_id("Wave" + string(index));
         array_push(self.waves, layer_data);
