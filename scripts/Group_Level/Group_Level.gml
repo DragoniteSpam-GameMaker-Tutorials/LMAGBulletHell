@@ -2,6 +2,8 @@
 #macro SCORE_MULTIPLIER_REDUCTION               (self.score_multiplier - DT / 4)
 #macro SCORE_MULTIPLIER_INCREASE                0.05
 #macro SCORE_MULTIPLIER_TIMER_DURATION          2
+#macro LEVEL_SCROLL_SPEED                       150
+#macro LEVEL_BACKGROUND_OBJECTS                 400
 
 function Level() constructor {
     self.score = 0;
@@ -15,14 +17,14 @@ function Level() constructor {
     self.waves = [];
     self.wave_timer = WAVE_DURATION;
     
-    self.level_objects = [];
+    self.level_objects = array_create(LEVEL_BACKGROUND_OBJECTS);
     
-    repeat (100) {
-        array_push(self.level_objects, {
+    for (var i = 0; i < LEVEL_BACKGROUND_OBJECTS; i++) {
+        self.level_objects[i] = {
             x: random(room_width),
-            y: random(room_height),
+            y: random_range(-64, room_height + 64),
             mesh: array_get_random_element(GameController.meshes.woodlands),
-        });
+        };
     }
     
     for (var index = 1; layer_exists("Wave" + string(index)); index++) {
@@ -49,6 +51,17 @@ function Level() constructor {
                 } // else there are still foes and you're being slow
             } else {
                 self.SendNextWave();
+            }
+        }
+        
+        for (var i = array_length(self.level_objects) - 1; i >= 0; i--) {
+            var object = self.level_objects[i];
+            object.y += LEVEL_SCROLL_SPEED * DT;
+            
+            if (object.y > room_height + 128) {
+                object.x = random(room_width);
+                object.y -= room_height + 192;
+                object.mesh = array_get_random_element(GameController.meshes.woodlands);
             }
         }
     };
