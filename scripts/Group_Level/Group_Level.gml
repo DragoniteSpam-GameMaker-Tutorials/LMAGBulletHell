@@ -5,7 +5,7 @@
 #macro LEVEL_SCROLL_SPEED                       150
 #macro LEVEL_BACKGROUND_OBJECTS                 400
 
-function Level(level_type) constructor {
+function Level(level_type, level_color) constructor {
     self.score = 0;
     self.score_multiplier = 1;
     self.score_multiplier_timer = 0;
@@ -18,6 +18,7 @@ function Level(level_type) constructor {
     self.wave_timer = WAVE_DURATION;
     
     self.level_type = level_type;
+    self.level_color = level_color;
     self.level_objects = array_create(LEVEL_BACKGROUND_OBJECTS);
     
     for (var i = 0; i < LEVEL_BACKGROUND_OBJECTS; i++) {
