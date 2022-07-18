@@ -18,6 +18,10 @@ self.foe_meshes = {
     scarab: load_foe_meshes("meshes/foes/scarab*.vbuff", self.format),
 };
 
+self.player_meshes = {
+    default_player: load_foe_meshes("meshes/players/sphere*.vbuff", self.format),
+};
+
 var meshes_woodlands = load_level_meshes("meshes/woodlands/", self.format);
 self.level_types = { };
 self.level_types[$ string(RoomLevel1)] = new LevelMetadata("Level 1: Woodlands", 0, meshes_woodlands, $004000);

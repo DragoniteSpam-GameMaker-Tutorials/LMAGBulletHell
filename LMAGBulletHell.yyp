@@ -196,6 +196,7 @@
     {"CopyToMask":-1,"filePath":"datafiles/meshes/foes","resourceVersion":"1.0","name":"pillbug1.vbuff","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/meshes/foes","resourceVersion":"1.0","name":"scarab0.vbuff","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/meshes/foes","resourceVersion":"1.0","name":"scarab1.vbuff","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/meshes/players","resourceVersion":"1.0","name":"sphere0.vbuff","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
     "IDEVersion": "2022.6.0.23",
