@@ -12,5 +12,7 @@ var distance_to_move = min(self.movement_speed * DT, distance_to_target);
 self.x += distance_to_move * dcos(direction_to_target);
 self.y -= distance_to_move * dsin(direction_to_target);
 
+//self.y = min(self.y, room_height * 2 / 3);
+
 // because the base models are facing forward (direction 270)
 self.face_direction = direction_to_target + 90;
