@@ -85,6 +85,7 @@
     {"id":{"name":"path_enter_from_right","path":"paths/path_enter_from_right/path_enter_from_right.yy",},"order":2,},
     {"id":{"name":"Pickup","path":"objects/Pickup/Pickup.yy",},"order":0,},
     {"id":{"name":"UISprite","path":"objects/UISprite/UISprite.yy",},"order":11,},
+    {"id":{"name":"EntFoeBagworm","path":"objects/EntFoeBagworm/EntFoeBagworm.yy",},"order":7,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":14,},
     {"id":{"name":"spr_block_raycast","path":"sprites/spr_block_raycast/spr_block_raycast.yy",},"order":4,},
     {"id":{"name":"PickupMoreDamage","path":"objects/PickupMoreDamage/PickupMoreDamage.yy",},"order":7,},
