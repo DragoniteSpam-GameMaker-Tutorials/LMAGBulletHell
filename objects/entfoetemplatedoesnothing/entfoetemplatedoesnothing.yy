@@ -9,8 +9,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "EntFoe",
-    "path": "objects/EntFoe/EntFoe.yy",
+    "name": "EntFoeTemplate",
+    "path": "objects/EntFoeTemplate/EntFoeTemplate.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -29,14 +29,14 @@
   ],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"point_value","path":"objects/EntFoe/EntFoe.yy",},"objectId":{"name":"EntFoe","path":"objects/EntFoe/EntFoe.yy",},"value":"score","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"point_value","path":"objects/EntFoeTemplate/EntFoeTemplate.yy",},"objectId":{"name":"EntFoeTemplate","path":"objects/EntFoeTemplate/EntFoeTemplate.yy",},"value":"score","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "Foes",
-    "path": "folders/Entities/Foes.yy",
+    "name": "Templates",
+    "path": "folders/Entities/Foes/Templates.yy",
   },
   "resourceVersion": "1.0",
-  "name": "EntFoeDoesNothing",
+  "name": "EntFoeTemplateDoesNothing",
   "tags": [],
   "resourceType": "GMObject",
 }

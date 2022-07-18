@@ -52,9 +52,9 @@ function Level(level_data) constructor {
             self.stats.score_multiplier = max(1, SCORE_MULTIPLIER_REDUCTION);
         }
         
-        if (EntPlayer.alive && (instance_number(EntFoe) == 0 || self.wave_timer <= 0) && GameController.end_of_level_screen == "") {
+        if (EntPlayer.alive && (instance_number(EntFoeTemplate) == 0 || self.wave_timer <= 0) && GameController.end_of_level_screen == "") {
             if (self.Complete()) {
-                if (instance_number(EntFoe) == 0) {
+                if (instance_number(EntFoeTemplate) == 0) {
                     GameController.ShowWinScreen();
                 } // else there are still foes and you're being slow
             } else {

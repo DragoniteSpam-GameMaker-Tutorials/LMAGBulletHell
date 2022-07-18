@@ -42,11 +42,11 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Foes",
-    "path": "folders/Entities/Foes.yy",
+    "name": "Templates",
+    "path": "folders/Entities/Foes/Templates.yy",
   },
   "resourceVersion": "1.0",
-  "name": "EntFoe",
+  "name": "EntFoeTemplate",
   "tags": [],
   "resourceType": "GMObject",
 }
