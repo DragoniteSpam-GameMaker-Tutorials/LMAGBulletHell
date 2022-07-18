@@ -15,10 +15,15 @@ self.drops = [
 ];
 
 self.OnDamage = function(bullet) {
-    self.health -= bullet.damage;
-    GameController.level.stats.damage_dealt += bullet.damage;
-    instance_destroy(bullet);
-    self.CheckDeath();
+    if (self.damage_shield > 0) {
+        self.damage_shield--;
+        // do something so that you know there was a shield
+    } else {
+        self.health -= bullet.damage;
+        GameController.level.stats.damage_dealt += bullet.damage;
+        instance_destroy(bullet);
+        self.CheckDeath();
+    }
 };
 
 self.CanShoot = function() {

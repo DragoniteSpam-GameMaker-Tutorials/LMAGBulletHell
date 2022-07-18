@@ -8,6 +8,7 @@
     {"id":{"name":"PickupFireBullet","path":"objects/PickupFireBullet/PickupFireBullet.yy",},"order":5,},
     {"id":{"name":"spr_pickup","path":"sprites/spr_pickup/spr_pickup.yy",},"order":6,},
     {"id":{"name":"Pickup_Code","path":"scripts/Pickup_Code/Pickup_Code.yy",},"order":1,},
+    {"id":{"name":"EntFoeGnat","path":"objects/EntFoeGnat/EntFoeGnat.yy",},"order":4,},
     {"id":{"name":"spr_bullet_fire_breath","path":"sprites/spr_bullet_fire_breath/spr_bullet_fire_breath.yy",},"order":21,},
     {"id":{"name":"RoomLevel12","path":"rooms/RoomLevel12/RoomLevel12.yy",},"order":11,},
     {"id":{"name":"EntFoeTemplateDoesNothing","path":"objects/EntFoeTemplateDoesNothing/EntFoeTemplateDoesNothing.yy",},"order":3,},
