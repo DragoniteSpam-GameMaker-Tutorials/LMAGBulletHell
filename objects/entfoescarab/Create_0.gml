@@ -1,5 +1,9 @@
 event_inherited();
 
+self.frames = GameController.foe_meshes.scarab;
+self.frame_index = 0;
+self.animation_speed = 3;
+
 self.bullet_spread = 0;
 self.score = 25;
 
