@@ -32,6 +32,7 @@
     {"id":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"order":3,},
     {"id":{"name":"Entity","path":"objects/Entity/Entity.yy",},"order":1,},
     {"id":{"name":"path_enter_from_top","path":"paths/path_enter_from_top/path_enter_from_top.yy",},"order":0,},
+    {"id":{"name":"EntFoePillbug","path":"objects/EntFoePillbug/EntFoePillbug.yy",},"order":8,},
     {"id":{"name":"RoomTemplate","path":"rooms/RoomTemplate/RoomTemplate.yy",},"order":1,},
     {"id":{"name":"Group_Text","path":"scripts/Group_Text/Group_Text.yy",},"order":63,},
     {"id":{"name":"spr_foe","path":"sprites/spr_foe/spr_foe.yy",},"order":3,},
