@@ -19,7 +19,7 @@ self.foe_meshes = {
 };
 
 self.player_meshes = {
-    default_player: load_foe_meshes("meshes/players/sphere*.vbuff", self.format),
+    test_player: load_foe_meshes("meshes/players/sphere*.vbuff", self.format),
 };
 
 var meshes_woodlands = load_level_meshes("meshes/woodlands/", self.format);

@@ -14,3 +14,6 @@ self.buff_fire.duration -= DT;
 if (self.buff_fire.duration <= 0) {
     self.buff_fire.value = false;
 }
+
+self.frame_index += self.animation_speed * DT;
+self.frame_index %= array_length(self.frames);

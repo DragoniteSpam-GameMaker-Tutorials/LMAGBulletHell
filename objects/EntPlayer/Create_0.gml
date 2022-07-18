@@ -1,9 +1,5 @@
 event_inherited();
 
-self.frames = GameController.player_meshes.default_player;
-self.frame_index = 0;
-self.animation_speed = 3;
-
 self.health_max = 10;
 self.health = self.health_max;
 self.iframe_cooldown = 0;

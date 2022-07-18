@@ -1,3 +1,7 @@
+self.frames = GameController.player_meshes.test_player;
+self.frame_index = 0;
+self.animation_speed = 3;
+
 self.buff_fire = {
     duration: 0,
     value: false,
