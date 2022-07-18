@@ -60,6 +60,7 @@
     {"id":{"name":"EntFoeTemplateSpiral","path":"objects/EntFoeTemplateSpiral/EntFoeTemplateSpiral.yy",},"order":6,},
     {"id":{"name":"EntPlayer","path":"objects/EntPlayer/EntPlayer.yy",},"order":2,},
     {"id":{"name":"spr_pickup_explosive_bullet","path":"sprites/spr_pickup_explosive_bullet/spr_pickup_explosive_bullet.yy",},"order":8,},
+    {"id":{"name":"EntFoeGrasshopper","path":"objects/EntFoeGrasshopper/EntFoeGrasshopper.yy",},"order":6,},
     {"id":{"name":"spr_foe_explode","path":"sprites/spr_foe_explode/spr_foe_explode.yy",},"order":20,},
     {"id":{"name":"RoomLevel6","path":"rooms/RoomLevel6/RoomLevel6.yy",},"order":5,},
     {"id":{"name":"Group_Player_Data","path":"scripts/Group_Player_Data/Group_Player_Data.yy",},"order":64,},
