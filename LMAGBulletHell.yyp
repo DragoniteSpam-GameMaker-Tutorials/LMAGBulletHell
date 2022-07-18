@@ -14,6 +14,7 @@
     {"id":{"name":"UIBlockRaycast","path":"objects/UIBlockRaycast/UIBlockRaycast.yy",},"order":9,},
     {"id":{"name":"spr_bullet_explosion","path":"sprites/spr_bullet_explosion/spr_bullet_explosion.yy",},"order":1,},
     {"id":{"name":"RoomLevel1","path":"rooms/RoomLevel1/RoomLevel1.yy",},"order":0,},
+    {"id":{"name":"EntFoeAphid","path":"objects/EntFoeAphid/EntFoeAphid.yy",},"order":3,},
     {"id":{"name":"Group_Level","path":"scripts/Group_Level/Group_Level.yy",},"order":55,},
     {"id":{"name":"spr_pickup_recursive_bullet","path":"sprites/spr_pickup_recursive_bullet/spr_pickup_recursive_bullet.yy",},"order":13,},
     {"id":{"name":"PickupRecursiveBullet","path":"objects/PickupRecursiveBullet/PickupRecursiveBullet.yy",},"order":8,},
