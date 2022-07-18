@@ -8,6 +8,16 @@ vertex_format_add_normal();
 vertex_format_add_color();
 self.format = vertex_format_end();
 
+self.foe_meshes = {
+    ant: load_foe_meshes("meshes/foes/ant*.vbuff", self.format),
+    aphid: load_foe_meshes("meshes/foes/aphid*.vbuff", self.format),
+    bagworm: load_foe_meshes("meshes/foes/bagworm*.vbuff", self.format),
+    gnat: load_foe_meshes("meshes/foes/gnat*.vbuff", self.format),
+    grasshopper: load_foe_meshes("meshes/foes/grasshopper*.vbuff", self.format),
+    pillbug: load_foe_meshes("meshes/foes/pillbug*.vbuff", self.format),
+    scarab: load_foe_meshes("meshes/foes/scarab*.vbuff", self.format),
+};
+
 var meshes_woodlands = load_level_meshes("meshes/woodlands/", self.format);
 self.level_types = { };
 self.level_types[$ string(RoomLevel1)] = new LevelMetadata("Level 1: Woodlands", 0, meshes_woodlands, $004000);
