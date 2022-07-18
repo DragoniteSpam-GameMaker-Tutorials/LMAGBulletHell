@@ -4,7 +4,8 @@
     "path": "sprites/spr_bullet_explosion/spr_bullet_explosion.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {

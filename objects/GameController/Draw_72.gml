@@ -16,6 +16,12 @@ if (self.state != GameStates.TITLE) {
     }
 }
 
-//shader_reset();
-//gpu_set_ztestenable(false);
-//gpu_set_zwriteenable(false);
+shader_reset();
+gpu_set_ztestenable(false);
+gpu_set_zwriteenable(false);
+
+with (Bullet) draw_self();
+
+gpu_set_ztestenable(true);
+gpu_set_zwriteenable(true);
+shader_set(shd_world);

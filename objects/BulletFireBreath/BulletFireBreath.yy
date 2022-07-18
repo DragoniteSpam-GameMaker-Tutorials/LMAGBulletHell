@@ -4,7 +4,8 @@
     "path": "sprites/spr_bullet_fire_breath/spr_bullet_fire_breath.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
