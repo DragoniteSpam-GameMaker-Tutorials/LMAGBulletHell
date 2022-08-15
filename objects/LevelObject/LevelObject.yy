@@ -1,7 +1,11 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "LevelObject",
   "spriteId": null,
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -24,8 +28,4 @@
     "name": "LMAGBulletHell",
     "path": "LMAGBulletHell.yyp",
   },
-  "resourceVersion": "1.0",
-  "name": "LevelObject",
-  "tags": [],
-  "resourceType": "GMObject",
 }
