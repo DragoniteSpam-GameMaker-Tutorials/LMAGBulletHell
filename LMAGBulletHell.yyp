@@ -5,6 +5,7 @@
   "resources": [
     {"id":{"name":"spr_healthbar","path":"sprites/spr_healthbar/spr_healthbar.yy",},"order":0,},
     {"id":{"name":"spr_pickup_more_damage","path":"sprites/spr_pickup_more_damage/spr_pickup_more_damage.yy",},"order":12,},
+    {"id":{"name":"spr_foe_scorpion","path":"sprites/spr_foe_scorpion/spr_foe_scorpion.yy",},"order":22,},
     {"id":{"name":"spr_player_iframes","path":"sprites/spr_player_iframes/spr_player_iframes.yy",},"order":15,},
     {"id":{"name":"UIButton","path":"objects/UIButton/UIButton.yy",},"order":10,},
     {"id":{"name":"spr_nineslice","path":"sprites/spr_nineslice/spr_nineslice.yy",},"order":6,},
@@ -13,6 +14,7 @@
     {"id":{"name":"Pickup_Code","path":"scripts/Pickup_Code/Pickup_Code.yy",},"order":1,},
     {"id":{"name":"EntFoeGnat","path":"objects/EntFoeGnat/EntFoeGnat.yy",},"order":4,},
     {"id":{"name":"spr_bullet_fire_breath","path":"sprites/spr_bullet_fire_breath/spr_bullet_fire_breath.yy",},"order":21,},
+    {"id":{"name":"EntFoeScorpion","path":"objects/EntFoeScorpion/EntFoeScorpion.yy",},"order":9,},
     {"id":{"name":"RoomLevel12","path":"rooms/RoomLevel12/RoomLevel12.yy",},"order":11,},
     {"id":{"name":"EntFoeTemplateDoesNothing","path":"objects/EntFoeTemplateDoesNothing/EntFoeTemplateDoesNothing.yy",},"order":3,},
     {"id":{"name":"UIBlockRaycast","path":"objects/UIBlockRaycast/UIBlockRaycast.yy",},"order":9,},

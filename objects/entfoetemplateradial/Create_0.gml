@@ -1,6 +1,5 @@
 event_inherited();
 
-self.bullet_spread = 0;
 self.score = 25;
 
 self.Shoot = function() {
