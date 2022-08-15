@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "EntFoeCentipede",
+  "name": "EntFoeCentipedeSegment",
   "spriteId": {
     "name": "spr_foe_centipede",
     "path": "sprites/spr_foe_centipede/spr_foe_centipede.yy",
