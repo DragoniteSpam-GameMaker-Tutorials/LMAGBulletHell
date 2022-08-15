@@ -16,6 +16,10 @@ self.foe_meshes = {
     grasshopper: load_foe_meshes("meshes/foes/grasshopper*.vbuff", self.format),
     pillbug: load_foe_meshes("meshes/foes/pillbug*.vbuff", self.format),
     scarab: load_foe_meshes("meshes/foes/scarab*.vbuff", self.format),
+    centipede_head: load_foe_meshes("meshes/foes/centipede-head*.vbuff", self.format),
+    centipede_body: load_foe_meshes("meshes/foes/centipede-body*.vbuff", self.format),
+    hornet: load_foe_meshes("meshes/foes/hornet*.vbuff", self.format),
+    scorpion: load_foe_meshes("meshes/foes/scorpion*.vbuff", self.format),
 };
 
 self.player_meshes = {
