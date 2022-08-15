@@ -7,3 +7,7 @@ self.animation_speed = 4;
 self.Shoot = function() {
     
 };
+
+self.OnDamage = function(bullet) {
+    self.head.OnDamage(bullet);
+};
