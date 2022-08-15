@@ -50,7 +50,7 @@ self.Die = function() {
 };
 
 self.Shoot = function() {
-    var shot = instance_create_depth(self.x, self.y, self.depth + 1, Bullet);
+    var shot = instance_create_depth(self.x, self.y, self.depth + 1, self.default_bullet_type);
     var shot_velocity = self.shot_velocity;
     var shot_angle = 270 + random_range(-self.bullet_spread / 2, self.bullet_spread / 2);
     shot.xspeed =  shot_velocity * dcos(shot_angle);
