@@ -17,13 +17,29 @@ self.hp_stage = 0;
 
 self.UpdateHPStage = function() {
     var f = self.health / self.health_max;
+    var last_stage = self.hp_stage;
     if (f < 0.25) {
         self.hp_stage = 3;
+        if (last_stage != self.hp_stage) {
+            self.OnHPStageChange();
+        }
     } else if (f < 0.50) {
         self.hp_stage = 2;
+        if (last_stage != self.hp_stage) {
+            self.OnHPStageChange();
+        }
     } else if (f < 0.75) {
         self.hp_stage = 1;
+        if (last_stage != self.hp_stage) {
+            self.OnHPStageChange();
+        }
     } else {
         self.hp_stage = 0;
+        if (last_stage != self.hp_stage) {
+            self.OnHPStageChange();
+        }
     }
+};
+
+self.OnHPStageChange = function() {
 };

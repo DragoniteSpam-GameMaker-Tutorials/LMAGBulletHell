@@ -85,6 +85,7 @@
     {"id":{"name":"BulletExplosionFragments","path":"objects/BulletExplosionFragments/BulletExplosionFragments.yy",},"order":1,},
     {"id":{"name":"spr_foe_aim","path":"sprites/spr_foe_aim/spr_foe_aim.yy",},"order":18,},
     {"id":{"name":"EntFoeTemplate","path":"objects/EntFoeTemplate/EntFoeTemplate.yy",},"order":0,},
+    {"id":{"name":"EntFoeBossCockroach","path":"objects/EntFoeBossCockroach/EntFoeBossCockroach.yy",},"order":15,},
     {"id":{"name":"Bullet","path":"objects/Bullet/Bullet.yy",},"order":0,},
     {"id":{"name":"RoomLevel10","path":"rooms/RoomLevel10/RoomLevel10.yy",},"order":9,},
     {"id":{"name":"EntFoeTemplateChase","path":"objects/EntFoeTemplateChase/EntFoeTemplateChase.yy",},"order":2,},
