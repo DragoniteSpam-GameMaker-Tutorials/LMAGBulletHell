@@ -2,6 +2,8 @@ window_set_size(1366, 768);
 display_set_gui_maximize();
 application_surface_draw_enable(false);
 
+self.background_surface = surface_create(1366, 768);
+
 vertex_format_begin();
 vertex_format_add_position_3d();
 vertex_format_add_normal();
