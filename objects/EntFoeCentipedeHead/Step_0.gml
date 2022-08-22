@@ -20,7 +20,7 @@ self.y += DT * self.yspeed;
 self.frame_index += self.animation_speed * DT;
 self.frame_index %= array_length(self.frames);
 
-self.image_angle = dir;
+self.image_angle = dir + 90;
 
 var current = self.id;
 var next = current.next;
@@ -30,7 +30,7 @@ while (next != undefined) {
     
     next.x = current.x + self.spacing * dcos(dir);
     next.y = current.y - self.spacing * dsin(dir);
-    next.image_angle = dir;
+    next.image_angle = dir + 90;
     
     current = next;
     next = next.next;
