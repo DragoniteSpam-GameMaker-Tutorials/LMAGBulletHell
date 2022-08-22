@@ -37,6 +37,16 @@ self.Shoot = function() {
             }
             break;
         case 3:
+            var shot_count = 12;
+            var shot_velocity = 320;
+            var bullet_spread = 30;
+            repeat (shot_count) {
+                var target = EntPlayer.id;
+                var shot = instance_create_depth(self.x, self.y, self.depth + 1, BulletHoming);
+                var shot_angle = point_direction(self.x, self.y, target.x, target.y) + random_range(-bullet_spread / 2, bullet_spread / 2);
+                shot.xspeed =  shot_velocity * dcos(shot_angle);
+                shot.yspeed = -shot_velocity * dsin(shot_angle);
+            }
             break;
     }
     
