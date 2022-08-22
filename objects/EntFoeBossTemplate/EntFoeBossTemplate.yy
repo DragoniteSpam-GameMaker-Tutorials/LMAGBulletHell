@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "EntFoeBoss",
+  "name": "EntFoeBossTemplate",
   "spriteId": {
     "name": "spr_foe_hornet",
     "path": "sprites/spr_foe_hornet/spr_foe_hornet.yy",

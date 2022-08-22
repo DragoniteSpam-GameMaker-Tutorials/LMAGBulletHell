@@ -45,7 +45,7 @@
     {"id":{"name":"spr_bullet_homing","path":"sprites/spr_bullet_homing/spr_bullet_homing.yy",},"order":24,},
     {"id":{"name":"EntFoePillbug","path":"objects/EntFoePillbug/EntFoePillbug.yy",},"order":8,},
     {"id":{"name":"RoomTemplate","path":"rooms/RoomTemplate/RoomTemplate.yy",},"order":1,},
-    {"id":{"name":"EntFoeBoss","path":"objects/EntFoeBoss/EntFoeBoss.yy",},"order":13,},
+    {"id":{"name":"EntFoeBossTemplate","path":"objects/EntFoeBossTemplate/EntFoeBossTemplate.yy",},"order":13,},
     {"id":{"name":"Group_Text","path":"scripts/Group_Text/Group_Text.yy",},"order":63,},
     {"id":{"name":"spr_foe","path":"sprites/spr_foe/spr_foe.yy",},"order":3,},
     {"id":{"name":"Group_Misc","path":"scripts/Group_Misc/Group_Misc.yy",},"order":58,},

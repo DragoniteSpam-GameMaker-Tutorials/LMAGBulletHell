@@ -14,6 +14,6 @@ if (self.state != GameStates.TITLE) {
     }
 }
 
-with (EntFoeBoss) {
+with (EntFoeBossTemplate) {
     self.DrawBossUI((window_get_width() - (1366 - room_width)) / 2, 32);
 }

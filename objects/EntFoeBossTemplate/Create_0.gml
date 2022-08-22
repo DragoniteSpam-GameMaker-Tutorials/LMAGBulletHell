@@ -12,3 +12,18 @@ self.DrawBossUI = function(x, y) {
         c_white, c_red, c_green, 0, true, true
     );
 };
+
+self.hp_stage = 0;
+
+self.UpdateHPStage = function() {
+    var f = self.health / self.health_max;
+    if (f < 0.25) {
+        self.hp_stage = 3;
+    } else if (f < 0.50) {
+        self.hp_stage = 2;
+    } else if (f < 0.75) {
+        self.hp_stage = 1;
+    } else {
+        self.hp_stage = 0;
+    }
+};

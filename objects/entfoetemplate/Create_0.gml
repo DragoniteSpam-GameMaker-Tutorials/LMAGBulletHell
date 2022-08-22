@@ -14,6 +14,9 @@ self.drops = [
     new PickupDropOdds(PickupExplosiveBullet, 5),
 ];
 
+self.UpdateHPStage = function() {
+};
+
 self.OnDamage = function(bullet) {
     if (self.damage_shield > 0) {
         self.damage_shield--;
@@ -22,6 +25,7 @@ self.OnDamage = function(bullet) {
         self.health -= bullet.damage;
         GameController.level.stats.damage_dealt += bullet.damage;
         instance_destroy(bullet);
+        self.UpdateHPStage();
         self.CheckDeath();
     }
 };
