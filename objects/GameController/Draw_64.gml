@@ -13,3 +13,7 @@ if (self.state != GameStates.TITLE) {
         self.ui.RenderUI(self.end_of_level_screen);
     }
 }
+
+with (EntFoeBoss) {
+    self.DrawBossUI((window_get_width() - (1366 - room_width)) / 2, 32);
+}
