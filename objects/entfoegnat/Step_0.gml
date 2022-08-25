@@ -4,12 +4,20 @@ if (!is_playing()) return;
 
 if (!self.active) return;
 
-var target = EntPlayer.id;
+var mspd = point_distance(0, 0, self.xspeed, self.yspeed);
+var dir = point_direction(0, 0, self.xspeed, self.yspeed);
+var dir_to_player = point_direction(self.x, self.y, EntPlayer.x, EntPlayer.y);
+var diff = angle_difference(dir, dir_to_player);
 
-var distance_to_target = point_distance(self.x, self.y, target.x, target.y);
-var direction_to_target = point_direction(self.x, self.y, target.x, target.y);
-var distance_to_move = min(self.movement_speed * DT, distance_to_target);
-self.x += distance_to_move * dcos(direction_to_target);
-self.y -= distance_to_move * dsin(direction_to_target);
+dir -= self.homing_amount * DT * clamp(diff, -1, 1);
 
-//self.y = min(self.y, room_height * 2 / 3);
+self.xspeed =  mspd * dcos(dir);
+self.yspeed = -mspd * dsin(dir);
+
+self.x += DT * self.xspeed;
+self.y += DT * self.yspeed;
+
+self.frame_index += self.animation_speed * DT;
+self.frame_index %= array_length(self.frames);
+
+self.image_angle = dir + 90;

@@ -33,11 +33,13 @@
   ],
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"movement_speed","varType":0,"value":"180","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"homing_amount","varType":0,"value":"50","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
   ],
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"point_value","path":"objects/EntFoeTemplate/EntFoeTemplate.yy",},"objectId":{"name":"EntFoeTemplate","path":"objects/EntFoeTemplate/EntFoeTemplate.yy",},"value":"40",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"health_max","path":"objects/EntFoeTemplate/EntFoeTemplate.yy",},"objectId":{"name":"EntFoeTemplate","path":"objects/EntFoeTemplate/EntFoeTemplate.yy",},"value":"4",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"damage_shield","path":"objects/EntFoeTemplate/EntFoeTemplate.yy",},"objectId":{"name":"EntFoeTemplate","path":"objects/EntFoeTemplate/EntFoeTemplate.yy",},"value":"2",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"path_enter","path":"objects/EntFoeTemplate/EntFoeTemplate.yy",},"objectId":{"name":"EntFoeTemplate","path":"objects/EntFoeTemplate/EntFoeTemplate.yy",},"value":"noone",},
   ],
   "parent": {
     "name": "Foes",
