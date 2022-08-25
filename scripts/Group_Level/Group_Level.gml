@@ -85,6 +85,7 @@ function Level(level_data) constructor {
     
     static SendNextWave = function() {
         instance_activate_layer(self.waves[self.wave_index]);
+        with (Spawner) self.Spawn();
         self.wave_index++;
         self.wave_timer = WAVE_DURATION;
     };
