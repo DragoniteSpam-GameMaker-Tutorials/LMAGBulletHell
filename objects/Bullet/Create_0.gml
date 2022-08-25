@@ -2,6 +2,10 @@ self.attribute_fire = false;
 self.attribute_recursive = false;
 self.attribute_explode = false;
 
+self.objects_hit = { };
+
+self.destroy_on_hit = true;
+
 self.ApplyEffect = function(entity) {
     if (self.attribute_fire) {
         entity.buff_fire.value = true;

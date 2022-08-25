@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "BulletFireBreath",
   "spriteId": {
     "name": "spr_bullet_fire_breath",
     "path": "sprites/spr_bullet_fire_breath/spr_bullet_fire_breath.yy",
@@ -25,16 +28,15 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"damage","path":"objects/Bullet/Bullet.yy",},"objectId":{"name":"Bullet","path":"objects/Bullet/Bullet.yy",},"value":"4",},
+  ],
   "parent": {
     "name": "Bullets",
     "path": "folders/Bullets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "BulletFireBreath",
-  "tags": [],
-  "resourceType": "GMObject",
 }

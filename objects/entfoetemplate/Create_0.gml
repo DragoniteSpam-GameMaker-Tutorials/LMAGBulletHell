@@ -18,13 +18,16 @@ self.UpdateHPStage = function() {
 };
 
 self.OnDamage = function(bullet) {
+    if (bullet.objects_hit[$ string(self.id)]) return;
+    bullet.objects_hit[$ string(self.id)] = true;
+    
     if (self.damage_shield > 0) {
         self.damage_shield--;
         // do something so that you know there was a shield
     } else {
         self.health -= bullet.damage;
         GameController.level.stats.damage_dealt += bullet.damage;
-        instance_destroy(bullet);
+        if (bullet.destroy_on_hit) instance_destroy(bullet);
         self.UpdateHPStage();
         self.CheckDeath();
     }
