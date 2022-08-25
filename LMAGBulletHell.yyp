@@ -229,6 +229,6 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"scorpion2.vbuff","CopyToMask":-1,"filePath":"datafiles/meshes/foes",},
   ],
   "MetaData": {
-    "IDEVersion": "2022.800.0.193",
+    "IDEVersion": "2022.800.0.199",
   },
 }
