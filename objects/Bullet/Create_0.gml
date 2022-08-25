@@ -9,8 +9,8 @@ self.ApplyEffect = function(entity) {
         entity.buff_fire.damage_cooldown = 1;
     }
     if (self.attribute_recursive) {
-        var number_of_shots = 8;
-        for (var i = 0; i < 360; i += 360 / number_of_shots) {
+        var number_of_shots = 4;
+        for (var i = 45; i <= 135; i += 90 / number_of_shots) {
             var shot = instance_create_depth(self.x, self.y, self.depth + 1, Bullet);
             var shot_velocity = DEFAULT_SHOT_VELOCITY;
             var shot_angle = i;

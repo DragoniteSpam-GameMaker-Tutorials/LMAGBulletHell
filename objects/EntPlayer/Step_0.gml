@@ -24,6 +24,11 @@ if (mouse_check_button_pressed(mb_right)) {
     }
 }
 
+if (DEBUG && keyboard_check_pressed(vk_f1)) {
+    self.buff_recursive.value = true;
+    self.buff_recursive.duration = 10;
+}
+
 if (self.Invincible()) {
     self.sprite_index = spr_player_iframes;
 } else {
