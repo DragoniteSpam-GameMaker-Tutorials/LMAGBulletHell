@@ -35,8 +35,7 @@
               ],"isDnd":false,"objectId":{"name":"EntFoeTemplate","path":"objects/EntFoeTemplate/EntFoeTemplate.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":912.0,"y":352.0,},
           ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
         {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Wave1","instances":[
-            {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_79A12A16","properties":[],"isDnd":false,"objectId":{"name":"EntFoeScorpion","path":"objects/EntFoeScorpion/EntFoeScorpion.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":256.0,"y":32.0,},
-            {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_63EA0E15","properties":[],"isDnd":false,"objectId":{"name":"EntFoeGrasshopper","path":"objects/EntFoeGrasshopper/EntFoeGrasshopper.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":480.0,"y":0.0,},
+            {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_28D404CB","properties":[],"isDnd":false,"objectId":{"name":"EntFoeBossCockroach","path":"objects/EntFoeBossCockroach/EntFoeBossCockroach.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":544.0,"y":-384.0,},
           ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
       ],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
@@ -57,8 +56,7 @@
     {"name":"inst_3B06A934_1_1_1_1_1_1_1_1_1_1","path":"rooms/RoomLevel9/RoomLevel9.yy",},
     {"name":"inst_1FF89117_1_1_1_1_1_1_1_1_1_1","path":"rooms/RoomLevel9/RoomLevel9.yy",},
     {"name":"inst_537AAB79_1_1_1_1_1_1_1_1_1_1","path":"rooms/RoomLevel9/RoomLevel9.yy",},
-    {"name":"inst_79A12A16","path":"rooms/RoomLevel9/RoomLevel9.yy",},
-    {"name":"inst_63EA0E15","path":"rooms/RoomLevel9/RoomLevel9.yy",},
+    {"name":"inst_28D404CB","path":"rooms/RoomLevel9/RoomLevel9.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

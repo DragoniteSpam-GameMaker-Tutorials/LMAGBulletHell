@@ -4,6 +4,7 @@ self.last_shot_angle = 180;
 self.shot_angle_direction = 10;
 
 self.OnHPStageChange = function() {
+    self.interstage_cooldown = DEFAULT_BOSS_STAGE_COOLDOWN;
     switch (self.hp_stage) {
         case 1:
             self.last_shot_angle = 180;
@@ -17,6 +18,7 @@ self.OnHPStageChange = function() {
 };
 
 self.Shoot = function() {
+    if (self.interstage_cooldown > 0) return;
     switch (self.hp_stage) {
         case 0:
             var shot_count = 10;

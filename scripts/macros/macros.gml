@@ -6,6 +6,7 @@
 #macro DEFAULT_EFFECT_DURATION          2
 
 #macro DEFAULT_SHOT_VELOCITY            360
+#macro DEFAULT_BOSS_STAGE_COOLDOWN      5                   // seconds
 
 #macro SAVE_FILE_NAME                   "save.json"
 

@@ -1,6 +1,7 @@
 event_inherited();
 
 self.Shoot = function() {
+    if (self.interstage_cooldown > 0) return;
     switch (self.hp_stage) {
         case 0:
             var shot_count = 6;
