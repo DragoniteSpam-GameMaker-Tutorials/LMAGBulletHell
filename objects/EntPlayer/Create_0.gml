@@ -59,6 +59,7 @@ self.Shoot = function() {
     shot.yspeed = -shot_velocity * dsin(shot_angle);
     shot.friendly = true;
     shot.damage += self.buff_damage.value;
+    shot.damage *= Upgrades.GetDamageBuff();
     if (self.buff_fire_bullets.value) shot.attribute_fire = true;
     if (self.buff_recursive.value) shot.attribute_recursive = true;
     if (self.buff_explosive.value) shot.attribute_explode = true;

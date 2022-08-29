@@ -4,6 +4,7 @@ Upgrades = {
     special_recharge_rate: 0,
     special_charge_level: 0,
     special_fire: 0,
+    damage_buff: 0,
     
     GetSubweaponChargeLevel: function() {
         switch (self.special_charge_level) {
@@ -20,6 +21,7 @@ Upgrades = {
             case 2: return 2.0;
         }
     },
+    
     GetSubweaponBurnCapacity: function() {
         switch (self.special_fire) {
             case 0: return { duration: 0.0, amount: 0 };
@@ -28,4 +30,11 @@ Upgrades = {
         }
     },
     
+    GetDamageBuff: function() {
+        switch (self.damage_buff) {
+            case 0: return 1.0;
+            case 1: return 1.3;
+            case 2: return 1.6;
+        }
+    },
 };
