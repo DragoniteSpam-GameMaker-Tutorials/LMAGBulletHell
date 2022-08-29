@@ -105,6 +105,7 @@
     {"id":{"name":"path_enter_from_right","path":"paths/path_enter_from_right/path_enter_from_right.yy",},"order":2,},
     {"id":{"name":"Pickup","path":"objects/Pickup/Pickup.yy",},"order":0,},
     {"id":{"name":"UISprite","path":"objects/UISprite/UISprite.yy",},"order":11,},
+    {"id":{"name":"get_upgrade_subweapon_value","path":"scripts/get_upgrade_subweapon_value/get_upgrade_subweapon_value.yy",},"order":0,},
     {"id":{"name":"EntFoeBagworm","path":"objects/EntFoeBagworm/EntFoeBagworm.yy",},"order":7,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":14,},
     {"id":{"name":"spr_block_raycast","path":"sprites/spr_block_raycast/spr_block_raycast.yy",},"order":4,},
@@ -162,6 +163,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Title stuff","folderPath":"folders/Title stuff.yy","order":62,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Levels","folderPath":"folders/Rooms/Levels.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Templates","folderPath":"folders/Entities/Foes/Templates.yy","order":1,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Upgrades","folderPath":"folders/Upgrades.yy","order":65,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},

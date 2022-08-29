@@ -10,7 +10,7 @@ self.x += distance_to_move * dcos(direction_to_target);
 self.y -= distance_to_move * dsin(direction_to_target);
  
 self.iframe_cooldown -= DT;
-self.shot_cooldown_sub = max(0, self.shot_cooldown_sub - DT);
+self.shot_cooldown_sub = max(get_upgrade_subweapon_value(), self.shot_cooldown_sub - DT);
 
 if (mouse_check_button(mb_left)) {
     if (self.CanShoot()) {

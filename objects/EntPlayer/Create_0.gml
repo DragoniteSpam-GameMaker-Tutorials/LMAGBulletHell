@@ -84,7 +84,7 @@ self.ShootSub = function() {
     shot.friendly = true;
     shot.damage += self.buff_damage.value * SUB_ATTACK_BUFF_VALUE;
     shot.attribute_fire = true;
-    self.shot_cooldown_sub = SUB_ATTACK_COOLDOWN;
+    self.shot_cooldown_sub += SUB_ATTACK_COOLDOWN;
 };
 
 self.Invincible = function() {
