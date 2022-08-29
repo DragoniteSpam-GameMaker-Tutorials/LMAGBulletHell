@@ -30,3 +30,21 @@ for (var i = 0; i < self.health_max - 1; i++) {
     self.tail.next = segment;
     self.tail = segment;
 }
+
+self.inheritedOnDamage = self.OnDamage;
+
+self.OnDamage = function(bullet) {
+    self.inheritedOnDamage(bullet);
+    
+    var segment = self;
+    for (var i = 1; i < self.health; i++) {
+        segment = segment.next;
+    }
+    
+    while (segment.next) {
+        instance_destroy(segment.next);
+        var next = segment.next;
+        segment.next = undefined;
+        segment = next;
+    }
+};
