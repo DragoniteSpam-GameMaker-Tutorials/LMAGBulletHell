@@ -3,7 +3,7 @@ if (!is_playing()) exit;
 if (self.buff_fire.value) {
     self.buff_fire.damage_cooldown -= DT;
     if (self.buff_fire.damage_cooldown <= 0) {
-        self.health--;
+        self.health -= self.buff_fire.amount;
         self.CheckDeath();
         self.buff_fire.damage_cooldown = 1;
     }

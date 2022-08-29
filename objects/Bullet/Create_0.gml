@@ -9,7 +9,8 @@ self.destroy_on_hit = true;
 self.ApplyEffect = function(entity) {
     if (self.attribute_fire) {
         entity.buff_fire.value = true;
-        entity.buff_fire.duration = DEFAULT_EFFECT_DURATION;
+        entity.buff_fire.duration = self.effect_fire_duration;
+        entity.buff_fire.amount = self.effect_fire_amount;
         entity.buff_fire.damage_cooldown = 1;
     }
     if (self.attribute_recursive) {

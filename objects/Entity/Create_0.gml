@@ -6,6 +6,7 @@ self.buff_fire = {
     duration: 0,
     value: false,
     damage_cooldown: 0,
+    amount: 0,
 };
 
 self.OnDamage = function(bullet) {
