@@ -83,7 +83,13 @@ self.ShootSub = function() {
     shot.yspeed = -shot_velocity * dsin(shot_angle);
     shot.friendly = true;
     shot.damage += self.buff_damage.value * SUB_ATTACK_BUFF_VALUE;
-    shot.attribute_fire = true;
+    
+    var burn_capacity = Upgrades.GetSubweaponBurnCapacity();
+    if (burn_capacity.duration > 0) {
+        shot.attribute_fire = true;
+        shot.effect_fire_amount = burn_capacity.amount;
+        shot.effect_fire_duration = burn_capacity.duration;
+    }
     self.shot_cooldown_sub += SUB_ATTACK_COOLDOWN;
 };
 

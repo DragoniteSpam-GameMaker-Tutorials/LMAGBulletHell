@@ -60,6 +60,7 @@
     {"id":{"name":"spr_status_fire","path":"sprites/spr_status_fire/spr_status_fire.yy",},"order":16,},
     {"id":{"name":"PickupFasterFire","path":"objects/PickupFasterFire/PickupFasterFire.yy",},"order":4,},
     {"id":{"name":"spr_healthbar_fill","path":"sprites/spr_healthbar_fill/spr_healthbar_fill.yy",},"order":1,},
+    {"id":{"name":"Group_Upgrade_Database","path":"scripts/Group_Upgrade_Database/Group_Upgrade_Database.yy",},"order":1,},
     {"id":{"name":"PickupExplosiveBullet","path":"objects/PickupExplosiveBullet/PickupExplosiveBullet.yy",},"order":3,},
     {"id":{"name":"Group_UI","path":"scripts/Group_UI/Group_UI.yy",},"order":57,},
     {"id":{"name":"spr_collision_player","path":"sprites/spr_collision_player/spr_collision_player.yy",},"order":3,},
