@@ -53,6 +53,10 @@ self.Die = function() {
         odds -= self.drops[i].odds;
     }
     GameController.level.AddScore(self.point_value);
+    if (!EntPlayer.alive && !EntPlayer.officially_dead) {
+        EntPlayer.alive = true;
+        EntPlayer.health = 1;
+    }
     instance_destroy();
 };
 

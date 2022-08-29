@@ -5,6 +5,7 @@ Upgrades = {
     special_charge_level: 0,
     special_fire: 0,
     damage_buff: 0,
+    posthumous_recovery: 0,
     
     GetSubweaponChargeLevel: function() {
         switch (self.special_charge_level) {
@@ -35,6 +36,14 @@ Upgrades = {
             case 0: return 1.0;
             case 1: return 1.3;
             case 2: return 1.6;
+        }
+    },
+    
+    GetPosthumousRecoveryTime: function() {
+        switch (self.posthumous_recovery) {
+            case 0: return 0;
+            case 1: return 1;
+            case 2: return 2;
         }
     },
 };

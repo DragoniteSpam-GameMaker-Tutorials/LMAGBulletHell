@@ -1,6 +1,6 @@
 event_inherited();
 
-self.health_max = 1000;
+self.health_max = 3;
 self.health = self.health_max;
 self.iframe_cooldown = 0;
 self.iframe_duration = 1;
@@ -124,7 +124,12 @@ self.CheckDeath = function() {
     }
 };
 
+self.posthumous_recovery_time = 0;
+self.officially_dead = false;
+
 self.Die = function() {
-    GameController.ShowLoseScreen();
+    self.posthumous_recovery_time = Upgrades.GetPosthumousRecoveryTime();
+    self.officially_dead = false;
+    //GameController.ShowLoseScreen();
     self.alive = false;
 };

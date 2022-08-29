@@ -1,7 +1,14 @@
 event_inherited();
 
 if (!is_playing()) return;
-if (!self.alive) return;
+
+if (!self.alive) {
+    self.posthumous_recovery_time -= DT;
+    if (self.posthumous_recovery_time <= 0 && !self.officially_dead) {
+        GameController.ShowLoseScreen();
+    }
+    return;
+}
 
 var distance_to_target = point_distance(self.x, self.y, window_mouse_get_x(), window_mouse_get_y());
 var direction_to_target = point_direction(self.x, self.y, window_mouse_get_x(), window_mouse_get_y());
