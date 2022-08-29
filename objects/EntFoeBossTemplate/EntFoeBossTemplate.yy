@@ -9,7 +9,10 @@
   "solid": false,
   "visible": true,
   "managed": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_collision_bug_boss",
+    "path": "sprites/spr_collision_bug_boss/spr_collision_bug_boss.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "EntFoeTemplate",
