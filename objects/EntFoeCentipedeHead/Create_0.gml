@@ -39,7 +39,7 @@ self.OnDamage = function(bullet) {
     self.inheritedOnDamage(bullet);
     
     var segment = self;
-    for (var i = 1; i < self.health; i++) {
+    for (var i = 1; i < ceil(self.health); i++) {
         segment = segment.next;
     }
     

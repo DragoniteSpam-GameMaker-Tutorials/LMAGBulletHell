@@ -25,7 +25,7 @@ self.OnDamage = function(bullet) {
         self.damage_shield--;
         // do something so that you know there was a shield
     } else {
-        self.health -= bullet.damage;
+        self.health -= max(0, bullet.damage - self.defense);
         GameController.level.stats.damage_dealt += bullet.damage;
         if (bullet.destroy_on_hit) instance_destroy(bullet);
         self.UpdateHPStage();
