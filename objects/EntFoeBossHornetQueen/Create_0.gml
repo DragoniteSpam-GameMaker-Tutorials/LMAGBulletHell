@@ -15,6 +15,7 @@ self.OnHPStageChange = function() {
             self.shot_angle_direction = 15;
             break;
     }
+    GameController.level.SendNextWave();
 };
 
 self.Shoot = function() {

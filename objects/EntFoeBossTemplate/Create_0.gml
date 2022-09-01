@@ -65,4 +65,5 @@ self.UpdateHPStage = function() {
 
 self.OnHPStageChange = function() {
     self.interstage_cooldown = DEFAULT_BOSS_STAGE_COOLDOWN;
+    GameController.level.SendNextWave();
 };

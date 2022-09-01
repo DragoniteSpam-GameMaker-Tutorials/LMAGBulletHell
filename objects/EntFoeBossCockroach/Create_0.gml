@@ -1,5 +1,11 @@
 event_inherited();
 
+// inherited
+/*self.OnHPStageChange = function() {
+    self.interstage_cooldown = DEFAULT_BOSS_STAGE_COOLDOWN;
+    GameController.level.SendNextWave();
+};*/
+
 self.Shoot = function() {
     if (self.interstage_cooldown > 0) return;
     switch (self.hp_stage) {
