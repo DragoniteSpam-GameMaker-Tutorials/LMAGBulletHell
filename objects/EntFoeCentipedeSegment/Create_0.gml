@@ -11,3 +11,9 @@ self.Shoot = function() {
 self.OnDamage = function(bullet) {
     self.head.OnDamage(bullet);
 };
+
+self.CheckDeath = function() {
+};
+
+self.Die = function() {
+};

@@ -1,6 +1,6 @@
 if (!is_playing()) exit;
 
-if (self.buff_fire.value) {
+if (!self.immune_to_fire && self.buff_fire.value) {
     self.buff_fire.damage_cooldown -= DT;
     if (self.buff_fire.damage_cooldown <= 0) {
         self.health -= self.buff_fire.amount;
