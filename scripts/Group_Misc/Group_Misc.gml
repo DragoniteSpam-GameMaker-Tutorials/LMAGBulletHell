@@ -39,3 +39,7 @@ function load_vbuff(filename, format) {
     vertex_freeze(vbuff);
     return vbuff;
 }
+
+function foe_count() {
+    return instance_number(EntFoeTemplate) - instance_number(EntFoeCentipedeSegment);
+};
