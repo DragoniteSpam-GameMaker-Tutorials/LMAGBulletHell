@@ -17,6 +17,8 @@ self.active = true;
 self.xspeed = 0;
 self.yspeed = self.movement_speed;
 
+self.has_been_on_screen = false;
+
 self.spacing = 24;
 self.next = undefined;
 self.tail = self.id;
