@@ -52,7 +52,13 @@ function Level(level_data) constructor {
             self.stats.score_multiplier = max(1, SCORE_MULTIPLIER_REDUCTION);
         }
         
-        if (EntPlayer.alive && (foe_count() == 0 || self.wave_timer <= 0) && GameController.end_of_level_screen == "") {
+        var objects_to_spawn = 0;
+        
+        with (Spawner) {
+            objects_to_spawn += self.spawn_count;
+        }
+        
+        if (EntPlayer.alive && (foe_count() == 0 || self.wave_timer <= 0) && GameController.end_of_level_screen == "" && objects_to_spawn == 0) {
             if (self.Complete()) {
                 if (foe_count() == 0) {
                     GameController.ShowWinScreen();
