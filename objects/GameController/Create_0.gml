@@ -38,10 +38,10 @@ self.level_types[$ string(RoomLevel5)] = new LevelMetadata("Level 5: Grasshopper
 self.level_types[$ string(RoomLevel6)] = new LevelMetadata("Level 6: Beehive Bonanza", 5, meshes_woodlands, $004000);
 self.level_types[$ string(RoomLevel7)] = new LevelMetadata("Level 7: Centipedes", 6, meshes_woodlands, $004000);
 self.level_types[$ string(RoomLevel8)] = new LevelMetadata("Level 8: Beetle Juice", 7, meshes_woodlands, $004000);
-self.level_types[$ string(RoomLevel9)] = new LevelMetadata("Level 9...", 8, meshes_woodlands, $004000);
-self.level_types[$ string(RoomLevel10)] = new LevelMetadata("Level 10...", 9, meshes_woodlands, $004000);
-self.level_types[$ string(RoomLevel11)] = new LevelMetadata("Level 11...", 10, meshes_woodlands, $004000);
-self.level_types[$ string(RoomLevel12)] = new LevelMetadata("Level 12...", 11, meshes_woodlands, $004000);
+self.level_types[$ string(RoomLevel9)] = new LevelMetadata("Level 9: Cockroach Chaos", 8, meshes_woodlands, $004000);
+self.level_types[$ string(RoomLevel10)] = new LevelMetadata("Level 10: Scorpion Rush", 9, meshes_woodlands, $004000);
+self.level_types[$ string(RoomLevel11)] = new LevelMetadata("Level 11: The Infestation", 10, meshes_woodlands, $004000);
+self.level_types[$ string(RoomLevel12)] = new LevelMetadata("Level 12: Hornet Queen's\nRevenge", 11, meshes_woodlands, $004000);
 
 self.ui = new UIManager();
 
