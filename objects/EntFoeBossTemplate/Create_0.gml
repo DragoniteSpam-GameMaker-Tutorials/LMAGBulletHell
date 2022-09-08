@@ -63,6 +63,14 @@ self.UpdateHPStage = function() {
     }
 };
 
+self.inheritedDie = self.Die;
+
+self.Die = function() {
+    self.inheritedDie();
+    with (Spawner) instance_destroy();
+    with (EntFoeGnat) instance_destroy();
+}
+
 self.OnHPStageChange = function() {
     self.interstage_cooldown = DEFAULT_BOSS_STAGE_COOLDOWN;
     GameController.level.SendNextWave();
