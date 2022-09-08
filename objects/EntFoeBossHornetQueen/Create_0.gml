@@ -3,6 +3,8 @@ event_inherited();
 self.last_shot_angle = 180;
 self.shot_angle_direction = 10;
 
+self.stage_3_interval = 0;
+
 self.OnHPStageChange = function() {
     self.interstage_cooldown = DEFAULT_BOSS_STAGE_COOLDOWN;
     switch (self.hp_stage) {
@@ -46,7 +48,22 @@ self.Shoot = function() {
             }
             break;
         case 2:
-            // bullets that spawn more bullets at intervals
+            self.stage_3_interval++;
+            if (self.stage_3_interval == 5) {
+                self.stage_3_interval = 0;
+            }
+            self.shots_per_second = (self.stage_3_interval == 0) ? 0.25 : 5;
+            
+            var shot_velocity = 160;
+            var shot_count = 8;
+            var player_direction = point_direction(self.x, self.y, EntPlayer.x, EntPlayer.y);
+            
+            repeat (shot_count) {
+                var shot = instance_create_depth(self.x, self.y, self.depth + 1, Bullet);
+                var dir = player_direction + random_range(-self.bullet_spread / 2, self.bullet_spread / 2);
+                shot.xspeed =  shot_velocity * dcos(dir);
+                shot.yspeed = -shot_velocity * dsin(dir);
+            }
             break;
         case 3:
             self.shots_per_second = 4;
