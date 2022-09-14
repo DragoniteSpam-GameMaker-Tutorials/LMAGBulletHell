@@ -60,6 +60,7 @@ self.Die = function() {
         EntPlayer.health = 1;
     }
     instance_destroy();
+    part_particles_create(Particles.system, self.x, self.y, Particles.type_foe_die, 10);
 };
 
 self.Shoot = function() {

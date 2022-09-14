@@ -13,12 +13,25 @@ Particles = new (function() constructor {
     part_type_gravity(self.type_foe_hit, 0, 270);
     part_type_orientation(self.type_foe_hit, 0, 0, 0, 0, 0);
     part_type_size(self.type_foe_hit, 1, 1, 0, 0);
-    part_type_scale(self.type_foe_hit, 0.5, 1);
+    part_type_scale(self.type_foe_hit, 1, 1);
     part_type_life(self.type_foe_hit, 1.25 * _fps, 1.75 * _fps);
     part_type_blend(self.type_foe_hit, false);
     part_type_color3(self.type_foe_hit, c_white, c_ltgray, c_white);
     part_type_alpha3(self.type_foe_hit, 0.52, 0.1, 0);
     part_type_shape(self.type_foe_hit, pt_shape_sphere);
+    
+    self.type_foe_die = part_type_create();
+    part_type_speed(self.type_foe_die, 1, 1.50, -0.01, 0);
+    part_type_direction(self.type_foe_die, 10, 170, 0, 0);
+    part_type_gravity(self.type_foe_die, 0, 270);
+    part_type_orientation(self.type_foe_die, 0, 0, 0, 0, 0);
+    part_type_size(self.type_foe_die, 1, 1, 0, 0);
+    part_type_scale(self.type_foe_die, 1.25, 1.25);
+    part_type_life(self.type_foe_die, 1.25 * _fps, 1.75 * _fps);
+    part_type_blend(self.type_foe_die, false);
+    part_type_color3(self.type_foe_die, c_white, c_ltgray, c_white);
+    part_type_alpha3(self.type_foe_die, 0.52, 0.1, 0);
+    part_type_shape(self.type_foe_die, pt_shape_sphere);
     
     self.type_on_fire = part_type_create();
     part_type_speed(self.type_on_fire, 1, 1.50, -0.01, 0);
@@ -26,7 +39,7 @@ Particles = new (function() constructor {
     part_type_gravity(self.type_on_fire, 0, 270);
     part_type_orientation(self.type_on_fire, 0, 0, 0, 0, 0);
     part_type_size(self.type_on_fire, 1, 1, 0, 0);
-    part_type_scale(self.type_on_fire, 0.5, 1);
+    part_type_scale(self.type_on_fire, 0.75, 0.75);
     part_type_life(self.type_on_fire, 1.25 * _fps, 1.75 * _fps);
     part_type_blend(self.type_on_fire, true);
     part_type_color2(self.type_on_fire, 8388607, 255);
@@ -58,6 +71,19 @@ Particles = new (function() constructor {
     part_type_color2(self.type_player_hit, 255, 255);
     part_type_alpha2(self.type_player_hit, 0.56, 0);
     part_type_shape(self.type_player_hit, pt_shape_sphere);
+    
+    self.type_player_die = part_type_create();
+    part_type_speed(self.type_player_die, 2, 2.50, 0, 0);
+    part_type_direction(self.type_player_die, 0, 360, 0, 0);
+    part_type_gravity(self.type_player_die, 0, 270);
+    part_type_orientation(self.type_player_die, 0, 0, 0, 0, 0);
+    part_type_size(self.type_player_die, 1, 1, 0, 0);
+    part_type_scale(self.type_player_die, 2, 2);
+    part_type_life(self.type_player_die, 0.25 * _fps, 0.50 * _fps);
+    part_type_blend(self.type_player_die, false);
+    part_type_color2(self.type_player_die, 255, 255);
+    part_type_alpha2(self.type_player_die, 0.56, 0);
+    part_type_shape(self.type_player_die, pt_shape_sphere);
     
     self.type_boss_stage = part_type_create();
     part_type_speed(self.type_boss_stage, 2, 2.50, -0.02, 0);
