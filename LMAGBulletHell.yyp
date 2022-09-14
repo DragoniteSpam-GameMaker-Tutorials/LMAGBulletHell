@@ -100,6 +100,7 @@
     {"id":{"name":"spr_foe_spiral","path":"sprites/spr_foe_spiral/spr_foe_spiral.yy",},"order":19,},
     {"id":{"name":"Spawner","path":"objects/Spawner/Spawner.yy",},"order":16,},
     {"id":{"name":"EntFoeTemplateAim","path":"objects/EntFoeTemplateAim/EntFoeTemplateAim.yy",},"order":1,},
+    {"id":{"name":"Group_Particles","path":"scripts/Group_Particles/Group_Particles.yy",},"order":17,},
     {"id":{"name":"RoomLevel9","path":"rooms/RoomLevel9/RoomLevel9.yy",},"order":8,},
     {"id":{"name":"spr_foe_centipede","path":"sprites/spr_foe_centipede/spr_foe_centipede.yy",},"order":25,},
     {"id":{"name":"spr_title","path":"sprites/spr_title/spr_title.yy",},"order":0,},

@@ -8,4 +8,5 @@ if (keyboard_check_pressed(vk_escape)) {
 
 if (self.state == GameStates.PLAYING) {
     self.level.Update();
+    part_system_update(Particles.system);
 }
