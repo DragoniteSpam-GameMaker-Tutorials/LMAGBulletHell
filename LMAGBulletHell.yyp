@@ -57,7 +57,6 @@
     {"id":{"name":"spr_pickup_damage_shield","path":"sprites/spr_pickup_damage_shield/spr_pickup_damage_shield.yy",},"order":7,},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":0,},
     {"id":{"name":"spr_collision_bug_boss","path":"sprites/spr_collision_bug_boss/spr_collision_bug_boss.yy",},"order":18,},
-    {"id":{"name":"spr_status_fire","path":"sprites/spr_status_fire/spr_status_fire.yy",},"order":16,},
     {"id":{"name":"PickupFasterFire","path":"objects/PickupFasterFire/PickupFasterFire.yy",},"order":4,},
     {"id":{"name":"spr_healthbar_fill","path":"sprites/spr_healthbar_fill/spr_healthbar_fill.yy",},"order":1,},
     {"id":{"name":"Group_Upgrade_Database","path":"scripts/Group_Upgrade_Database/Group_Upgrade_Database.yy",},"order":1,},

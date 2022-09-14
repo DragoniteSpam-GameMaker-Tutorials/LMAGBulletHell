@@ -7,6 +7,7 @@ if (!self.immune_to_fire && self.buff_fire.value) {
         self.CheckDeath();
         self.buff_fire.damage_cooldown = 1;
     }
+    part_particles_create(Particles.system, self.x, self.y, Particles.type_on_fire, 2);
 }
 
 self.buff_fire.duration -= DT;
