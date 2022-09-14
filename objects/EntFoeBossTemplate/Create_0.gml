@@ -38,27 +38,34 @@ self.DrawBossUI = function(x, y) {
 self.hp_stage = 0;
 
 self.UpdateHPStage = function() {
+    static burst_particles = function() {
+        part_particles_create(Particles.system, self.x, self.y, Particles.type_boss_stage, 50);
+    };
     var f = self.health / self.health_max;
     var last_stage = self.hp_stage;
     if (f < 0.25) {
         self.hp_stage = 3;
         if (last_stage != self.hp_stage) {
             self.OnHPStageChange();
+            burst_particles();
         }
     } else if (f < 0.50) {
         self.hp_stage = 2;
         if (last_stage != self.hp_stage) {
             self.OnHPStageChange();
+            burst_particles();
         }
     } else if (f < 0.75) {
         self.hp_stage = 1;
         if (last_stage != self.hp_stage) {
             self.OnHPStageChange();
+            burst_particles();
         }
     } else {
         self.hp_stage = 0;
         if (last_stage != self.hp_stage) {
             self.OnHPStageChange();
+            burst_particles();
         }
     }
 };
