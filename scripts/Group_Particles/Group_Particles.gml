@@ -33,6 +33,19 @@ Particles = new (function() constructor {
     part_type_alpha2(self.type_on_fire, 0.2, 0);
     part_type_shape(self.type_on_fire, pt_shape_sphere);
     
+    self.type_fire_breath = part_type_create();
+    part_type_speed(self.type_fire_breath, 4, 6, -0.1, 0);
+    part_type_direction(self.type_fire_breath, 45, 135, 0, 0);
+    part_type_gravity(self.type_fire_breath, 0, 270);
+    part_type_orientation(self.type_fire_breath, 0, 0, 0, 0, 0);
+    part_type_size(self.type_fire_breath, 1, 1, 0, 0);
+    part_type_scale(self.type_fire_breath, 1.5, 2.5);
+    part_type_life(self.type_fire_breath, 1 * _fps, 1.25 * _fps);
+    part_type_blend(self.type_fire_breath, true);
+    part_type_color2(self.type_fire_breath, 8388607, 255);
+    part_type_alpha2(self.type_fire_breath, 0.2, 0);
+    part_type_shape(self.type_fire_breath, pt_shape_sphere);
+    
     self.type_player_hit = part_type_create();
     part_type_speed(self.type_player_hit, 2, 2.50, 0, 0);
     part_type_direction(self.type_player_hit, 0, 360, 0, 0);

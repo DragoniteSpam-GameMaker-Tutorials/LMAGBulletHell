@@ -26,7 +26,7 @@ shader_reset();
 gpu_set_ztestenable(false);
 gpu_set_zwriteenable(false);
 
-with (Bullet) draw_self();
+with (Bullet) event_perform(ev_draw, 0);
 
 gpu_set_ztestenable(true);
 gpu_set_zwriteenable(true);
