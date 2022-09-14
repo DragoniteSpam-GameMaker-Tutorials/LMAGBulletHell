@@ -136,4 +136,5 @@ self.Die = function() {
     self.officially_dead = false;
     //GameController.ShowLoseScreen();
     self.alive = false;
+    part_particles_create(Particles.system, self.x, self.y, Particles.type_player_die, 20);
 };
