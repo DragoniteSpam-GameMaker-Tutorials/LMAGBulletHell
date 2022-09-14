@@ -17,4 +17,5 @@ self.Die = function() {
         shot.yspeed = -shot_velocity * dsin(shot_angle);
     }
     instance_destroy();
+    part_particles_create(Particles.system, self.x, self.y, Particles.type_explosion, 100);
 };
