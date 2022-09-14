@@ -31,6 +31,8 @@ self.OnDamage = function(bullet) {
         self.UpdateHPStage();
         self.CheckDeath();
     }
+    
+    part_particles_create(Particles.system, self.x, self.y, Particles.type_foe_hit, 5);
 };
 
 self.CanShoot = function() {
