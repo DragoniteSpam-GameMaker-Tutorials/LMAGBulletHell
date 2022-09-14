@@ -108,6 +108,8 @@ self.OnDamage = function(bullet) {
     self.iframe_cooldown = self.iframe_duration;
     
     GameController.level.stats.damage_taken += bullet.damage;
+    
+    part_particles_create(Particles.system, self.x, self.y, Particles.type_player_hit, 20);
 };
 
 self.OnEntityContact = function(bullet) {
@@ -116,6 +118,8 @@ self.OnEntityContact = function(bullet) {
     self.health--;
     self.CheckDeath();
     self.iframe_cooldown = self.iframe_duration;
+    
+    part_particles_create(Particles.system, self.x, self.y, Particles.type_player_hit, 20);
 };
 
 self.CheckDeath = function() {
