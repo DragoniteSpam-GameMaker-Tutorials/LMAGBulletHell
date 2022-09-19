@@ -4,7 +4,7 @@ GetText = function() {
     var clear_data = GameController.active_save_data.GetClearData(self.room_level);
     
     if (clear_data == undefined) {
-        self.text = L("%0\nNot yet cleared", room_get_name(self.room_level));
+        self.text = L("(Locked)");
     } else {
         self.text = L(
             "%0\nNo damage? %1\nFast clear? %2\nThird star: %3", [

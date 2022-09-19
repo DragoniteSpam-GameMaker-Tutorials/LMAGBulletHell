@@ -43,6 +43,10 @@ self.level_types[$ string(RoomLevel10)] = new LevelMetadata("Level 10: Scorpion 
 self.level_types[$ string(RoomLevel11)] = new LevelMetadata("Level 11: The Infestation", 10, meshes_woodlands, $004000);
 self.level_types[$ string(RoomLevel12)] = new LevelMetadata("Level 12: Hornet Queen's\nRevenge", 11, meshes_woodlands, $004000);
 
+self.GetLevelMetadata = function(room_level) {
+    return self.level_types[$ string(room_level)];
+};
+
 self.ui = new UIManager();
 
 state = GameStates.TITLE;

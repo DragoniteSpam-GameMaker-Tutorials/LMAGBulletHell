@@ -3,7 +3,7 @@ OnClick = function() {
 };
 
 Update = function() {
-    var level_data = GameController.level_types[$ string(RoomLevel7)];
+    var level_data = GameController.GetLevelMetadata(string(RoomLevel7));
     self.enabled = (GameController.active_save_data.total_level_cleared >= level_data.id) || DEBUG;
     self.text = L(string_replace(level_data.name, ": ", "\n"));
 };
