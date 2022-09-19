@@ -128,6 +128,14 @@ ShowWinScreen = function() {
     
     clear_data.high_score = max(clear_data.high_score, self.level.stats.score);
     
+    var clear_without_damage = self.level.stats.damage_taken == 0;
+    var clear_under_time = self.level.game_timer <= 105;
+    
+    if (clear_without_damage)
+        clear_data.clear_without_damage = true;
+    if (clear_under_time)
+        clear_data.clear_under_time = true;
+    
     // update some other stats
     self.active_save_data.highest_score_multiplier = max(self.active_save_data.highest_score_multiplier, self.level.stats.highest_score_multiplier);
     self.active_save_data.cumulative_score += self.level.stats.score;
