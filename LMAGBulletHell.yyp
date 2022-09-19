@@ -80,6 +80,7 @@
     {"id":{"name":"spr_foe_explode","path":"sprites/spr_foe_explode/spr_foe_explode.yy",},"order":20,},
     {"id":{"name":"EntFoeCentipedeSegment","path":"objects/EntFoeCentipedeSegment/EntFoeCentipedeSegment.yy",},"order":12,},
     {"id":{"name":"RoomLevel6","path":"rooms/RoomLevel6/RoomLevel6.yy",},"order":5,},
+    {"id":{"name":"UIButtonSkillUpgrade","path":"objects/UIButtonSkillUpgrade/UIButtonSkillUpgrade.yy",},"order":13,},
     {"id":{"name":"Group_Player_Data","path":"scripts/Group_Player_Data/Group_Player_Data.yy",},"order":14,},
     {"id":{"name":"spr_pickup_health","path":"sprites/spr_pickup_health/spr_pickup_health.yy",},"order":11,},
     {"id":{"name":"spr_pickup_fire_bullet","path":"sprites/spr_pickup_fire_bullet/spr_pickup_fire_bullet.yy",},"order":10,},
