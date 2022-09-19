@@ -1,3 +1,3 @@
 GetText = function() {
-    self.text = room_get_name(room);
+    self.text = string_replace_all(L(GameController.GetLevelMetadata(room).name), ": ", "\n");
 };
