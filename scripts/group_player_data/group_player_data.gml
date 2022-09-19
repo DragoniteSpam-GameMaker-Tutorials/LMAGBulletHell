@@ -13,6 +13,11 @@ function PlayerSaveData() constructor {
     self.currency = 0;
     self.total_currency = 0;
     
+    static Respec = function() {
+        self.currency = self.total_currency;
+        Upgrades.Respec();
+    };
+    
     static Load = function(source) {
         if (is_real(source[$ "cumulative_score"])) self.cumulative_score = source.cumulative_score;
         if (is_real(source[$ "highest_score_multiplier"])) self.highest_score_multiplier = source.highest_score_multiplier;
