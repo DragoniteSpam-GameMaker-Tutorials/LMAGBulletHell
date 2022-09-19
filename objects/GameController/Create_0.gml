@@ -120,7 +120,7 @@ RestartLevel = function() {
 
 ShowWinScreen = function() {
     // update the high score if you need to, and other level clear data
-    var clear_data = self.active_save_data.clear_data[$ room_get_name(room)];
+    var clear_data = self.active_save_data.GetClearData(room);
     if (clear_data == undefined) {
         clear_data = new self.active_save_data.ClearData();
         self.active_save_data.clear_data[$ room_get_name(room)] = clear_data;
