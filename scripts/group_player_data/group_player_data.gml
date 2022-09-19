@@ -10,6 +10,9 @@ function PlayerSaveData() constructor {
     
     self.total_level_cleared = 0;
     
+    self.currency = 0;
+    self.total_currency = 0;
+    
     static Load = function(source) {
         if (is_real(source[$ "cumulative_score"])) self.cumulative_score = source.cumulative_score;
         if (is_real(source[$ "highest_score_multiplier"])) self.highest_score_multiplier = source.highest_score_multiplier;
@@ -18,6 +21,9 @@ function PlayerSaveData() constructor {
         if (is_real(source[$ "total_damage_dealt"])) self.total_damage_dealt = source.total_damage_dealt;
         if (is_real(source[$ "total_damage_taken"])) self.total_damage_taken = source.total_damage_taken;
         if (is_real(source[$ "total_level_cleared"])) self.total_level_cleared = source.total_level_cleared;
+        
+        if (is_real(source[$ "currency"])) self.currency = source.currency;
+        if (is_real(source[$ "total_currency"])) self.total_currency = source.total_currency;
         
         if (is_struct(source[$ "clear_data"])) {
             var keys = variable_struct_get_names(source.clear_data);
