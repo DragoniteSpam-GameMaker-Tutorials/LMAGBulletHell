@@ -16,20 +16,25 @@
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
   ],
   "layers": [
-    {"resourceType":"GMRLayer","resourceVersion":"1.0","name":"UI_Title_Group","visible":false,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[
+    {"resourceType":"GMRLayer","resourceVersion":"1.0","name":"UI_Title_Group","visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[
         {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"UI_Title_Upgrades","instances":[
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_67828A9B","properties":[],"isDnd":false,"objectId":{"name":"UIBlockRaycast","path":"objects/UIBlockRaycast/UIBlockRaycast.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":12.666667,"scaleY":15.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":32.0,},
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_65EE9FFE","properties":[
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"source_text","path":"objects/UIText/UIText.yy",},"objectId":{"name":"UIText","path":"objects/UIText/UIText.yy",},"value":"Upgrades",},
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_horizontal","path":"objects/ParentUI/ParentUI.yy",},"objectId":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"value":"fa_left",},
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_vertical","path":"objects/ParentUI/ParentUI.yy",},"objectId":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"value":"fa_middle",},
-              ],"isDnd":false,"objectId":{"name":"UIText","path":"objects/UIText/UIText.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":11.416667,"scaleY":1.6666666,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":64.0,},
+              ],"isDnd":false,"objectId":{"name":"UIText","path":"objects/UIText/UIText.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":11.416667,"scaleY":1.6666666,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":64.0,},
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7568B669","properties":[
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_horizontal","path":"objects/ParentUI/ParentUI.yy",},"objectId":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"value":"fa_left",},
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_vertical","path":"objects/ParentUI/ParentUI.yy",},"objectId":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"value":"fa_middle",},
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"source_text","path":"objects/UIButton/UIButton.yy",},"objectId":{"name":"UIButton","path":"objects/UIButton/UIButton.yy",},"value":"Back",},
-              ],"isDnd":false,"objectId":{"name":"UIButton","path":"objects/UIButton/UIButton.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":7.3333335,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":672.0,},
-          ],"visible":false,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+              ],"isDnd":false,"objectId":{"name":"UIButton","path":"objects/UIButton/UIButton.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":5.3333335,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":352.0,"y":672.0,},
+            {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_10BD0F44","properties":[
+                {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_horizontal","path":"objects/ParentUI/ParentUI.yy",},"objectId":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"value":"fa_left",},
+                {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_vertical","path":"objects/ParentUI/ParentUI.yy",},"objectId":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"value":"fa_middle",},
+                {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"source_text","path":"objects/UIButton/UIButton.yy",},"objectId":{"name":"UIButton","path":"objects/UIButton/UIButton.yy",},"value":"Respec",},
+              ],"isDnd":false,"objectId":{"name":"UIButton","path":"objects/UIButton/UIButton.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":5.3333335,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":672.0,},
+          ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
         {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"UI_Title_Collectables","instances":[
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_44E9D8FB","properties":[],"isDnd":false,"objectId":{"name":"UIBlockRaycast","path":"objects/UIBlockRaycast/UIBlockRaycast.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":12.666667,"scaleY":15.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":32.0,},
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3F76F6EB","properties":[
@@ -195,6 +200,12 @@
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_vertical","path":"objects/ParentUI/ParentUI.yy",},"objectId":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"value":"fa_top",},
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"source_text","path":"objects/UIButton/UIButton.yy",},"objectId":{"name":"UIButton","path":"objects/UIButton/UIButton.yy",},"value":"Delete Save",},
               ],"isDnd":false,"objectId":{"name":"UIButton","path":"objects/UIButton/UIButton.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":3.3333335,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":736.0,"y":704.0,},
+            {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_29BB1FEF","properties":[
+                {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_horizontal","path":"objects/ParentUI/ParentUI.yy",},"objectId":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"value":"fa_right",},
+                {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_vertical","path":"objects/ParentUI/ParentUI.yy",},"objectId":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"value":"fa_top",},
+                {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"source_text","path":"objects/UIButton/UIButton.yy",},"objectId":{"name":"UIButton","path":"objects/UIButton/UIButton.yy",},"value":"Stars:",},
+                {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"source_text","path":"objects/UIText/UIText.yy",},"objectId":{"name":"UIText","path":"objects/UIText/UIText.yy",},"value":"Stars:",},
+              ],"isDnd":false,"objectId":{"name":"UIText","path":"objects/UIText/UIText.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":3.3333335,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":896.0,"y":96.0,},
           ],"visible":false,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
         {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"UI_Title_Delete_Save","instances":[
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_19C46ADF","properties":[
@@ -274,7 +285,7 @@
               ],"isDnd":false,"objectId":{"name":"UIButton","path":"objects/UIButton/UIButton.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":6.75,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.0,"y":544.0,},
           ],"visible":false,"depth":700,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
       ],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
-    {"resourceType":"GMRLayer","resourceVersion":"1.0","name":"UI_Gamplay","visible":true,"depth":800,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[
+    {"resourceType":"GMRLayer","resourceVersion":"1.0","name":"UI_Gamplay","visible":false,"depth":800,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[
         {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"UI_Would_You_Like_To_Restart","instances":[
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4A3D18B0","properties":[
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_horizontal","path":"objects/UIBlockRaycast/UIBlockRaycast.yy",},"objectId":{"name":"UIBlockRaycast","path":"objects/UIBlockRaycast/UIBlockRaycast.yy",},"value":"fa_center",},
@@ -295,7 +306,7 @@
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_horizontal","path":"objects/ParentUI/ParentUI.yy",},"objectId":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"value":"fa_center",},
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_vertical","path":"objects/ParentUI/ParentUI.yy",},"objectId":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"value":"fa_middle",},
               ],"isDnd":false,"objectId":{"name":"UIButton","path":"objects/UIButton/UIButton.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":2.0000002,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":432.0,"y":416.0,},
-          ],"visible":true,"depth":900,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+          ],"visible":false,"depth":900,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
         {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"UI_Would_You_Like_To_Quit","instances":[
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_59046638","properties":[
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_horizontal","path":"objects/UIBlockRaycast/UIBlockRaycast.yy",},"objectId":{"name":"UIBlockRaycast","path":"objects/UIBlockRaycast/UIBlockRaycast.yy",},"value":"fa_center",},
@@ -321,7 +332,7 @@
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_horizontal","path":"objects/ParentUI/ParentUI.yy",},"objectId":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"value":"fa_center",},
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_vertical","path":"objects/ParentUI/ParentUI.yy",},"objectId":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"value":"fa_middle",},
               ],"isDnd":false,"objectId":{"name":"UIButton","path":"objects/UIButton/UIButton.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":4.3333335,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":320.0,"y":416.0,},
-          ],"visible":true,"depth":1000,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+          ],"visible":false,"depth":1000,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
         {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"UI_Lose","instances":[
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3909ADA5","properties":[
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_horizontal","path":"objects/UIBlockRaycast/UIBlockRaycast.yy",},"objectId":{"name":"UIBlockRaycast","path":"objects/UIBlockRaycast/UIBlockRaycast.yy",},"value":"fa_center",},
@@ -342,7 +353,7 @@
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_horizontal","path":"objects/ParentUI/ParentUI.yy",},"objectId":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"value":"fa_center",},
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_vertical","path":"objects/ParentUI/ParentUI.yy",},"objectId":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"value":"fa_middle",},
               ],"isDnd":false,"objectId":{"name":"UIButton","path":"objects/UIButton/UIButton.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":5.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":304.0,"y":432.0,},
-          ],"visible":true,"depth":1100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+          ],"visible":false,"depth":1100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
         {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"UI_Win","instances":[
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_257E8177","properties":[
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_horizontal","path":"objects/UIBlockRaycast/UIBlockRaycast.yy",},"objectId":{"name":"UIBlockRaycast","path":"objects/UIBlockRaycast/UIBlockRaycast.yy",},"value":"fa_center",},
@@ -368,7 +379,7 @@
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_horizontal","path":"objects/ParentUI/ParentUI.yy",},"objectId":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"value":"fa_center",},
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_vertical","path":"objects/ParentUI/ParentUI.yy",},"objectId":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"value":"fa_middle",},
               ],"isDnd":false,"objectId":{"name":"UIButton","path":"objects/UIButton/UIButton.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":5.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":304.0,"y":384.0,},
-          ],"visible":true,"depth":1200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+          ],"visible":false,"depth":1200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
         {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"UI_Settings","instances":[
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_55C01A28","properties":[
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_horizontal","path":"objects/UIBlockRaycast/UIBlockRaycast.yy",},"objectId":{"name":"UIBlockRaycast","path":"objects/UIBlockRaycast/UIBlockRaycast.yy",},"value":"fa_center",},
@@ -487,7 +498,7 @@
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_horizontal","path":"objects/ParentUI/ParentUI.yy",},"objectId":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"value":"fa_center",},
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_vertical","path":"objects/ParentUI/ParentUI.yy",},"objectId":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"value":"fa_middle",},
               ],"isDnd":false,"objectId":{"name":"UIButton","path":"objects/UIButton/UIButton.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":8.333333,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":224.0,"y":656.0,},
-          ],"visible":true,"depth":1300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+          ],"visible":false,"depth":1300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
         {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"UI_Pause","instances":[
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3EDB3FC1","properties":[
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_horizontal","path":"objects/UIBlockRaycast/UIBlockRaycast.yy",},"objectId":{"name":"UIBlockRaycast","path":"objects/UIBlockRaycast/UIBlockRaycast.yy",},"value":"fa_center",},
@@ -518,7 +529,7 @@
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_horizontal","path":"objects/ParentUI/ParentUI.yy",},"objectId":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"value":"fa_center",},
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_vertical","path":"objects/ParentUI/ParentUI.yy",},"objectId":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"value":"fa_middle",},
               ],"isDnd":false,"objectId":{"name":"UIButton","path":"objects/UIButton/UIButton.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":4.3333335,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":320.0,"y":480.0,},
-          ],"visible":true,"depth":1400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+          ],"visible":false,"depth":1400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
         {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"UI_Gameplay","instances":[
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_game_background","properties":[
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_horizontal","path":"objects/UIBlockRaycast/UIBlockRaycast.yy",},"objectId":{"name":"UIBlockRaycast","path":"objects/UIBlockRaycast/UIBlockRaycast.yy",},"value":"fa_right",},
@@ -553,7 +564,7 @@
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_game_high_score","properties":[
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"anchor_horizontal","path":"objects/ParentUI/ParentUI.yy",},"objectId":{"name":"ParentUI","path":"objects/ParentUI/ParentUI.yy",},"value":"fa_right",},
               ],"isDnd":false,"objectId":{"name":"UIText","path":"objects/UIText/UIText.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":4.333333,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":848.0,"y":352.0,},
-          ],"visible":true,"depth":1500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+          ],"visible":false,"depth":1500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
       ],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1B13D1C1","properties":[],"isDnd":false,"objectId":{"name":"GameController","path":"objects/GameController/GameController.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":32.0,},
@@ -675,6 +686,8 @@
     {"name":"inst_19C46ADF","path":"rooms/RoomInitialization/RoomInitialization.yy",},
     {"name":"inst_7998A995","path":"rooms/RoomInitialization/RoomInitialization.yy",},
     {"name":"inst_1CBBEA17","path":"rooms/RoomInitialization/RoomInitialization.yy",},
+    {"name":"inst_29BB1FEF","path":"rooms/RoomInitialization/RoomInitialization.yy",},
+    {"name":"inst_10BD0F44","path":"rooms/RoomInitialization/RoomInitialization.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
