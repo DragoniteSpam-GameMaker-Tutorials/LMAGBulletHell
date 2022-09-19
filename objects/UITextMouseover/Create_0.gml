@@ -16,13 +16,15 @@ Render = function() {
     draw_set_colour(c_black);
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
-    draw_text(x + sprite_width / 2, y + sprite_height / 2, text);
+    draw_text_ext(x + sprite_width / 2, y + sprite_height / 2, text, -1, sprite_width - 32);
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
+    
+    self.text = "";
 }
 
 GetText = function() {
-    self.text = L(self.source_text);
+    if (self.text = "") self.text = L(self.source_text);
 }
 
 OnHover = function() {
