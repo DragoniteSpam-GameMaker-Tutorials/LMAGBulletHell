@@ -1,5 +1,5 @@
 function PlayerSaveData() constructor {
-    self.high_score = { };
+    self.clear_data = { };
     self.cumulative_score = 0;
     self.highest_score_multiplier = 1;
     
@@ -19,15 +19,31 @@ function PlayerSaveData() constructor {
         if (is_real(source[$ "total_damage_taken"])) self.total_damage_taken = source.total_damage_taken;
         if (is_real(source[$ "total_level_cleared"])) self.total_level_cleared = source.total_level_cleared;
         
-        if (is_struct(source[$ "high_score"])) {
-            var keys = variable_struct_get_names(source.high_score);
+        if (is_struct(source[$ "clear_data"])) {
+            var keys = variable_struct_get_names(source.clear_data);
             for (var i = 0, n = array_length(keys); i < n; i++) {
                 if (room_exists(asset_get_index(keys[i])) && room_get_name(asset_get_index(keys[i])) == keys[i]) {
-                    if (is_real(source.high_score[$ keys[i]])) {
-                        self.high_score[$ keys[i]] = source.high_score[$ keys[i]];
+                    self.clear_data[$ keys[i]] = new self.ClearData();
+                    
+                    if (is_struct(source.clear_data[$ keys[i]])) {
+                        self.clear_data[$ keys[i]].Load(source.clear_data[$ keys[i]]);
                     }
                 }
             }
         }
+    };
+    
+    static ClearData = function() constructor {
+        self.high_score = 0;
+        self.clear = false;
+        self.clear_without_damage = false;
+        self.clear_under_time = false;
+        
+        static Load = function(source) {
+            if (is_real(source[$ "high_score"])) self.high_score = source.high_score;
+            if (is_real(source[$ "clear"])) self.clear = source.clear;
+            if (is_real(source[$ "clear_without_damage"])) self.clear_without_damage = source.clear_without_damage;
+            if (is_real(source[$ "clear_under_time"])) self.clear_under_time = source.clear_under_time;
+        };
     };
 }

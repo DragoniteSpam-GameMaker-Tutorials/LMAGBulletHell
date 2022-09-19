@@ -119,11 +119,15 @@ RestartLevel = function() {
 };
 
 ShowWinScreen = function() {
-    // update the high score if you need to
-    var current_high_score = self.active_save_data.high_score[$ room_get_name(room)];
-    if (current_high_score == undefined || current_high_score < self.level.stats.score) {
-        self.active_save_data.high_score[$ room_get_name(room)] = self.level.stats.score;
+    // update the high score if you need to, and other level clear data
+    var clear_data = self.active_save_data.clear_data[$ room_get_name(room)];
+    if (clear_data == undefined) {
+        clear_data = new self.active_save_data.ClearData();
+        self.active_save_data.clear_data[$ room_get_name(room)] = clear_data;
     }
+    
+    clear_data.high_score = max(clear_data.high_score, self.level.stats.score);
+    
     // update some other stats
     self.active_save_data.highest_score_multiplier = max(self.active_save_data.highest_score_multiplier, self.level.stats.highest_score_multiplier);
     self.active_save_data.cumulative_score += self.level.stats.score;
