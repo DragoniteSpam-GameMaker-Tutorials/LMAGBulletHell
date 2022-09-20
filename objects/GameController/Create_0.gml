@@ -2,6 +2,9 @@ window_set_size(1366, 768);
 display_set_gui_maximize();
 application_surface_draw_enable(false);
 
+self.pseudo_window_width = window_get_width();
+self.pseudo_window_height = window_get_height();
+
 self.background_surface = surface_create(1366, 768);
 
 vertex_format_begin();

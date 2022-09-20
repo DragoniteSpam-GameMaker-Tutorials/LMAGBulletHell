@@ -10,3 +10,11 @@ if (self.state == GameStates.PLAYING) {
     self.level.Update();
     part_system_update(Particles.system);
 }
+
+if (self.state == GameStates.TITLE) {
+    self.pseudo_window_width = window_get_width();
+    self.pseudo_window_height = window_get_height();
+} else {
+    self.pseudo_window_width = window_get_width() - inst_game_background.sprite_width;
+    self.pseudo_window_height = window_get_height();
+}
