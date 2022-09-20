@@ -9,6 +9,13 @@ self.buff_fire = {
     amount: 0,
 };
 
+self.hitflash_time = 0;
+self.hitflash_scale = 1;
+self.Hitflash = function() {
+    self.hitflash_time = HITFLASH_DURATION;
+    self.hitflash_scale = HITFLASH_SCALE;
+};
+
 self.OnDamage = function(bullet) {
 };
 

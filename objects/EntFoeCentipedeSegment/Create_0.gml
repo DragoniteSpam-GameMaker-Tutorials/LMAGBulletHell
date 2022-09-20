@@ -10,6 +10,7 @@ self.Shoot = function() {
 
 self.OnDamage = function(bullet) {
     self.head.OnDamage(bullet);
+    self.Hitflash();
 };
 
 self.CheckDeath = function() {

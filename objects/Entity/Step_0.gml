@@ -18,3 +18,10 @@ if (self.buff_fire.duration <= 0) {
 
 self.frame_index += self.animation_speed * DT;
 self.frame_index %= array_length(self.frames);
+
+if (self.hitflash_time > 0) {
+    self.hitflash_time -= DT;
+    self.hitflash_scale = lerp(self.hitflash_scale, 1, HITFLASH_REDUCTION_AMOUNT * DT);
+} else {
+    self.hitflash_scale = 1;
+}

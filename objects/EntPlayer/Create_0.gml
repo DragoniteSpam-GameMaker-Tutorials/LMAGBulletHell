@@ -111,6 +111,8 @@ self.OnDamage = function(bullet) {
     GameController.level.stats.damage_taken += bullet.damage;
     
     part_particles_create(Particles.system, self.x, self.y, Particles.type_player_hit, 20);
+    
+    self.Hitflash();
 };
 
 self.OnEntityContact = function(bullet) {

@@ -33,6 +33,8 @@ self.OnDamage = function(bullet) {
     }
     
     part_particles_create(Particles.system, self.x, self.y, Particles.type_foe_hit, 5);
+    
+    self.Hitflash();
 };
 
 self.CanShoot = function() {
