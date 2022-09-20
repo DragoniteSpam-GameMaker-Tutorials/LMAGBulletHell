@@ -4,3 +4,7 @@ if (self.state != GameStates.TITLE) {
     self.level.SendNextWave();
     self.end_of_level_screen = "";
 }
+
+if (self.state == GameStates.TITLE) {
+    part_system_clear(Particles.system);
+}
