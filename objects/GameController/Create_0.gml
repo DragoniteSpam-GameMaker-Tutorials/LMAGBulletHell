@@ -120,6 +120,7 @@ Unpause = function() {
 RestartLevel = function() {
     with (LevelObject) instance_destroy();
     room_restart();
+    self.Unpause();
 };
 
 ShowWinScreen = function() {
