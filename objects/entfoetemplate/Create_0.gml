@@ -78,4 +78,5 @@ self.Shoot = function() {
     }
 };
 
-path_start(self.path_enter, 10, path_action_stop, false);
+self.default_path_speed = 10;
+path_start(self.path_enter, self.default_path_speed, path_action_stop, false);
