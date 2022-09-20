@@ -1,4 +1,5 @@
 self.Spawn = function() {
+    if (!self.alive) return;
     if (self.spawn_count <= 0) {
         instance_destroy();
         return;
@@ -7,3 +8,5 @@ self.Spawn = function() {
     self.spawn_count--;
     call_later(1 / self.spawn_rate, time_source_units_seconds, self.Spawn, false);
 }
+
+self.alive = true;

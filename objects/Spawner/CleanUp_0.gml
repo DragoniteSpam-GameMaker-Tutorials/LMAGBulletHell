@@ -1,0 +1,1 @@
+self.alive = false;
