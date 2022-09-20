@@ -1,0 +1,1 @@
+part_particles_create(Particles.system, self.x, self.y, Particles.type_foe_die, 10);
