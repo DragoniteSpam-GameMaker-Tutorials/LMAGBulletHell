@@ -1,6 +1,9 @@
 if (keyboard_check_pressed(vk_escape)) {
     if (self.state == GameStates.PLAYING) {
         self.Pause();
+    } else if (room == RoomTitle) {
+        // we can assume we're showing the settings menu
+        GameController.title_screen = "UI_Level_Select";
     } else {
         self.Unpause();
     }
