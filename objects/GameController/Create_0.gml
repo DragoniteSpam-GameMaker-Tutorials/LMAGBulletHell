@@ -127,6 +127,8 @@ RestartLevel = function() {
 };
 
 ShowWinScreen = function() {
+    with (Bullet) instance_destroy();
+    
     // update the high score if you need to, and other level clear data
     var clear_data = self.active_save_data.GetClearData(room);
     if (clear_data == undefined) {
