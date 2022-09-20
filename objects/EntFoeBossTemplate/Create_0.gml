@@ -75,7 +75,7 @@ self.inheritedDie = self.Die;
 self.Die = function() {
     self.inheritedDie();
     with (Spawner) instance_destroy();
-    with (EntFoeGnat) instance_destroy();
+    with (EntFoeTemplate) instance_destroy();
 }
 
 self.OnHPStageChange = function() {
