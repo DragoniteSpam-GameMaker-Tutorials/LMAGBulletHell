@@ -9,7 +9,10 @@
   "solid": false,
   "visible": false,
   "managed": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_collision_bullet",
+    "path": "sprites/spr_collision_bullet/spr_collision_bullet.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "LevelObject",

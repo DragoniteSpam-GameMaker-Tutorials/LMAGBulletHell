@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "BulletExplosionFragments",
   "spriteId": {
     "name": "spr_bullet_explosion",
     "path": "sprites/spr_bullet_explosion/spr_bullet_explosion.yy",
@@ -6,7 +9,10 @@
   "solid": false,
   "visible": false,
   "managed": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_collision_bullet",
+    "path": "sprites/spr_collision_bullet/spr_collision_bullet.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "Bullet",
@@ -25,8 +31,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -34,8 +40,4 @@
     "name": "Bullets",
     "path": "folders/Bullets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "BulletExplosionFragments",
-  "tags": [],
-  "resourceType": "GMObject",
 }
