@@ -1,5 +1,8 @@
 event_inherited();
 
+self.frames = GameController.foe_meshes.hornetqueen;
+self.animation_speed = 10;
+
 self.last_shot_angle = 180;
 self.shot_angle_direction = 10;
 

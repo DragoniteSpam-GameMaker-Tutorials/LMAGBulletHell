@@ -1,0 +1,21 @@
+
+# The project files for bullethell.dragon are not stored here.
+# This file simply contains a reference to the ID of the project in local
+# storage. If you would like to archive the project as a whole (e.g. to
+# send to another computer), go to Export and save the project as a zip.
+# If you would like to compile the game files for use in a game, go to 
+# Export and save the project as a set of DDD files.
+
+author: Who made this?
+date: 
+  day: 21
+  hour: 22
+  minute: 31
+  month: 9
+  second: 34
+  year: 2022
+folder: projects/77E5A50E_be264317bb473bea2ddc23cbf6bc93d2/
+id: 77E5A50E
+save_name: bullethell.dragon
+summary: Write a short summary in Global Game Settings
+version: 1

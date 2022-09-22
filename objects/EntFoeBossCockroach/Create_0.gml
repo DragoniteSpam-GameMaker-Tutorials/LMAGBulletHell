@@ -1,5 +1,8 @@
 event_inherited();
 
+self.frames = GameController.foe_meshes.cockroach;
+self.animation_speed = 10;
+
 // inherited
 /*self.OnHPStageChange = function() {
     self.interstage_cooldown = DEFAULT_BOSS_STAGE_COOLDOWN;

@@ -24,11 +24,14 @@ self.foe_meshes = {
     centipede_head: load_foe_meshes("meshes/foes/centipede-head*.vbuff", self.format),
     centipede_body: load_foe_meshes("meshes/foes/centipede-body*.vbuff", self.format),
     hornet: load_foe_meshes("meshes/foes/hornet*.vbuff", self.format),
+    hornetqueen: load_foe_meshes("meshes/foes/hornetqueen*.vbuff", self.format),
+    hornetfinal: load_foe_meshes("meshes/foes/hornetfinal*.vbuff", self.format),
     scorpion: load_foe_meshes("meshes/foes/scorpion*.vbuff", self.format),
+    cockroach: load_foe_meshes("meshes/foes/cockroach*.vbuff", self.format),
 };
 
 self.player_meshes = {
-    test_player: load_foe_meshes("meshes/players/sphere*.vbuff", self.format),
+    test_player: load_foe_meshes("meshes/players/player*.vbuff", self.format),
 };
 
 var meshes_woodlands = load_level_meshes("meshes/woodlands/", self.format);

@@ -1,5 +1,7 @@
 event_inherited();
 
+self.animation_speed = 6;
+
 self.health_max = 3;
 self.health = self.health_max;
 self.iframe_cooldown = 0;
