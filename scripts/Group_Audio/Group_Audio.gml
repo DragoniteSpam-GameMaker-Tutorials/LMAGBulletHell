@@ -33,3 +33,15 @@ function audio_play_game_pause() {
 function audio_play_game_unpause() {
     audio_play_sound(se_game_unpause, 100, false);
 }
+
+function audio_play_menu_button() {
+    audio_play_sound(se_menu_generic, 100, false);
+}
+
+function audio_play_menu_back() {
+    audio_play_sound(se_menu_back, 100, false);
+}
+
+function audio_play_menu_forward() {
+    audio_play_sound(se_menu_forward, 100, false);
+}

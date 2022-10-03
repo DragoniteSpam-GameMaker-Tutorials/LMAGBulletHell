@@ -9,7 +9,7 @@
   "bitDepth": 1,
   "bitRate": 128,
   "soundFile": "se_player_shoot.wav",
-  "duration": 0.117506,
+  "duration": 0.194082,
   "volume": 1.0,
   "preload": false,
   "audioGroupId": {
