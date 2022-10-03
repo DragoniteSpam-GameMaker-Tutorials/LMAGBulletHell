@@ -173,6 +173,8 @@ ShowWinScreen = function() {
     self.SaveAll();
     // actually show the win screen
     self.end_of_level_screen = "UI_Win";
+    
+    audio_play_win();
 };
 
 ShowLoseScreen = function() {

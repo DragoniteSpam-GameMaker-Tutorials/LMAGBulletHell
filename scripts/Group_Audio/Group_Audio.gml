@@ -53,3 +53,7 @@ function audio_play_pickup() {
 function audio_play_pickup_health() {
     audio_play_sound(se_pickup_health, 100, false);
 }
+
+function audio_play_win() {
+    audio_play_sound(se_win, 100, false);
+}
