@@ -12,4 +12,6 @@ self.Shoot = function() {
     self.SetTimer(1 / self.shots_per_second, function() {
         self.shot_enabled = true;
     });
+    
+    audio_play_foe_shoot();
 };

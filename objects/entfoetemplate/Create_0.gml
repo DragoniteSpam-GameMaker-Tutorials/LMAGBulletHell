@@ -35,6 +35,8 @@ self.OnDamage = function(bullet) {
     part_particles_create(Particles.system, self.x, self.y, Particles.type_foe_hit, 5);
     
     self.Hitflash();
+    
+    audio_play_foe_hit();
 };
 
 self.CanShoot = function() {
@@ -63,6 +65,8 @@ self.Die = function() {
     }
     instance_destroy();
     //part_particles_create(Particles.system, self.x, self.y, Particles.type_foe_die, 10);
+    
+    audio_play_foe_die();
 };
 
 self.Shoot = function() {
@@ -78,6 +82,8 @@ self.Shoot = function() {
             self.shot_enabled = true;
         });
     }
+    
+    audio_play_foe_shoot();
 };
 
 self.default_path_speed = 10;

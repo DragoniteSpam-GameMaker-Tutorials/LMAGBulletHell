@@ -19,4 +19,6 @@ self.Die = function() {
         shot.yspeed = -shot_velocity * dsin(shot_angle);
     }
     instance_destroy();
+    
+    audio_play_foe_die();
 };

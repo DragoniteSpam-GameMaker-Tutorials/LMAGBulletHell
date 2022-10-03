@@ -1,0 +1,23 @@
+function audio_play_player_shoot() {
+    audio_play_sound(se_player_shoot, 100, false);
+}
+
+function audio_play_player_hit() {
+    audio_play_sound(se_player_hit, 100, false);
+}
+
+function audio_play_player_special_fire() {
+    audio_play_sound(se_player_special_fire, 100, false);
+}
+
+function audio_play_foe_hit() {
+    audio_play_sound(se_foe_hit, 100, false);
+}
+
+function audio_play_foe_shoot() {
+    audio_play_sound(se_foe_shoot, 100, false);
+}
+
+function audio_play_foe_die() {
+    audio_play_sound(se_foe_die, 100, false);
+}

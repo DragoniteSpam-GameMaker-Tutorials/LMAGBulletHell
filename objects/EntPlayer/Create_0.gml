@@ -73,6 +73,8 @@ self.Shoot = function() {
     });
     
     GameController.level.stats.shots++;
+    
+    audio_play_player_shoot();
 };
 
 self.CanShootSub = function() {
@@ -95,6 +97,8 @@ self.ShootSub = function() {
         shot.effect_fire_duration = burn_capacity.duration;
     }
     self.shot_cooldown_sub += SUB_ATTACK_COOLDOWN;
+    
+    audio_play_player_special_fire();
 };
 
 self.Invincible = function() {
@@ -118,6 +122,8 @@ self.OnDamage = function(bullet) {
     self.Hitflash();
     
     instance_destroy(bullet);
+    
+    audio_play_player_hit();
 };
 
 self.OnEntityContact = function(bullet) {
