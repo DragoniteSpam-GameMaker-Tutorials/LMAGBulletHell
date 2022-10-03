@@ -13,6 +13,8 @@ vertex_format_add_normal();
 vertex_format_add_color();
 self.format = vertex_format_end();
 
+audio_play_sound(se_ambient, 100, true);
+
 self.foe_meshes = {
     ant: load_foe_meshes("meshes/foes/ant*.vbuff", self.format),
     aphid: load_foe_meshes("meshes/foes/aphid*.vbuff", self.format),
