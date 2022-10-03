@@ -34,5 +34,6 @@ self.ApplyEffect = function(entity) {
         shot.attribute_fire = self.attribute_fire;
         shot.attribute_recursive = false;
         shot.attribute_explode = false;
+        audio_play_explosion();
     }
 };

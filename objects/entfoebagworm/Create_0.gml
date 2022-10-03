@@ -19,5 +19,5 @@ self.Die = function() {
     instance_destroy();
     part_particles_create(Particles.system, self.x, self.y, Particles.type_explosion, 100);
     
-    
+    audio_play_explosion();
 };

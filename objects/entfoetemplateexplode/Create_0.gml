@@ -14,5 +14,5 @@ self.Die = function() {
     }
     instance_destroy();
     
-    
+    audio_play_explosion();
 };

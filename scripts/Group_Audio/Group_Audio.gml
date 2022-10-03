@@ -21,3 +21,7 @@ function audio_play_foe_shoot() {
 function audio_play_foe_die() {
     audio_play_sound(se_foe_die, 100, false);
 }
+
+function audio_play_explosion() {
+    audio_play_sound(se_explosion, 100, false);
+}
