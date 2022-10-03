@@ -118,11 +118,13 @@ Pause = function() {
     time_source_pause(time_source_game);
     self.state = GameStates.PAUSED;
     self.pause_screen = "UI_Pause";
+    audio_play_game_pause();
 };
 
 Unpause = function() {
     self.state = GameStates.PLAYING;
     time_source_start(time_source_game);
+    audio_play_game_unpause();
 };
 
 RestartLevel = function() {

@@ -9,7 +9,7 @@
   "bitDepth": 1,
   "bitRate": 128,
   "soundFile": "se_game_unpause.wav",
-  "duration": 0.332177,
+  "duration": 0.225873,
   "volume": 1.0,
   "preload": false,
   "audioGroupId": {

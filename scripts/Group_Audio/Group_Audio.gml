@@ -25,3 +25,11 @@ function audio_play_foe_die() {
 function audio_play_explosion() {
     audio_play_sound(se_explosion, 100, false);
 }
+
+function audio_play_game_pause() {
+    audio_play_sound(se_game_pause, 100, false);
+}
+
+function audio_play_game_unpause() {
+    audio_play_sound(se_game_unpause, 100, false);
+}
