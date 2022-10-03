@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "PickupHealth",
   "spriteId": {
     "name": "spr_pickup_health",
     "path": "sprites/spr_pickup_health/spr_pickup_health.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -24,16 +28,14 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"sound_effect","path":"objects/Pickup/Pickup.yy",},"objectId":{"name":"Pickup","path":"objects/Pickup/Pickup.yy",},"value":"se_pickup_health",},
+  ],
   "parent": {
     "name": "Pickups",
     "path": "folders/Pickups.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "PickupHealth",
-  "tags": [],
-  "resourceType": "GMObject",
 }

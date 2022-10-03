@@ -94,6 +94,7 @@
     {"id":{"name":"EntFoeCentipedeSegment","path":"objects/EntFoeCentipedeSegment/EntFoeCentipedeSegment.yy",},"order":12,},
     {"id":{"name":"se_player_shoot","path":"sounds/se_player_shoot/se_player_shoot.yy",},"order":12,},
     {"id":{"name":"RoomLevel6","path":"rooms/RoomLevel6/RoomLevel6.yy",},"order":5,},
+    {"id":{"name":"se_pickup","path":"sounds/se_pickup/se_pickup.yy",},"order":17,},
     {"id":{"name":"UITextMouseover","path":"objects/UITextMouseover/UITextMouseover.yy",},"order":14,},
     {"id":{"name":"UIButtonSkillUpgrade","path":"objects/UIButtonSkillUpgrade/UIButtonSkillUpgrade.yy",},"order":13,},
     {"id":{"name":"se_pickup_health","path":"sounds/se_pickup_health/se_pickup_health.yy",},"order":10,},

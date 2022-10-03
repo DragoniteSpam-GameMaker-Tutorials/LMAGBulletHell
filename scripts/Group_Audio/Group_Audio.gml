@@ -45,3 +45,11 @@ function audio_play_menu_back() {
 function audio_play_menu_forward() {
     audio_play_sound(se_menu_forward, 100, false);
 }
+
+function audio_play_pickup() {
+    audio_play_sound(se_pickup, 100, false);
+}
+
+function audio_play_pickup_health() {
+    audio_play_sound(se_pickup_health, 100, false);
+}
