@@ -102,9 +102,10 @@ self.Invincible = function() {
 };
 
 self.OnDamage = function(bullet) {
-    instance_destroy(bullet);
-    
-    if (self.Invincible()) return;
+    if (self.Invincible()) {
+        instance_destroy(bullet);
+        return;
+    }
     
     self.health -= bullet.damage;
     self.CheckDeath();
@@ -115,6 +116,8 @@ self.OnDamage = function(bullet) {
     part_particles_create(Particles.system, self.x, self.y, Particles.type_player_hit, 20);
     
     self.Hitflash();
+    
+    instance_destroy(bullet);
 };
 
 self.OnEntityContact = function(bullet) {
