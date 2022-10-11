@@ -20,7 +20,7 @@ self.iframe_cooldown -= DT;
 self.shot_cooldown_sub = max(Upgrades.GetSubweaponChargeLevel(), self.shot_cooldown_sub - DT * Upgrades.GetSubweaponRechargeRate());
 
 if (mouse_check_button(mb_left)) {
-    if (self.CanShoot()) {
+    if (GameController.level.ready_to_go && self.CanShoot()) {
         self.Shoot();
     }
 }
