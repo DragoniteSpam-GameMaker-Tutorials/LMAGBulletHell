@@ -18,6 +18,7 @@ function Level(level_data) constructor {
     };
     
     self.game_timer = 0;
+    self.ready_to_go = false;
     
     self.wave_index = 0;
     self.waves = [];
@@ -43,6 +44,7 @@ function Level(level_data) constructor {
     
     static Update = function() {
         if (!is_playing()) return;
+        if (!self.ready_to_go) return;
         
         self.stats.score_multiplier_timer -= DT;
         self.wave_timer -= DT;
@@ -67,6 +69,10 @@ function Level(level_data) constructor {
                 self.SendNextWave();
             }
         }
+    };
+    
+    static ScrollBackground = function() {
+        if (!is_playing()) return;
         
         for (var i = array_length(self.level_objects) - 1; i >= 0; i--) {
             var object = self.level_objects[i];
