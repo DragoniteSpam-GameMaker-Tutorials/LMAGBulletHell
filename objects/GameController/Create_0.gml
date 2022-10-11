@@ -121,10 +121,18 @@ Pause = function() {
     audio_play_game_pause();
 };
 
+self.countdown_time_source = -1;
+
 Unpause = function() {
-    self.state = GameStates.PLAYING;
-    time_source_start(time_source_game);
-    audio_play_game_unpause();
+    self.pause_screen = "";
+    self.countdown_time_source = time_source_create(time_source_global, 3, time_source_units_seconds, function() {
+        self.state = GameStates.PLAYING;
+        time_source_start(time_source_game);
+        audio_play_game_unpause();
+        time_source_destroy(self.countdown_time_source);
+        self.countdown_time_source = -1;
+    });
+    time_source_start(self.countdown_time_source);
 };
 
 RestartLevel = function() {
