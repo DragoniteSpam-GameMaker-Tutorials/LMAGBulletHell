@@ -50,6 +50,7 @@ self.CheckDeath = function() {
 };
 
 self.Die = function() {
+    /*
     var odds = random(100);
     for (var i = 0, n = array_length(self.drops); i < n; i++) {
         if (odds < self.drops[i].odds) {
@@ -58,6 +59,7 @@ self.Die = function() {
         }
         odds -= self.drops[i].odds;
     }
+    */
     GameController.level.AddScore(self.point_value);
     if (!EntPlayer.alive && !EntPlayer.officially_dead) {
         EntPlayer.alive = true;
