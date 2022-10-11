@@ -5,6 +5,9 @@
 
 #macro DEFAULT_EFFECT_DURATION          2
 
+#macro DEFAULT_HEALTH                   infinity
+#macro Release:DEFAULT_HEALTH           3
+
 #macro HITFLASH_DURATION                0.25
 #macro HITFLASH_SCALE                   1.25
 #macro HITFLASH_REDUCTION_AMOUNT        6
