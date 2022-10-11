@@ -115,6 +115,8 @@ enum GameStates {
 
 Pause = function() {
     if (self.end_of_level_screen != "") return;
+    if (self.countdown_time_source != -1) time_source_destroy(self.countdown_time_source);
+    self.countdown_time_source = -1;
     time_source_pause(time_source_game);
     self.state = GameStates.PAUSED;
     self.pause_screen = "UI_Pause";
@@ -124,6 +126,7 @@ Pause = function() {
 self.countdown_time_source = -1;
 
 Unpause = function() {
+    if (self.countdown_time_source != -1) return;
     self.pause_screen = "";
     self.countdown_time_source = time_source_create(time_source_global, 3, time_source_units_seconds, function() {
         self.state = GameStates.PLAYING;
@@ -131,6 +134,7 @@ Unpause = function() {
         audio_play_game_unpause();
         time_source_destroy(self.countdown_time_source);
         self.countdown_time_source = -1;
+        self.level.ready_to_go = true;
     });
     time_source_start(self.countdown_time_source);
 };
