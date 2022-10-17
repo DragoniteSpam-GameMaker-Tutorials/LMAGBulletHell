@@ -26,6 +26,10 @@ if (self.state != GameStates.TITLE) {
     }
 }
 
+surface_reset_target();
+camera_apply(default_camera);
+draw_clear_alpha(c_black, 0);
+
 shader_reset();
 gpu_set_ztestenable(false);
 gpu_set_zwriteenable(false);
@@ -35,7 +39,3 @@ with (Bullet) event_perform(ev_draw, 0);
 gpu_set_ztestenable(true);
 gpu_set_zwriteenable(true);
 shader_set(shd_world);
-
-surface_reset_target();
-camera_apply(default_camera);
-draw_clear_alpha(c_black, 0);
