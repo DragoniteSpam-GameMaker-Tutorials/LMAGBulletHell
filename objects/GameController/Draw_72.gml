@@ -4,9 +4,10 @@ gpu_set_ztestenable(true);
 gpu_set_zwriteenable(true);
 shader_set(shd_world);
 
-if (!surface_exists(self.background_surface)) {
-    self.background_surface = surface_create(1366, 768);
-}
+var back_width = Settings.video.scale_value * Settings.video.size_value.x;
+var back_height = Settings.video.scale_value * Settings.video.size_value.y;
+
+self.background_surface = surface_validate(self.background_surface, back_width, back_height);
 
 surface_set_target(self.background_surface);
 
