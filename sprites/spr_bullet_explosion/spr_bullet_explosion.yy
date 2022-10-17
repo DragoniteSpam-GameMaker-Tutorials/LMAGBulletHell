@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Programmer art and stuff",
-    "path": "folders/Programmer art and stuff.yy",
+    "name": "Bullets",
+    "path": "folders/Bullets.yy",
   },
 }

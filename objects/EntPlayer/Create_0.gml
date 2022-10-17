@@ -56,6 +56,7 @@ self.CanShoot = function() {
 self.Shoot = function() {
     var shot = instance_create_depth(self.x, self.y, self.depth + 1, Bullet);
     shot.mask_index = spr_collision_bullet_player;
+    shot.sprite_index = spr_bullet_player;
     var shot_velocity = DEFAULT_SHOT_VELOCITY;
     var shot_angle = 90 + random_range(-self.bullet_spread / 2, self.bullet_spread / 2);
     shot.xspeed =  shot_velocity * dcos(shot_angle);
