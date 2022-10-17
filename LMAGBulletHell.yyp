@@ -28,6 +28,7 @@
     {"id":{"name":"RoomLevel1","path":"rooms/RoomLevel1/RoomLevel1.yy",},"order":0,},
     {"id":{"name":"EntFoeScarab","path":"objects/EntFoeScarab/EntFoeScarab.yy",},"order":5,},
     {"id":{"name":"EntFoeAphid","path":"objects/EntFoeAphid/EntFoeAphid.yy",},"order":3,},
+    {"id":{"name":"shd_outline","path":"shaders/shd_outline/shd_outline.yy",},"order":20,},
     {"id":{"name":"spr_foe_hornet","path":"sprites/spr_foe_hornet/spr_foe_hornet.yy",},"order":23,},
     {"id":{"name":"Group_Level","path":"scripts/Group_Level/Group_Level.yy",},"order":5,},
     {"id":{"name":"spr_pickup_recursive_bullet","path":"sprites/spr_pickup_recursive_bullet/spr_pickup_recursive_bullet.yy",},"order":13,},
