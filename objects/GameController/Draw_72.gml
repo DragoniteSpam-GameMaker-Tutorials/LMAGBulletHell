@@ -4,10 +4,10 @@ gpu_set_ztestenable(true);
 gpu_set_zwriteenable(true);
 shader_set(shd_world);
 
-var fore_width = Settings.video.size_value.x;
+var fore_width = Settings.video.size_value.x - 274;
 var fore_height = Settings.video.size_value.y;
 
-var back_width = Settings.video.scale_value * Settings.video.size_value.x;
+var back_width = Settings.video.scale_value * Settings.video.size_value.x - 274;
 var back_height = Settings.video.scale_value * Settings.video.size_value.y;
 
 self.background_surface = surface_validate(self.background_surface, back_width, back_height);

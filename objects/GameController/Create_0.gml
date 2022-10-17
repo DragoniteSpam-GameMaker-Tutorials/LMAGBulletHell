@@ -8,7 +8,7 @@ self.pseudo_window_height = window_get_height();
 self.background_surface = surface_create(1366, 768);
 self.background_camera = camera_create();
 camera_set_view_pos(self.background_camera, 0, 0);
-camera_set_view_size(self.background_camera, 1366, 768);
+camera_set_view_size(self.background_camera, 1366 - 274, 768);
 
 vertex_format_begin();
 vertex_format_add_position_3d();

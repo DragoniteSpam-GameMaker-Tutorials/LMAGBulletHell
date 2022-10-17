@@ -92,6 +92,7 @@
     {"id":{"name":"EntPlayer","path":"objects/EntPlayer/EntPlayer.yy",},"order":2,},
     {"id":{"name":"spr_pickup_explosive_bullet","path":"sprites/spr_pickup_explosive_bullet/spr_pickup_explosive_bullet.yy",},"order":8,},
     {"id":{"name":"se_unlock_upgrade","path":"sounds/se_unlock_upgrade/se_unlock_upgrade.yy",},"order":15,},
+    {"id":{"name":"shd_cheap_scale","path":"shaders/shd_cheap_scale/shd_cheap_scale.yy",},"order":21,},
     {"id":{"name":"EntFoeGrasshopper","path":"objects/EntFoeGrasshopper/EntFoeGrasshopper.yy",},"order":6,},
     {"id":{"name":"spr_foe_explode","path":"sprites/spr_foe_explode/spr_foe_explode.yy",},"order":20,},
     {"id":{"name":"EntFoeCentipedeSegment","path":"objects/EntFoeCentipedeSegment/EntFoeCentipedeSegment.yy",},"order":12,},
