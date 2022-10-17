@@ -43,3 +43,15 @@ function load_vbuff(filename, format) {
 function foe_count() {
     return instance_number(EntFoeTemplate) - instance_number(EntFoeCentipedeSegment);
 };
+
+function surface_validate(surface, width, height) {
+    if (surface_exists(surface)) {
+        if (surface_get_width(surface) == width && surface_get_height(surface) == height) {
+            return surface;
+        }
+        
+        surface_free(surface);
+    }
+    
+    return surface_create(width, height);
+}
