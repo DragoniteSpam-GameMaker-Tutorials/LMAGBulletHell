@@ -10,8 +10,14 @@ if (!self.alive) {
     return;
 }
 
-var distance_to_target = point_distance(self.x, self.y, window_mouse_get_x(), window_mouse_get_y());
-var direction_to_target = point_direction(self.x, self.y, window_mouse_get_x(), window_mouse_get_y());
+var scale_x = (window_get_width() - 274) / (1366 - 274);
+var scale_y = window_get_height() / 768;
+
+var mx = window_mouse_get_x() / scale_x;
+var my = window_mouse_get_y() / scale_y;
+
+var distance_to_target = point_distance(self.x, self.y, mx, my);
+var direction_to_target = point_direction(self.x, self.y, mx, my);
 var distance_to_move = min(self.movement_speed * DT, distance_to_target);
 self.x += distance_to_move * dcos(direction_to_target);
 self.y -= distance_to_move * dsin(direction_to_target);
