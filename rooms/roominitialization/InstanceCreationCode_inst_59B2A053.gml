@@ -1,3 +1,3 @@
 GetText = function() {
-    self.text = L("Scale: %0", Settings.video.scale_value);
+    self.text = L("Scale: %0x", string_format(Settings.video.scale_value, 1, 2));
 };

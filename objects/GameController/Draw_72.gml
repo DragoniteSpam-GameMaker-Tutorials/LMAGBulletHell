@@ -9,7 +9,10 @@ var back_height = Settings.video.scale_value * Settings.video.size_value.y;
 
 self.background_surface = surface_validate(self.background_surface, back_width, back_height);
 
+var default_camera = camera_get_active();
+
 surface_set_target(self.background_surface);
+camera_apply(self.background_camera);
 
 if (self.state != GameStates.TITLE) {
     draw_clear(self.level.level_data.color);
@@ -34,5 +37,5 @@ gpu_set_zwriteenable(true);
 shader_set(shd_world);
 
 surface_reset_target();
-
+camera_apply(default_camera);
 draw_clear_alpha(c_black, 0);
