@@ -11,3 +11,5 @@ dir -= self.homing_amount * DT * sign(diff);
 
 self.xspeed =  mspd * dcos(dir);
 self.yspeed = -mspd * dsin(dir);
+
+self.image_angle = dir;
