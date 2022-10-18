@@ -25,9 +25,9 @@ function Level(level_data) constructor {
     self.wave_timer = WAVE_DURATION;
     
     self.level_data = level_data;
-    self.level_objects = array_create(LEVEL_BACKGROUND_OBJECTS);
+    self.level_objects = array_create(LEVEL_BACKGROUND_OBJECTS * level_data.object_density);
     
-    for (var i = 0; i < LEVEL_BACKGROUND_OBJECTS; i++) {
+    for (var i = 0, n = array_length(self.level_objects); i < n; i++) {
         self.level_objects[i] = {
             x: random(room_width),
             y: random_range(-64, room_height + 64),
@@ -107,9 +107,10 @@ function Level(level_data) constructor {
     };
 }
 
-function LevelMetadata(name, id, mesh_array, background_color) constructor {
+function LevelMetadata(name, id, mesh_array, background_color, object_density = 1) constructor {
     self.name = name;
     self.id = id;
     self.meshes = mesh_array;
     self.color = background_color;
+    self.object_density = object_density;
 }
