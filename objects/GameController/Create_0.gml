@@ -41,18 +41,22 @@ self.player_meshes = {
 
 var meshes_woodlands = load_level_meshes("meshes/woodlands/", self.format);
 var meshes_cactuslands = load_level_meshes("meshes/cactusland/", self.format);
+var meshes_flowerland = load_level_meshes("meshes/flowerland/", self.format);
+
 self.level_types = { };
 self.level_types[$ string(RoomLevel1)] = new LevelMetadata("Level 1: Cannon Fodder", 0, meshes_woodlands, #004000);
 self.level_types[$ string(RoomLevel2)] = new LevelMetadata("Level 2: Bagworm Bombs", 1, meshes_woodlands, #004000);
 self.level_types[$ string(RoomLevel3)] = new LevelMetadata("Level 3: Hornet's Nest", 2, meshes_woodlands, #004000);
-self.level_types[$ string(RoomLevel4)] = new LevelMetadata("Level 4: Smidge Annoying", 3, meshes_woodlands, #004000);
-self.level_types[$ string(RoomLevel5)] = new LevelMetadata("Level 5: Grasshoppers", 4, meshes_woodlands, #004000);
-self.level_types[$ string(RoomLevel6)] = new LevelMetadata("Level 6: Beehive Bonanza", 5, meshes_woodlands, #004000);
+
+self.level_types[$ string(RoomLevel4)] = new LevelMetadata("Level 4: Smidge Annoying", 3, meshes_flowerland, #004800, 1.25);
+self.level_types[$ string(RoomLevel5)] = new LevelMetadata("Level 5: Grasshoppers", 4, meshes_flowerland, #004800, 1.25);
+self.level_types[$ string(RoomLevel6)] = new LevelMetadata("Level 6: Beehive Bonanza", 5, meshes_flowerland, #004800, 1.25);
+
 self.level_types[$ string(RoomLevel7)] = new LevelMetadata("Level 7: Centipedes", 6, meshes_woodlands, #004000);
 self.level_types[$ string(RoomLevel8)] = new LevelMetadata("Level 8: Beetle Juice", 7, meshes_woodlands, #004000);
 
-self.level_types[$ string(RoomLevel9)] = new LevelMetadata("Level 9: Cockroach Chaos", 8, meshes_cactuslands, #ffd9b3, 0.4);
-self.level_types[$ string(RoomLevel10)] = new LevelMetadata("Level 10: Scorpion Rush", 9, meshes_cactuslands, #ffd9b3, 0.4);
+self.level_types[$ string(RoomLevel9)] = new LevelMetadata("Level 9: Cockroach Chaos", 8, meshes_cactuslands, #ffd9b3, 0.3);
+self.level_types[$ string(RoomLevel10)] = new LevelMetadata("Level 10: Scorpion Rush", 9, meshes_cactuslands, #ffd9b3, 0.3);
 
 self.level_types[$ string(RoomLevel11)] = new LevelMetadata("Level 11: The Infestation", 10, meshes_woodlands, #004000);
 self.level_types[$ string(RoomLevel12)] = new LevelMetadata("Level 12: Hornet Queen's\nRevenge", 11, meshes_woodlands, #004000);
