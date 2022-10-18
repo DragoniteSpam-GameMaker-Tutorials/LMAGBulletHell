@@ -79,7 +79,7 @@ function Level(level_data) constructor {
             object.y += LEVEL_SCROLL_SPEED * DT;
             
             if (object.y > room_height + 128) {
-                object.x = random(room_width);
+                object.x = random(room_width + 274);
                 object.y -= room_height + 192;
                 object.mesh = array_get_random_element(self.level_data.meshes);
             }
