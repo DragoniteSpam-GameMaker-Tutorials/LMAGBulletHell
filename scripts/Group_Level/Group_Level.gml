@@ -29,7 +29,7 @@ function Level(level_data) constructor {
     
     for (var i = 0, n = array_length(self.level_objects); i < n; i++) {
         self.level_objects[i] = {
-            x: random(room_width),
+            x: random(room_width + 274),
             y: random_range(-64, room_height + 64),
             mesh: array_get_random_element(level_data.meshes),
             scale: random_range(1.8, 2.2)
@@ -71,8 +71,8 @@ function Level(level_data) constructor {
         }
     };
     
-    static ScrollBackground = function() {
-        if (!is_playing()) return;
+    static ScrollBackground = function(always = false) {
+        if (!always && !is_playing()) return;
         
         for (var i = array_length(self.level_objects) - 1; i >= 0; i--) {
             var object = self.level_objects[i];

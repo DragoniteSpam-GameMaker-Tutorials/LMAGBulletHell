@@ -1,4 +1,4 @@
-draw_surface_stretched(self.background_surface, 0, 0, window_get_width() - 274, window_get_height());
+draw_surface_stretched(self.background_surface, 0, 0, window_get_width(), window_get_height());
 
 shader_set(shd_cheap_scale);
 var scale_x = (window_get_width() - 274) / (1366 - 274);

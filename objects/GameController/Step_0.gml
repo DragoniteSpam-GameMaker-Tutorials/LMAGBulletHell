@@ -9,6 +9,10 @@ if (keyboard_check_pressed(vk_escape)) {
     }
 }
 
+if (self.state == GameStates.TITLE) {
+    self.level.ScrollBackground(true);
+}
+
 if (self.state == GameStates.PLAYING) {
     self.level.ScrollBackground();
     self.level.Update();

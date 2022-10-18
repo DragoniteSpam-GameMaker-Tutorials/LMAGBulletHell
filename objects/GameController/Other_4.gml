@@ -1,4 +1,6 @@
-if (self.state != GameStates.TITLE) {
+if (self.state == GameStates.TITLE) {
+    self.level = new Level(self.level_title);
+} else {
     var level_data = self.level_types[$ string(room)];
     self.level = new Level(level_data);
     self.end_of_level_screen = "";

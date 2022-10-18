@@ -12,7 +12,7 @@ if (window_get_fullscreen()) {
     var fore_height = Settings.video.size_value.y;
 }
 
-var back_width = Settings.video.scale_value * Settings.video.size_value.x - 274;
+var back_width = Settings.video.scale_value * Settings.video.size_value.x;
 var back_height = Settings.video.scale_value * Settings.video.size_value.y;
 
 self.background_surface = surface_validate(self.background_surface, back_width, back_height);
@@ -26,7 +26,7 @@ var default_camera = camera_get_active();
 surface_set_target(self.background_surface);
 camera_apply(self.background_camera);
 
-if (self.state != GameStates.TITLE) {
+if (self.level) {
     draw_clear(self.level.level_data.color);
     for (var i = 0, n = array_length(self.level.level_objects); i < n; i++) {
         var object = self.level.level_objects[i];

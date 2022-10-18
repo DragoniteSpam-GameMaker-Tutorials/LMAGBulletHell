@@ -8,7 +8,7 @@ self.pseudo_window_height = window_get_height();
 self.background_surface = surface_create(1366, 768);
 self.background_camera = camera_create();
 camera_set_view_pos(self.background_camera, 0, 0);
-camera_set_view_size(self.background_camera, 1366 - 274, 768);
+camera_set_view_size(self.background_camera, 1366, 768);
 
 vertex_format_begin();
 vertex_format_add_position_3d();
@@ -48,6 +48,8 @@ var color_woods = #004000;
 var color_flowers = #004800;
 var color_cactus = #ffd9b3;
 var color_swamp = #806000;
+
+self.level_title = new LevelMetadata("TITLE", -1, meshes_flowerland, color_flowers);
 
 self.level_types = { };
 self.level_types[$ string(RoomLevel1)] = new LevelMetadata("Level 1: Cannon Fodder", 0, meshes_woodlands, color_woods);
