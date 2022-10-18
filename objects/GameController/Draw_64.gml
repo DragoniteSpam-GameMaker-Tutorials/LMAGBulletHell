@@ -24,7 +24,7 @@ if (self.countdown_time_source != -1) {
     draw_clear_alpha(c_black, 0);
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
-    draw_set_colour(c_black);
+    draw_set_colour(c_white);
     draw_text(tsw / 2, tsh / 2, ceil(time_source_get_time_remaining(self.countdown_time_source)));
     draw_set_halign(halign);
     draw_set_valign(valign);
@@ -36,6 +36,7 @@ if (self.countdown_time_source != -1) {
     var sy = surface_get_height(application_surface) / 2 - tsh / 2;
     shader_set(shd_outline);
     shader_set_uniform_f(shader_get_uniform(shd_outline, "texSize"), tsw, tsh);
+    shader_set_uniform_f(shader_get_uniform(shd_outline, "outlineColor"), 0, 0, 0);
     draw_surface(text_surface, sx, sy);
     shader_reset();
     

@@ -9,6 +9,7 @@ shader_reset();
 
 // draw the foreground outline
 shader_set(shd_outline);
+    shader_set_uniform_f(shader_get_uniform(shd_outline, "outlineColor"), 1, 1, 1);
 shader_set_uniform_f(shader_get_uniform(shd_outline, "texSize"), surface_get_width(application_surface), surface_get_height(application_surface));
 draw_surface_stretched(application_surface, 0, 0, window_get_width() - 274, window_get_height());
 shader_reset();

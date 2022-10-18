@@ -2,6 +2,8 @@ varying vec2 v_vTexcoord;
 
 uniform vec2 texSize;
 
+uniform vec3 outlineColor;
+
 void main()
 {
     mat3 sobelx = mat3(
@@ -30,5 +32,5 @@ void main()
     float final = pow(sqrt(x * x + y * y) / 2.0, 2.);
     //final = 1.0 - clamp(final, 0.0, 1.0);
     
-    gl_FragColor = vec4(1, 1, 1, final);
+    gl_FragColor = vec4(outlineColor, final);
 }
