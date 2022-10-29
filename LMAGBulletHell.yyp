@@ -88,6 +88,7 @@
     {"id":{"name":"EntFoeTemplateExplode","path":"objects/EntFoeTemplateExplode/EntFoeTemplateExplode.yy",},"order":4,},
     {"id":{"name":"spr_collision_bullet_player","path":"sprites/spr_collision_bullet_player/spr_collision_bullet_player.yy",},"order":5,},
     {"id":{"name":"EntFoeAnt","path":"objects/EntFoeAnt/EntFoeAnt.yy",},"order":2,},
+    {"id":{"name":"spr_bullet_friendly_fire","path":"sprites/spr_bullet_friendly_fire/spr_bullet_friendly_fire.yy",},"order":11,},
     {"id":{"name":"EntFoeTemplateSpiral","path":"objects/EntFoeTemplateSpiral/EntFoeTemplateSpiral.yy",},"order":6,},
     {"id":{"name":"EntPlayer","path":"objects/EntPlayer/EntPlayer.yy",},"order":2,},
     {"id":{"name":"spr_pickup_explosive_bullet","path":"sprites/spr_pickup_explosive_bullet/spr_pickup_explosive_bullet.yy",},"order":8,},
