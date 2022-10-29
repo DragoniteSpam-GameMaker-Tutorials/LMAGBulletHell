@@ -9,7 +9,7 @@ self.Shoot = function() {
 };
 
 self.can_track_player = false;
-call_later(1, time_source_units_seconds, function() {
+self.time_source_track_player = time_source_create(time_source_game, 1, time_source_units_seconds, function() {
     self.can_track_player = true;
 });
 

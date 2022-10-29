@@ -7,3 +7,5 @@ while (instance_exists(next)) {
     instance_destroy(next);
     next = pending_next;
 }
+
+time_source_destroy(self.time_source_track_player);
