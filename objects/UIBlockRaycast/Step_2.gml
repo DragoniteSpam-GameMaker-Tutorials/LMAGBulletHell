@@ -24,3 +24,9 @@ switch (anchor_vertical) {
         y = offset_y + (hh / 2);
         break;
 }
+
+// if you need a horizontal fill for whatever reason, just do the equivalent
+
+if (self.adjust_fill_vertical) {
+    self.image_yscale = hh / sprite_get_height(self.sprite_index);
+}
