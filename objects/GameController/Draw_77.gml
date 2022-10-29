@@ -1,5 +1,7 @@
 draw_surface_stretched(self.background_surface, 0, 0, window_get_width(), window_get_height());
 
+gpu_set_texfilter(true);
+
 shader_set(shd_cheap_scale);
 var scale_x = (window_get_width() - 274) / (1366 - 274);
 var scale_y = window_get_height() / 768;
@@ -13,6 +15,8 @@ shader_set(shd_outline);
 shader_set_uniform_f(shader_get_uniform(shd_outline, "texSize"), surface_get_width(application_surface), surface_get_height(application_surface));
 draw_surface_stretched(application_surface, 0, 0, window_get_width() - 274, window_get_height());
 shader_reset();
+
+gpu_set_texfilter(false);
 
 // draw the filled part of the foreground
 draw_surface_stretched(application_surface, 0, 0, window_get_width() - 274, window_get_height());
