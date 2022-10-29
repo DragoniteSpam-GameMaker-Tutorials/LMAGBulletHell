@@ -45,18 +45,21 @@ self.UpdateHPStage = function() {
     var last_stage = self.hp_stage;
     if (f < 0.25) {
         self.hp_stage = 3;
+        self.hp = self.health_max / 4;
         if (last_stage != self.hp_stage) {
             self.OnHPStageChange();
             burst_particles();
         }
     } else if (f < 0.50) {
         self.hp_stage = 2;
+        self.hp = self.health_max / 2;
         if (last_stage != self.hp_stage) {
             self.OnHPStageChange();
             burst_particles();
         }
     } else if (f < 0.75) {
         self.hp_stage = 1;
+        self.hp = 3 * self.health_max / 4;
         if (last_stage != self.hp_stage) {
             self.OnHPStageChange();
             burst_particles();
