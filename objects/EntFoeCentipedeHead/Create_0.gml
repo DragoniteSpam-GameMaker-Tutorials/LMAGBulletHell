@@ -55,6 +55,4 @@ self.OnDamage = function(bullet) {
     for (var i = array_length(to_destroy) - 1; i >= 0; i--) {
         instance_destroy(to_destroy[i]);
     }
-    
-    audio_play_foe_hit();
 };
