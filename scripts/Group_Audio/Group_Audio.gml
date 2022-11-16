@@ -57,3 +57,11 @@ function audio_play_pickup_health() {
 function audio_play_win() {
     audio_play_sound(se_win, 100, false);
 }
+
+global.bgm_currently_playing = -1;
+
+function audio_play_bgm(audio) {
+	if (global.bgm_currently_playing != -1)
+		audio_stop_sound(global.bgm_currently_playing);
+	global.bgm_currently_playing = audio_play_sound(audio, 150, true, Settings.audio.bgm);
+}
