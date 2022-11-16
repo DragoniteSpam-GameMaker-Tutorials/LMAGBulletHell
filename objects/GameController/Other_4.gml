@@ -17,3 +17,5 @@ if (self.state == GameStates.TITLE) {
 if (self.state == GameStates.TITLE) {
     part_system_clear(Particles.system);
 }
+
+audio_play_bgm(self.level.level_data.bgm_audio);
