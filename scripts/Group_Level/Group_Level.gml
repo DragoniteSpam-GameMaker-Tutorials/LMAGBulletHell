@@ -120,4 +120,11 @@ function LevelMetadata(name, id, mesh_array, background_color, object_density = 
 		self.bgm_audio = audio;
 		return self;
 	};
+	
+	self.star_score_requirement = 1000;
+	
+	self.SetStarScoreRequirement = function(value) {
+		self.star_score_requirement = value;
+		return self;
+	};
 }
