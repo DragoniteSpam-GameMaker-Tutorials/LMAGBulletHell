@@ -202,6 +202,7 @@ ShowWinScreen = function() {
     
     var clear_without_damage = self.level.stats.damage_taken == 0;
     var clear_under_time = self.level.game_timer <= 105;
+	var clear_with_score = self.level.stats.score >= self.level.level_data.star_score_requirement;
     
     if (!clear_data.clear_without_damage && clear_without_damage) {
         clear_data.clear_without_damage = true;
@@ -210,6 +211,11 @@ ShowWinScreen = function() {
     }
     if (!clear_data.clear_under_time && clear_under_time) {
         clear_data.clear_under_time = true;
+        self.active_save_data.currency++;
+        self.active_save_data.total_currency++;
+    }
+    if (!clear_data.clear_with_score && clear_with_score) {
+        clear_data.clear_with_score = true;
         self.active_save_data.currency++;
         self.active_save_data.total_currency++;
     }

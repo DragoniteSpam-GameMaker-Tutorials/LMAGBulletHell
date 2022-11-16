@@ -53,12 +53,14 @@ function PlayerSaveData() constructor {
         self.clear = false;
         self.clear_without_damage = false;
         self.clear_under_time = false;
+		self.clear_with_score = false;
         
         static Load = function(source) {
             if (is_real(source[$ "high_score"])) self.high_score = source.high_score;
             if (is_real(source[$ "clear"])) self.clear = source.clear;
             if (is_real(source[$ "clear_without_damage"])) self.clear_without_damage = source.clear_without_damage;
             if (is_real(source[$ "clear_under_time"])) self.clear_under_time = source.clear_under_time;
+			if (is_real(source[$ "clear_with_score"])) self.clear_with_score = source.clear_with_score;
         };
     };
 }
