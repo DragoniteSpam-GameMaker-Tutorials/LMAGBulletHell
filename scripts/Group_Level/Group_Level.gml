@@ -1,7 +1,7 @@
 #macro WAVE_DURATION                            60
-#macro SCORE_MULTIPLIER_REDUCTION               (self.stats.score_multiplier - DT / 4)
+#macro SCORE_MULTIPLIER_REDUCTION               (self.stats.score_multiplier - DT / 40)
 #macro SCORE_MULTIPLIER_INCREASE                0.05
-#macro SCORE_MULTIPLIER_TIMER_DURATION          2
+#macro SCORE_MULTIPLIER_TIMER_DURATION          3
 #macro LEVEL_SCROLL_SPEED                       150
 #macro LEVEL_BACKGROUND_OBJECTS                 400
 
