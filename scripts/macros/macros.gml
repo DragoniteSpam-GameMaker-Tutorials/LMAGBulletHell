@@ -16,6 +16,7 @@
 #macro DEFAULT_BOSS_STAGE_COOLDOWN      5                   // seconds
 
 #macro SAVE_FILE_NAME                   "save.json"
+#macro SETTINGS_FILE_NAME				"settings.json"
 
 #macro DEBUG                            true
 #macro Release:DEBUG                    false

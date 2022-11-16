@@ -58,6 +58,27 @@ Settings = {
     ],
     
     language_index: 0,
+	
+    Save: function() {
+        var json = {
+            audio: self.audio,
+            language_index: self.language_index,
+			
+			video: {
+				frame_rate_index: self.video.frame_rate_index,
+				frame_rate_value: self.video.frame_rate_value,
+				scale_index: self.video.scale_index,
+				scale_value: self.video.scale_value,
+				size_index: self.video.size_index,
+				size_value: self.video.size_value,
+				fullscreen: window_get_fullscreen()
+			},
+        };
+        var save_buffer = buffer_create(100, buffer_grow, 1);
+        buffer_write(save_buffer, buffer_text, json_stringify(json));
+        buffer_save_ext(save_buffer, SETTINGS_FILE_NAME, 0, buffer_tell(save_buffer));
+        buffer_delete(save_buffer);
+    }
 };
 
 #macro TEXT_FILE "text.csv"

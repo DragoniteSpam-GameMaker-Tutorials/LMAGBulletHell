@@ -3,4 +3,5 @@ OnClick = function() {
         ((Settings.audio.bgm * 100) + 10) / 100
     );
     Settings.audio.ApplyVolume();
+	Settings.Save();
 };
