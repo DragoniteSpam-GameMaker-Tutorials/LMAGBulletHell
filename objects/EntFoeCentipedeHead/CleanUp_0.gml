@@ -8,4 +8,6 @@ while (instance_exists(next)) {
     next = pending_next;
 }
 
-time_source_destroy(self.time_source_track_player);
+if (time_source_exists(self.time_source_track_player)) {
+	time_source_destroy(self.time_source_track_player);
+}

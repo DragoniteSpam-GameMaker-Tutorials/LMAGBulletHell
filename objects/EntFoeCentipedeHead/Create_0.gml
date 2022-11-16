@@ -45,7 +45,7 @@ self.OnDamage = function(bullet) {
     
     var to_destroy = [];
     
-    while (segment.next) {
+    while (instance_exists(segment.next)) {
         array_push(to_destroy, segment.next);
         var next = segment.next;
         segment.next = undefined;
