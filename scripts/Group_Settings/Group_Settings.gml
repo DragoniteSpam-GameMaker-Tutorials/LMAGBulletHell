@@ -11,6 +11,7 @@ Settings = {
 			if (global.bgm_currently_playing != -1) {
 				audio_sound_gain(global.bgm_currently_playing, self.bgm, 0);
 			}
+			audio_sound_gain(se_ambient, self.se, 0);
         },
     },
     
