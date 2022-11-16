@@ -258,4 +258,6 @@ GoToTitle = function() {
     room_goto(RoomTitle);
 };
 
+Settings.Load();
+
 room_goto(RoomTitle);

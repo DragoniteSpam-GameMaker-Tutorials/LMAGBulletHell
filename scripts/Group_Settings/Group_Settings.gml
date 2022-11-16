@@ -78,7 +78,60 @@ Settings = {
         buffer_write(save_buffer, buffer_text, json_stringify(json));
         buffer_save_ext(save_buffer, SETTINGS_FILE_NAME, 0, buffer_tell(save_buffer));
         buffer_delete(save_buffer);
-    }
+    },
+	
+	Load: function() {
+		try {
+			var load_buffer = buffer_load(SETTINGS_FILE_NAME);
+			var json = json_parse(buffer_read(load_buffer, buffer_text));
+			
+			try {
+				self.audio.master = clamp(string(json.audio.master), 0, 1);
+			} catch (e) { self.audio.master = 1; }
+			try {
+				self.audio.bgm = clamp(string(json.audio.bgm), 0, 1);
+			} catch (e) { self.audio.bgm = 1; }
+			try {
+				self.audio.se = clamp(string(json.audio.se), 0, 1);
+			} catch (e) { self.audio.se = 1; }
+			
+			try {
+				self.video.frame_rate_index = clamp(string(json.video.frame_rate_index), 0, array_length(self.video.default_frame_rates) - 1);
+			} catch (e) { }
+			try {
+				self.video.frame_rate_value = clamp(string(json.video.frame_rate_value), 1, 10000);
+			} catch (e) { }
+			try {
+				self.video.scale_index = clamp(string(json.video.frame_rate_index), 0, array_length(self.video.default_scales) - 1);
+			} catch (e) { }
+			try {
+				self.video.scale_value = clamp(string(json.video.scale_value), 0.05, 10);
+			} catch (e) { }
+			try {
+				self.video.size_index = clamp(string(json.video.size_index), 0, array_length(self.video.default_screen_sizes) - 1);
+			} catch (e) { }
+			try {
+				self.video.size_value.x = clamp(string(json.video.size_value.x), 0.05, 10);
+			} catch (e) { }
+			try {
+				self.video.size_value.y = clamp(string(json.video.size_value.y), 0.05, 10);
+			} catch (e) { }
+			try {
+				window_set_fullscreen(bool(json.video.fullscreen));
+			} catch (e) { }
+			
+			try {
+				self.language_index = clamp(string(json.language_index), 0, array_length(self.languages) - 1);
+			} catch (e) { }
+			
+			buffer_delete(load_buffer);
+		} catch (e) {
+		}
+		
+		self.video.ApplyFPS();
+		self.video.ApplyScreenSize();
+		self.audio.ApplyVolume();
+	},
 };
 
 #macro TEXT_FILE "text.csv"
