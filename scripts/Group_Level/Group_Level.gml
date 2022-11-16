@@ -113,4 +113,11 @@ function LevelMetadata(name, id, mesh_array, background_color, object_density = 
     self.meshes = mesh_array;
     self.color = background_color;
     self.object_density = object_density;
+	
+	self.bgm_audio = -1;
+	
+	self.SetBGM = function(audio) {
+		self.bgm_audio = audio;
+		return self;
+	};
 }
