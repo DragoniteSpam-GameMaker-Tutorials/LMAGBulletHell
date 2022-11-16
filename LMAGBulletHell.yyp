@@ -392,6 +392,6 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"stump_round.vbuff","CopyToMask":-1,"filePath":"datafiles/meshes/swampland",},
   ],
   "MetaData": {
-    "IDEVersion": "2022.9.1.51",
+    "IDEVersion": "2022.0.0.19",
   },
 }
