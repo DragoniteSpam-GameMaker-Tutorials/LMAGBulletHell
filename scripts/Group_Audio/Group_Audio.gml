@@ -61,7 +61,12 @@ function audio_play_win() {
 global.bgm_currently_playing = -1;
 
 function audio_play_bgm(audio) {
-	if (global.bgm_currently_playing != -1)
-		audio_stop_sound(global.bgm_currently_playing);
+	if (global.bgm_currently_playing != -1) {
+		var fadeout_time = 1000;
+		audio_sound_gain(global.bgm_currently_playing, 0, fadeout_time);
+		call_later(fadeout_time, time_source_units_seconds, method({ snd: global.bgm_currently_playing }, function() {
+			audio_stop_sound(self.snd);
+		}));
+	}
 	global.bgm_currently_playing = audio_play_sound(audio, 150, true, Settings.audio.bgm);
 }
