@@ -3,5 +3,9 @@ GetText = function() {
 };
 
 OnHover = function() {
-    inst_upgrade_description.text = L("Allows your secondary attack to recharge faster!");
+	if (Upgrades.special_recharge_rate < 3) {
+		inst_upgrade_description.text = L("Allows your secondary attack to recharge faster!\nUpgrade cost: %0", Upgrades.special_recharge_rate + 1);
+	} else {
+		inst_upgrade_description.text = L("Allows your secondary attack to recharge faster!");
+	}
 };

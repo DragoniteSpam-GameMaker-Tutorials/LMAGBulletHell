@@ -3,5 +3,9 @@ GetText = function() {
 };
 
 OnHover = function() {
-    inst_upgrade_description.text = L("Increase your max charge level, allowing your secondary weapon to store up attacks to be unleashed quickly!");
+	if (Upgrades.special_recharge_rate < 3) {
+		inst_upgrade_description.text = L("Increase your max charge level, allowing your secondary weapon to store up attacks to be unleashed quickly!\nUpgrade cost: %0", Upgrades.special_charge_level + 1);
+	} else {
+		inst_upgrade_description.text = L("Increase your max charge level, allowing your secondary weapon to store up attacks to be unleashed quickly!");
+	}
 };

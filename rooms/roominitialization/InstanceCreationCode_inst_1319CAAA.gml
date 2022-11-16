@@ -3,5 +3,9 @@ GetText = function() {
 };
 
 OnHover = function() {
-    inst_upgrade_description.text = L("All attacks do more damage!");
+	if (Upgrades.special_recharge_rate < 3) {
+		inst_upgrade_description.text = L("All attacks do more damage!\nUpgrade cost: %0", Upgrades.damage_buff + 1);
+	} else {
+		inst_upgrade_description.text = L("All attacks do more damage!");
+	}
 };
