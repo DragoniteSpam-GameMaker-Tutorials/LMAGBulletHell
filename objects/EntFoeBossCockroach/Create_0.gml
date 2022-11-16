@@ -49,7 +49,7 @@ self.Shoot = function() {
         case 3:
             var shot_count = 12;
             var shot_velocity = 320;
-            var bullet_spread = 30;
+            var bullet_spread = 90;
             repeat (shot_count) {
                 var target = EntPlayer.id;
                 var shot = instance_create_depth(self.x, self.y, self.depth + 1, BulletHoming);
