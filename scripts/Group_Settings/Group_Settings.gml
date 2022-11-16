@@ -8,6 +8,9 @@ Settings = {
         
         ApplyVolume: function() {
             audio_set_master_gain(0, self.master);
+			if (global.bgm_currently_playing != -1) {
+				audio_sound_gain(global.bgm_currently_playing, self.bgm, 0);
+			}
         },
     },
     
