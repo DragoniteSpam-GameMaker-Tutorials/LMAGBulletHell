@@ -12,6 +12,10 @@ if (window_get_fullscreen()) {
     var fore_height = Settings.video.size_value.y;
 }
 
+// if the game window is minimized, this might happen
+if (fore_width <= 0) fore_width = 1280;
+if (fore_height <= 0) fore_height = 720;
+
 var back_width = Settings.video.scale_value * Settings.video.size_value.x;
 var back_height = Settings.video.scale_value * Settings.video.size_value.y;
 
