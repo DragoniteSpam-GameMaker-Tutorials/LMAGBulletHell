@@ -5,6 +5,8 @@
 #macro LEVEL_SCROLL_SPEED                       150
 #macro LEVEL_BACKGROUND_OBJECTS                 400
 
+#macro LEVEL_CLEAR_TIME							90
+
 function Level(level_data) constructor {
     self.stats = {
         score: 0,
