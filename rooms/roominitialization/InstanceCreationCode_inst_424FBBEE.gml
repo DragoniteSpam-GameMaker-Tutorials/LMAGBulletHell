@@ -5,5 +5,5 @@ GetText = function() {
 };
 
 OnHover = function() {
-    inst_win_screen_star_description.text = L("Clear the level with a\nscore of " + string(GameController.level.level_data.star_score_requirement) + " or higher!");
+    inst_win_screen_star_description.text = L("Clear the level with a\nscore of %0 or higher!", GameController.level.level_data.star_score_requirement);
 };
