@@ -134,6 +134,7 @@ self.active_save_data = self.save_data[0];
 
 self.SaveAll = function() {
     static save_buffer = buffer_create(1000, buffer_grow, 1);
+	self.active_save_data.upgrades = Upgrades;
     var save_json = json_stringify(self.save_data);
     buffer_seek(save_buffer, buffer_seek_start, 0);
     buffer_write(save_buffer, buffer_text, save_json);
@@ -147,6 +148,7 @@ self.EraseCurrentSave = function() {
             break;
         }
     }
+	Upgrades.Reset();
     self.SaveAll();
 };
 
