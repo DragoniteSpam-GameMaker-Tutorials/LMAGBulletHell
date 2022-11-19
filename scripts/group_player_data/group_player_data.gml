@@ -42,6 +42,14 @@ function PlayerSaveData() constructor {
                 }
             }
         }
+		
+		if (is_struct(source[$ "upgrades"])) {
+			Upgrades.special_recharge_rate = source.upgrades[$ "special_recharge_rate"] ?? 0;
+			Upgrades.special_charge_level = source.upgrades[$ "special_charge_level"] ?? 0;
+			Upgrades.special_fire = source.upgrades[$ "special_fire"] ?? 0;
+			Upgrades.damage_buff = source.upgrades[$ "damage_buff"] ?? 0;
+			Upgrades.posthumous_recovery = source.upgrades[$ "posthumous_recovery"] ?? 0;
+		}
     };
     
     static GetClearData = function(room_level) {
