@@ -5,14 +5,17 @@ OnClick = function() {
         case 0:
             GameController.active_save_data.currency--;
             Upgrades[$ self.property]++;
+			GameController.SaveAll();
             break;
         case 1:
             GameController.active_save_data.currency -= 2;
             Upgrades[$ self.property]++;
+			GameController.SaveAll();
             break;
         case 2:
             GameController.active_save_data.currency -= 3;
             Upgrades[$ self.property]++;
+			GameController.SaveAll();
             break;
     }
 };
