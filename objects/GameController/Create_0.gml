@@ -187,7 +187,10 @@ Unpause = function() {
 RestartLevel = function() {
     with (LevelObject) instance_destroy();
     room_restart();
-    self.Unpause();
+	if (self.countdown_time_source != -1) {
+		time_source_destroy(self.countdown_time_source);
+	}
+	self.state = GameStates.PLAYING;
 };
 
 ShowWinScreen = function() {
