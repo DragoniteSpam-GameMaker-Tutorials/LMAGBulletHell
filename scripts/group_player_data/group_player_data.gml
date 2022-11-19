@@ -45,7 +45,10 @@ function PlayerSaveData() constructor {
     };
     
     static GetClearData = function(room_level) {
-        return self.clear_data[$ room_get_name(room_level)];
+        if (!self.clear_data[$ room_get_name(room_level)]) {
+			self.clear_data[$ room_get_name(room_level)] = new self.ClearData();
+		}
+		return self.clear_data[$ room_get_name(room_level)];
     };
     
     static ClearData = function() constructor {
