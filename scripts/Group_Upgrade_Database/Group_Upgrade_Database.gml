@@ -28,20 +28,20 @@ Upgrades = {
     GetSubweaponRechargeRate: function() {
         switch (self.special_recharge_rate) {
 			default:
-            case 0: return 1.0;
-            case 1: return 1.5;
-            case 2: return 2.0;
-			case 3: return 2.5;
+            case 0: return 1.00;
+            case 1: return 1.33;
+            case 2: return 1.50;
+			case 3: return 2.00;
         }
     },
     
     GetSubweaponBurnCapacity: function() {
         switch (self.special_fire) {
 			default:
-            case 0: return { duration: DEFAULT_EFFECT_DURATION * 0.0, amount: 0 };
-            case 1: return { duration: DEFAULT_EFFECT_DURATION * 1.0, amount: 1 };
-            case 2: return { duration: DEFAULT_EFFECT_DURATION * 2.0, amount: 2 };
-            case 3: return { duration: DEFAULT_EFFECT_DURATION * 3.0, amount: 2.5 };
+            case 0: return { duration: DEFAULT_EFFECT_DURATION * 0.00, amount: 0.0 };
+            case 1: return { duration: DEFAULT_EFFECT_DURATION * 1.00, amount: 1.0 };
+            case 2: return { duration: DEFAULT_EFFECT_DURATION * 1.25, amount: 2.0 };
+            case 3: return { duration: DEFAULT_EFFECT_DURATION * 1.50, amount: 2.5 };
         }
     },
     
@@ -49,9 +49,9 @@ Upgrades = {
         switch (self.damage_buff) {
 			default:
             case 0: return 1.0;
-            case 1: return 1.3;
-            case 2: return 1.6;
-			case 3: return 2.0;
+            case 1: return 1.2;
+            case 2: return 1.4;
+			case 3: return 1.8;
         }
     },
     
