@@ -148,7 +148,6 @@ self.EraseCurrentSave = function() {
             break;
         }
     }
-	Upgrades.Reset();
     self.SaveAll();
 };
 

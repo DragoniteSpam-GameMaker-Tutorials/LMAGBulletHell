@@ -7,14 +7,6 @@ Upgrades = {
     damage_buff: 0,
     posthumous_recovery: 0,
 	
-	Reset: function() {
-	    self.special_recharge_rate = 0;
-	    self.special_charge_level = 0;
-	    self.special_fire = 0;
-	    self.damage_buff = 0;
-	    self.posthumous_recovery = 0;
-	},
-    
     Respec: function() {
         self.special_recharge_rate = 0;
         self.special_charge_level = 0;
