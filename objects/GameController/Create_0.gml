@@ -148,6 +148,7 @@ self.EraseCurrentSave = function() {
             break;
         }
     }
+	self.active_save_data.Respec();
     self.SaveAll();
 };
 
