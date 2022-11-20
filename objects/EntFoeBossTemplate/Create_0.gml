@@ -59,6 +59,7 @@ self.UpdateHPStage = function() {
             self.OnHPStageChange();
             burst_particles();
         }
+		GameController.level.AddScore(self.point_value / 4);
     } else if (f < 0.50) {
         self.hp_stage = 2;
         self.hp = self.health_max / 2;
@@ -66,6 +67,7 @@ self.UpdateHPStage = function() {
             self.OnHPStageChange();
             burst_particles();
         }
+		GameController.level.AddScore(self.point_value / 4);
     } else if (f < 0.75) {
         self.hp_stage = 1;
         self.hp = 3 * self.health_max / 4;
@@ -73,6 +75,7 @@ self.UpdateHPStage = function() {
             self.OnHPStageChange();
             burst_particles();
         }
+		GameController.level.AddScore(self.point_value / 4);
     } else {
         self.hp_stage = 0;
         if (last_stage != self.hp_stage) {
