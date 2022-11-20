@@ -11,7 +11,7 @@ GetText = function() {
             room_get_name(self.room_level),
             clear_data.clear_without_damage ? L("Yes") : L("No"),
             clear_data.clear_under_time ? L("Yes") : L("No"),
-            false ? L("Yes") : L("No")
+            clear_data.clear_with_score ? L("Yes") : L("No")
         ]);
     }
 }
