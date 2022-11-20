@@ -90,7 +90,7 @@ self.level_types[$ string(RoomLevel10)] = new LevelMetadata("Level 10: Scorpion 
 self.level_types[$ string(RoomLevel11)] = new LevelMetadata("Level 11: The Infestation", 10, meshes_swampland, color_swamp)
 	.SetBGM(bgm_level_grasslands)
 	.SetStarScoreRequirement(1200);
-self.level_types[$ string(RoomLevel12)] = new LevelMetadata("Level 12: Hornet Queen's\nRevenge", 11, meshes_flowerland, color_flowers)
+self.level_types[$ string(RoomLevel12)] = new LevelMetadata("Level 12: Hornet Queen's\nRevenge", 11, meshes_flowerland, color_flowers, 1.5)
 	.SetBGM(bgm_level_grasslands)
 	.SetStarScoreRequirement(1200);
 
