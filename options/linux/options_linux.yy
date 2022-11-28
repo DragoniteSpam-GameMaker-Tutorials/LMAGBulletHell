@@ -2,6 +2,9 @@
   "resourceType": "GMLinuxOptions",
   "resourceVersion": "1.0",
   "name": "Linux",
+  "ConfigValues": {
+    "Release": {"option_linux_long_desc":"A bullet hell game where you get revenge on some creepy crawlies","option_linux_short_desc":"A bullet hell game where you get revenge on some creepy crawlies","option_linux_homepage":"https://www.youtube.com/playlist?list=PL_hT--4HOvreUXehK2t8y7sQyWCZ7bJ8p","option_linux_display_name":"Buggy as Hell!",},
+  },
   "option_linux_display_name": "Created with GameMaker Studio 2",
   "option_linux_version": "1.0.0.0",
   "option_linux_maintainer_email": "",

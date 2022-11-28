@@ -2,6 +2,9 @@
   "resourceType": "GMWindowsOptions",
   "resourceVersion": "1.1",
   "name": "Windows",
+  "ConfigValues": {
+    "Release": {"option_windows_description_info":"A bullet hell game where you get revenge on some creepy crawlies","option_windows_copyright_info":"(c) 2022 Michael the Wizardragon","option_windows_product_info":"Buggy as Hell!","option_windows_company_info":"Wizardragon","option_windows_display_name":"Buggy as Hell!","option_windows_icon":"icons/icon.ico",},
+  },
   "option_windows_display_name": "Created with GameMaker Studio 2",
   "option_windows_executable_name": "${project_name}.exe",
   "option_windows_version": "1.0.0.0",
