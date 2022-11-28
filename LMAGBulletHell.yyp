@@ -131,6 +131,7 @@
     {"id":{"name":"spr_foe_centipede","path":"sprites/spr_foe_centipede/spr_foe_centipede.yy",},"order":25,},
     {"id":{"name":"spr_title","path":"sprites/spr_title/spr_title.yy",},"order":0,},
     {"id":{"name":"EntFoeBossHornetQueen","path":"objects/EntFoeBossHornetQueen/EntFoeBossHornetQueen.yy",},"order":14,},
+    {"id":{"name":"bgm_level_desert","path":"sounds/bgm_level_desert/bgm_level_desert.yy",},"order":2,},
     {"id":{"name":"RoomLevel5","path":"rooms/RoomLevel5/RoomLevel5.yy",},"order":4,},
     {"id":{"name":"path_enter_from_right","path":"paths/path_enter_from_right/path_enter_from_right.yy",},"order":2,},
     {"id":{"name":"Pickup","path":"objects/Pickup/Pickup.yy",},"order":0,},
@@ -392,6 +393,7 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"stone_smallb.vbuff","CopyToMask":-1,"filePath":"datafiles/meshes/swampland",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"mushroom_tan.vbuff","CopyToMask":-1,"filePath":"datafiles/meshes/swampland",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"stump_round.vbuff","CopyToMask":-1,"filePath":"datafiles/meshes/swampland",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"credits.txt","CopyToMask":-1,"filePath":"datafiles",},
   ],
   "MetaData": {
     "IDEVersion": "2022.0.0.19",
