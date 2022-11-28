@@ -9,6 +9,6 @@ OnHover = function() {
 	static ss = LEVEL_CLEAR_TIME mod 60;
 	ss = string(ss);
 	while (string_length(ss) < 2) ss = "0" + ss;
-	var t = string(mm) + ss;
-    inst_win_screen_star_description.text = L("Clear the level in less\nthan %0!", ss);
+	var t = string(mm) + ":" + ss;
+    inst_win_screen_star_description.text = L("Clear the level in less\nthan %0!", t);
 };
