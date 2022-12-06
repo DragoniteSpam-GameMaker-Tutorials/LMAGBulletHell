@@ -1,5 +1,14 @@
 #macro Settings global.__settings
 
+#macro default_frame_rate			60
+#macro pi:default_frame_rate		30
+#macro default_frame_rate_index		1
+#macro pi:default_frame_rate_index	0
+#macro default_scale				1
+#macro pi:default_scale				0.25
+#macro default_scale_index			5
+#macro pi:default_scale_index		0
+
 Settings = {
     audio: {
         master: 1,
@@ -19,8 +28,8 @@ Settings = {
         default_frame_rates: [
             30, 60, 120, 144,
         ],
-        frame_rate_index: 1,
-        frame_rate_value: 60,
+        frame_rate_index: default_frame_rate_index,
+        frame_rate_value: default_frame_rate,
         
         ApplyFPS: function() {
             self.frame_rate_value = self.default_frame_rates[self.frame_rate_index];
@@ -30,8 +39,8 @@ Settings = {
         default_scales: [
             0.25, 0.33, 0.40, 0.50, 0.75, 1.00
         ],
-        scale_index: 5,
-        scale_value: 1,
+        scale_index: default_scale_index,
+        scale_value: default_scale,
         
         ApplyScale: function() {
             self.scale_value = self.default_scales[self.scale_index];

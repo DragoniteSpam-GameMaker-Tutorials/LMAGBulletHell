@@ -164,7 +164,9 @@
   "configs": {
     "name": "Default",
     "children": [
-      {"name":"Release","children":[],},
+      {"name":"Release","children":[
+          {"name":"pi","children":[],},
+        ],},
     ],
   },
   "RoomOrderNodes": [

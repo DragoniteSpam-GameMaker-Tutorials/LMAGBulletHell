@@ -7,6 +7,7 @@
 
 #macro DEFAULT_HEALTH                   infinity
 #macro Release:DEFAULT_HEALTH           3
+#macro pi:DEFAULT_HEALTH				3
 
 #macro HITFLASH_DURATION                0.25
 #macro HITFLASH_SCALE                   1.25
@@ -20,3 +21,4 @@
 
 #macro DEBUG                            true
 #macro Release:DEBUG                    false
+#macro pi:DEBUG							false
