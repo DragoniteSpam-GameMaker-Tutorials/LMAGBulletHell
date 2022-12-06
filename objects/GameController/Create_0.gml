@@ -70,7 +70,7 @@ self.level_types[$ string(RoomLevel5)] = new LevelMetadata("Level 5: Grasshopper
 	.SetBGM(bgm_level_grasslands)
 	.SetStarScoreRequirement(2000);
 self.level_types[$ string(RoomLevel6)] = new LevelMetadata("Level 6: Beehive Bonanza", 5, meshes_flowerland, color_flowers, 1.25)
-	.SetBGM(bgm_level_grasslands)
+	.SetBGM(bgm_level_boss)
 	.SetStarScoreRequirement(2400);
 
 self.level_types[$ string(RoomLevel7)] = new LevelMetadata("Level 7: Centipedes", 6, meshes_swampland, color_swamp)
@@ -81,7 +81,7 @@ self.level_types[$ string(RoomLevel8)] = new LevelMetadata("Level 8: Beetle Juic
 	.SetStarScoreRequirement(1200);
 
 self.level_types[$ string(RoomLevel9)] = new LevelMetadata("Level 9: Cockroach Chaos", 8, meshes_cactuslands, color_cactus, 0.3)
-	.SetBGM(bgm_level_desert)
+	.SetBGM(bgm_level_boss)
 	.SetStarScoreRequirement(3000);
 self.level_types[$ string(RoomLevel10)] = new LevelMetadata("Level 10: Scorpion Rush", 9, meshes_cactuslands, color_cactus, 0.3)
 	.SetBGM(bgm_level_desert)
@@ -91,7 +91,7 @@ self.level_types[$ string(RoomLevel11)] = new LevelMetadata("Level 11: The Infes
 	.SetBGM(bgm_level_grasslands)
 	.SetStarScoreRequirement(2400);
 self.level_types[$ string(RoomLevel12)] = new LevelMetadata("Level 12: Hornet Queen's\nRevenge", 11, meshes_flowerland, color_flowers, 1.5)
-	.SetBGM(bgm_level_grasslands)
+	.SetBGM(bgm_level_boss)
 	.SetStarScoreRequirement(1200);
 
 self.GetLevelMetadata = function(room_level) {

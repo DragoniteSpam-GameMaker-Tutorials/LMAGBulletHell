@@ -12,6 +12,7 @@
     {"id":{"name":"UIButton","path":"objects/UIButton/UIButton.yy",},"order":10,},
     {"id":{"name":"spr_nineslice","path":"sprites/spr_nineslice/spr_nineslice.yy",},"order":6,},
     {"id":{"name":"PickupFireBullet","path":"objects/PickupFireBullet/PickupFireBullet.yy",},"order":5,},
+    {"id":{"name":"bgm_level_boss","path":"sounds/bgm_level_boss/bgm_level_boss.yy",},"order":3,},
     {"id":{"name":"spr_pickup","path":"sprites/spr_pickup/spr_pickup.yy",},"order":6,},
     {"id":{"name":"spr_collision_bug_large","path":"sprites/spr_collision_bug_large/spr_collision_bug_large.yy",},"order":17,},
     {"id":{"name":"Pickup_Code","path":"scripts/Pickup_Code/Pickup_Code.yy",},"order":1,},
